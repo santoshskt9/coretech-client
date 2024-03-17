@@ -1,0 +1,173 @@
+.hero-slider {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2696E9;
+}
+
+.hero-slider::before {
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0, 58, 157, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slider-navigation {
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active {
+    background: #2696E9;
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover {
+    transform: scale(1.5);
+}
+
+.video-slide {
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+.slider-content {
+    z-index: 888;
+    color: white;
+    display: none;
+}
+
+.slider-content.active {
+    display: block;
+}
+
+.hero-slider video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-- Animations ---*/
+.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  h5.animated {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  p.animated {
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  button.animated {
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
