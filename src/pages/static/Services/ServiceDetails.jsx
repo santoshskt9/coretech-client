@@ -14,7 +14,13 @@ import {
 const ServiceDetails = () => {
     return (
         <>
-            <Hero />
+            <Hero
+                heading="Defend Your Digital Assets with Our Cyber Security Solution"
+                description="Empowering businesses and individuals to navigate the digital landscape securely."
+                imgSrc="images/service/cyber-security.png"
+                link=""
+                linkText="Explore Know"
+            />
 
 
 
@@ -293,7 +299,7 @@ const ServiceDetails = () => {
                             <h4 class="title">Get your <span class="colored">FREE</span><br /> cyber security consultation</h4>
                         </div>
                         <div class="icon-box">
-                            <span className="icon"><FiPhoneCall/></span>
+                            <span className="icon"><FiPhoneCall /></span>
                         </div>
                         <div class="info-box">
                             <a href="tel:+11666999000" class="num">+11 - 666 999 000</a>
