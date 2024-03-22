@@ -138,3 +138,55 @@ h1, h2, h3, h4, h5, h6, p, blockquote, span, strong, sub, small {
   font-size: 20px;
   color: green; /* Change color as needed */
 }
+
+.icon-contact {
+  font-size: 40px;
+  color: white;
+}
+
+
+/*=== Default Form ===*/
+.form-control, .input-text {
+  height: calc(2.25rem + 27px);
+  padding: 14px 30px;
+  outline: 0;
+  background-color: #f4f5f8;
+  border: 1px solid #f4f5f8;
+  color: #686a6f;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.form-control::-webkit-input-placeholder, .input-text::-webkit-input-placeholder {
+  color: #686a6f;
+  opacity: 1;
+}
+.form-control::-moz-placeholder, .input-text::-moz-placeholder {
+  color: #686a6f;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder, .input-text:-ms-input-placeholder {
+  color: #686a6f;
+  opacity: 1;
+}
+.form-control::-ms-input-placeholder, .input-text::-ms-input-placeholder {
+  color: #686a6f;
+  opacity: 1;
+}
+.form-control::placeholder, .input-text::placeholder {
+  color: #686a6f;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder, .input-text:-ms-input-placeholder {
+  color: #686a6f;
+}
+.form-control::-ms-input-placeholder, .input-text::-ms-input-placeholder {
+  color: #686a6f;
+}
+
+textarea.form-control {
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+

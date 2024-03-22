@@ -21,7 +21,7 @@ const MainRouter = () => {
         <Route path='/:slug' element={<BlogDetails/>}/>
         <Route path='/training' element={<Training />}/>
         <Route path='/careers' element={<Careers />}/>
-        <Route path='/contactus' element={<ContactUs />}/>
+        <Route path='/contact' element={<ContactUs />}/>
         <Route path='*' element={<div className="p-5 d-flex justify-content-center align-items-center"><h1 className='text-center'>Page Not Found</h1></div>} />
     </Routes>
   )
