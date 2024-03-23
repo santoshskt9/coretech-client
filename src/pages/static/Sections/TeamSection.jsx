@@ -59,8 +59,8 @@ const TeamSection = () => {
                             <img src="images/resource/user.jpg" />
                         </div>
                         <div class="caption">
-                            <h3>Meghana Satyanarayana</h3>
-                            <p>HR Head</p>
+                            <h3>Shalini Kumari</h3>
+                            <p>Executive Sales Advisor</p>
                             {/* <div class="social-links">
                                 <FaFacebook />
                                 <FaTwitter />
@@ -92,8 +92,8 @@ const TeamSection = () => {
                             <img src="images/resource/user.jpg" />
                         </div>
                         <div class="caption">
-                            <h3>Vikram Verma</h3>
-                            <p>Chief Information Security Officer</p>
+                            <h3>Gayatri Kushwaha</h3>
+                            <p>Chief Designer</p>
                             {/* <div class="social-links">
                                 <FaFacebook />
                                 <FaTwitter />
