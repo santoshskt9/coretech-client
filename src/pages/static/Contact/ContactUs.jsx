@@ -3,6 +3,7 @@ import React from 'react'
 import BreadCrumb2 from '../../../components/BreadCrumb/BreadCrumb2'
 import { PiEnvelope, PiEnvelopeFill, PiNavigationArrowFill, PiPhoneCallFill } from 'react-icons/pi'
 import './ContactUs.css';
+import { FaMap } from 'react-icons/fa';
 
 const ContactUs = () => {
     return (
@@ -27,7 +28,7 @@ const ContactUs = () => {
                                         </div>
                                         <div className="contact-items">
                                             <h4>Have any question?</h4>
-                                            <a href="tel:980089850"><span>Free</span> +92 (020)-9850</a>
+                                            <a href="tel:980089850"> +92 (020)-9850</a>
                                         </div>
                                     </li>
                                     <li>
@@ -59,11 +60,89 @@ const ContactUs = () => {
                 </div>
             </section>
 
-            <section class="team-contact-form bg-light">
+
+            {/* Office Addresses */}
+            <section className="office-addresses mb-5">
+                <div className="container">
+                <div class="sec-title text-center">
+                        <span class="sub-title">Other Offices</span>
+                        <h2 class="section-title__title">Offices in India</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col office">
+                            <h3>Uttar Pradesh</h3>
+                            <ul className="list-unstyled contact-details__offices">
+                                    <li>
+                                        <div className="icon icon-contact">
+                                            <PiPhoneCallFill />
+                                        </div>
+                                        <div className="contact-items">
+                                            <h4>Call Us</h4>
+                                            <a href="tel:+918050572875">+91 (805)-0572875</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="icon icon-contact">
+                                            <PiEnvelopeFill />
+                                        </div>
+                                        <div className="contact-items">
+                                            <h4>Write email</h4>
+                                            <a href="mailto:info@coretechinfra.com">info@coretechinfra.com</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="icon icon-contact">
+                                            <PiNavigationArrowFill />
+                                        </div>
+                                        <div className="contact-items">
+                                            <h4>Visit anytime</h4>
+                                            <span>Plot No 9, A Block, Ambedkarnagar, <br/> Shaktinagar, Sonebhadra, Uttar Pradesh, <br/>India - 231222</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div className="col office">
+                            <h3>Maharastra</h3>
+                            <ul className="list-unstyled contact-details__offices">
+                                    <li>
+                                        <div className="icon icon-contact">
+                                            <PiPhoneCallFill />
+                                        </div>
+                                        <div className="contact-items">
+                                            <h4>Call Us</h4>
+                                            <a href="tel:+917757881212">+ 91 (775) 7881212</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="icon icon-contact">
+                                            <PiEnvelopeFill />
+                                        </div>
+                                        <div className="contact-items">
+                                            <h4>Write email</h4>
+                                            <a href="mailto:info@coretechinfra.com">info@coretechinfra.com</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="icon icon-contact">
+                                            <PiNavigationArrowFill />
+                                        </div>
+                                        <div className="contact-items">
+                                            <h4>Visit anytime</h4>
+                                            <span>Diwan deodi, Gulmandi, Chhatrapati <br/>Sambhaji Nagar, Maharashtra, India</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="team-contact-form">
                 <div class="container pb-100">
                     <div class="sec-title text-center">
                         <span class="sub-title">Contact With Us Now</span>
-                        <h2 class="section-title__title">Feel Free to Write Our <br /> Tecnology Experts</h2>
+                        <h2 class="section-title__title">Feel Free to Write Our <br /> Technology Experts</h2>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-lg-8">

@@ -74,6 +74,7 @@ textarea {
 button {
   outline: none !important;
   cursor: pointer;
+  border: none;
 }
 
 /* img {
@@ -113,6 +114,13 @@ li {
 
 h1, h2, h3, h4, h5, h6, p, blockquote, span, strong, sub, small {
   font-family: 'Poppins';
+}
+
+input, textarea {
+  outline: none;
+  border: none !important;
+  padding: 20px !important;
+  font-family: 'Poppins' !important;
 }
 
 /* h2 {
@@ -187,6 +195,10 @@ textarea.form-control {
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.bg-form {
+  background-color: #686a6f;
 }
 
 
