@@ -19,7 +19,9 @@ const ContactUs = () => {
                                 <div className="sec-title">
                                     <span className="sub-title">Need any help?</span>
                                     <h2>Get in touch with us</h2>
-                                    <div className="text fw-light">Lorem ipsum is simply free text available dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt simply free ut labore et dolore magna aliqua.</div>
+                                    <div className="text fw-light">
+
+                                        For any inquiries, feedback, or collaboration opportunities, please don't hesitate to reach out to us. Our corporate office is dedicated to providing excellent support and fostering meaningful connections with our stakeholders.</div>
                                 </div>
                                 <ul className="list-unstyled contact-details__info">
                                     <li>
@@ -28,7 +30,7 @@ const ContactUs = () => {
                                         </div>
                                         <div className="contact-items">
                                             <h4>Have any question?</h4>
-                                            <a href="tel:980089850"> +92 (020)-9850</a>
+                                            <a href="tel:+19452785774">USA: +1 (945) 278 5774</a>
                                         </div>
                                     </li>
                                     <li>
@@ -37,7 +39,7 @@ const ContactUs = () => {
                                         </div>
                                         <div className="contact-items">
                                             <h4>Write email</h4>
-                                            <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                            <a href="mailto:info@coretecchinfra.com">info@coretecchinfra.com</a>
                                         </div>
                                     </li>
                                     <li>
@@ -46,7 +48,7 @@ const ContactUs = () => {
                                         </div>
                                         <div className="contact-items">
                                             <h4>Visit anytime</h4>
-                                            <span>66 broklyn golden street. New York</span>
+                                            <span>Coppell, Texas, USA</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -54,7 +56,7 @@ const ContactUs = () => {
                         </div>
                         <div className="col-xl-7 col-lg-6">
                             {/* <!-- Google Map HTML Codes --> */}
-                            <iframe src="https://www.google.com/maps/embed" width="100%" height="550" frameborder="0" allowfullscreen=""></iframe>
+                            <iframe src="https://www.google.com/maps/embed" width="100%" height="550" className='rounded-4' frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -64,7 +66,7 @@ const ContactUs = () => {
             {/* Office Addresses */}
             <section className="office-addresses mb-5">
                 <div className="container">
-                <div class="sec-title text-center">
+                    <div class="sec-title text-center">
                         <span class="sub-title">Other Offices</span>
                         <h2 class="section-title__title">Offices in India</h2>
                     </div>
@@ -72,68 +74,68 @@ const ContactUs = () => {
                         <div className="col office">
                             <h3>Uttar Pradesh</h3>
                             <ul className="list-unstyled contact-details__offices">
-                                    <li>
-                                        <div className="icon icon-contact">
-                                            <PiPhoneCallFill />
-                                        </div>
-                                        <div className="contact-items">
-                                            <h4>Call Us</h4>
-                                            <a href="tel:+918050572875">+91 (805)-0572875</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="icon icon-contact">
-                                            <PiEnvelopeFill />
-                                        </div>
-                                        <div className="contact-items">
-                                            <h4>Write email</h4>
-                                            <a href="mailto:info@coretechinfra.com">info@coretechinfra.com</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="icon icon-contact">
-                                            <PiNavigationArrowFill />
-                                        </div>
-                                        <div className="contact-items">
-                                            <h4>Visit anytime</h4>
-                                            <span>Plot No 9, A Block, Ambedkarnagar, <br/> Shaktinagar, Sonebhadra, Uttar Pradesh, <br/>India - 231222</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <div className="icon icon-contact">
+                                        <PiPhoneCallFill />
+                                    </div>
+                                    <div className="contact-items">
+                                        <h4>Call Us</h4>
+                                        <a href="tel:+918050572875">+91 (805)-0572875</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="icon icon-contact">
+                                        <PiEnvelopeFill />
+                                    </div>
+                                    <div className="contact-items">
+                                        <h4>Write email</h4>
+                                        <a href="mailto:info@coretechinfra.com">info@coretechinfra.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="icon icon-contact">
+                                        <PiNavigationArrowFill />
+                                    </div>
+                                    <div className="contact-items">
+                                        <h4>Visit anytime</h4>
+                                        <span>Plot No 9, A Block, Ambedkarnagar, <br /> Shaktinagar, Sonebhadra, Uttar Pradesh, <br />India - 231222</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <div className="col office">
                             <h3>Maharastra</h3>
                             <ul className="list-unstyled contact-details__offices">
-                                    <li>
-                                        <div className="icon icon-contact">
-                                            <PiPhoneCallFill />
-                                        </div>
-                                        <div className="contact-items">
-                                            <h4>Call Us</h4>
-                                            <a href="tel:+917757881212">+ 91 (775) 7881212</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="icon icon-contact">
-                                            <PiEnvelopeFill />
-                                        </div>
-                                        <div className="contact-items">
-                                            <h4>Write email</h4>
-                                            <a href="mailto:info@coretechinfra.com">info@coretechinfra.com</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="icon icon-contact">
-                                            <PiNavigationArrowFill />
-                                        </div>
-                                        <div className="contact-items">
-                                            <h4>Visit anytime</h4>
-                                            <span>Diwan deodi, Gulmandi, Chhatrapati <br/>Sambhaji Nagar, Maharashtra, India</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <div className="icon icon-contact">
+                                        <PiPhoneCallFill />
+                                    </div>
+                                    <div className="contact-items">
+                                        <h4>Call Us</h4>
+                                        <a href="tel:+917757881212">+ 91 (775) 7881212</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="icon icon-contact">
+                                        <PiEnvelopeFill />
+                                    </div>
+                                    <div className="contact-items">
+                                        <h4>Write email</h4>
+                                        <a href="mailto:info@coretechinfra.com">info@coretechinfra.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="icon icon-contact">
+                                        <PiNavigationArrowFill />
+                                    </div>
+                                    <div className="contact-items">
+                                        <h4>Visit anytime</h4>
+                                        <span>Diwan deodi, Gulmandi, Chhatrapati <br />Sambhaji Nagar, Maharashtra, India</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                       
+
                     </div>
                 </div>
             </section>
