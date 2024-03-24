@@ -1,106 +1,65 @@
 import React from 'react';
 import './Navbar2.css';
 import Brand from "../../assets/logo-4.png";
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 
 const Navbar2 = () => {
 	return (
 		<>
-			<header class="main-header header-style-two">
+			<header className="main-header header-style-two sticky-top shadow-sm">
 			
 
-				<div class="header-lower">
-					<div class="container-fluid">
+				<div className="header-lower">
+					<div className="container-fluid">
 						{/* <!-- Main box --> */}
-						<div class="main-box">
-							<div class="logo-box">
-								<div class="logo"><a href="/"><img src={Brand} height={50} alt="" title="Tronis"/></a></div>
+						<div className="main-box">
+							<div className="logo-box">
+								<div className="logo"><a href="/"><img src={Brand} height={50} alt="" title="Tronis"/></a></div>
 							</div>
 
 							{/* <!--Nav Box--> */}
-							<div class="nav-outer">
-								<nav class="nav main-menu">
-									<ul class="navigation">
-										<li class="current dropdown"><a href="/">Home</a>
+							<div className="nav-outer">
+								<nav className="nav main-menu">
+									<ul className="navigation">
+										<li><a href="/">Home</a>
+											
+										</li>
+										<li className="dropdown"><a href="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown/> </a>
 											<ul>
-												<li><a href="/">Home page 01</a></li>
-												<li><a href="index-2.html">Home page 02</a></li>
-												<li><a href="index-3.html">Home page 03</a></li>
-												<li class="dropdown"><a href="#">Single</a>
-													<ul>
-														<li><a href="index-1-single.html">Home Single 1</a></li>
-														<li><a href="index-2-single.html">Home Single 2</a></li>
-														<li><a href="index-3-single.html">Home Single 3</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="#">Dark</a>
-													<ul>
-														<li><a href="index-1-dark.html">Home Dark 1</a></li>
-														<li><a href="index-2-dark.html">Home Dark 2</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="#">Boxed</a>
-													<ul>
-														<li><a href="index-1-boxed.html">Home Boxed 1</a></li>
-														<li><a href="index-2-boxed.html">Home Boxed 2</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="#">RTL</a>
-													<ul>
-														<li><a href="index-1-rtl.html">Home RTL 1</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="#">Header Styles</a>
-													<ul>
-														<li><a href="/">Header Style One</a></li>
-														<li><a href="index-2.html">Header Style Two</a></li>
-														<li><a href="index-3.html">Header Style three</a></li>
-													</ul>
-												</li>
+												<li><a href="page-about.html">Company</a></li>
+												<li><a href="page-about.html">Partners</a></li>
+												<li><a href="page-about.html">Clients</a></li>
+												<li><a href="page-about.html">Mission & Vision</a></li>
 											</ul>
 										</li>
-										<li class="dropdown"><a href="#">Pages</a>
+										<li className="dropdown"><a href="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown/></a>
 											<ul>
-												<li><a href="page-about.html">About</a></li>
-												<li class="dropdown"><a href="#">Projects</a>
-													<ul>
-														<li><a href="page-projects.html">Projects List</a></li>
-														<li><a href="page-project-details.html">Project Details</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="#">Team</a>
-													<ul>
-														<li><a href="page-team.html">Team List</a></li>
-														<li><a href="page-team-details.html">Team Details</a></li>
-													</ul>
-												</li>
-												<li><a href="page-testimonial.html">Testimonial</a></li>
-												<li><a href="page-pricing.html">Pricing</a></li>
-												<li><a href="page-faq.html">FAQ</a></li>
-												<li><a href="page-404.html">Page 404</a></li>
+												<li><a href="/service-details">Cloud Architecture</a></li>
+												<li><a href="#">IT Infrastructure</a></li>
+												<li><a href="#">Cyber Security</a></li>
+												<li><a href="#">Business Optimization</a></li>
+												<li><a href="#">Service Management</a></li>
+												<li><a href="#">Cloud & Infra Security</a></li>
+												<li><a href="#">Application Development</a></li>
 											</ul>
 										</li>
-										<li class="dropdown"><a href="#">Services</a>
+										<li className="dropdown"><a href="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown/></a>
 											<ul>
-												<li><a href="page-services.html">Services List</a></li>
-												<li><a href="page-service-details.html">Service Details</a></li>
+												<li><a href="/training">Training</a></li>
+												<li><a href="/training">Certiification</a></li>
+												<li><a href="/training">Webinar</a></li>
 											</ul>
 										</li>
-										<li class="dropdown"><a href="#">Shop</a>
+										<li className="dropdown"><a href="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown/></a>
 											<ul>
-												<li><a href="shop-products.html">Products</a></li>
-												<li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-												<li><a href="shop-product-details.html">Product Details</a></li>
-												<li><a href="shop-cart.html">Cart</a></li>
-												<li><a href="shop-checkout.html">Checkout</a></li>
+												<li><a href="#">News</a></li>
+												<li><a href="#">Blogs</a></li>
+												<li><a href="#">Articles</a></li>
+												<li><a href="#">Case Studies</a></li>
 											</ul>
 										</li>
-										<li class="dropdown"><a href="#">News</a>
-											<ul>
-												<li><a href="news-grid.html">News Grid</a></li>
-												<li><a href="news-details.html">News Details</a></li>
-											</ul>
-										</li>
-										<li><a href="page-contact.html">Get in Touch</a></li>
+										<li><a href="/career">Career</a></li>
+										<li><a href="/contact">Get in Touch</a></li>
 									</ul>
 								</nav>
 								{/* <!-- Main Menu End--> */}
@@ -112,52 +71,52 @@ const Navbar2 = () => {
 				</div>
 
 				{/* <!-- Mobile Menu  --> */}
-				<div class="mobile-menu">
-					<div class="menu-backdrop"></div>
+				<div className="mobile-menu">
+					<div className="menu-backdrop"></div>
 
 					{/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
-					<nav class="menu-box">
-						<div class="upper-box">
-							<div class="nav-logo"><a href="/"><img src="images/logo.png" alt="" title=""/></a></div>
-							<div class="close-btn"><i class="icon fa fa-times"></i></div>
+					<nav className="menu-box">
+						<div className="upper-box">
+							<div className="nav-logo"><a href="/"><img src="images/logo.png" alt="" title=""/></a></div>
+							<div className="close-btn"><i className="icon fa fa-times"></i></div>
 						</div>
 
-						<ul class="navigation clearfix">
+						<ul className="navigation clearfix">
 							{/* <!--Keep This Empty / Menu will come through Javascript--> */}
 						</ul>
-						<ul class="contact-list-one">
+						<ul className="contact-list-one">
 							<li>
 								{/* <!-- Contact Info Box --> */}
-								<div class="contact-info-box">
-									<i class="icon lnr-icon-phone-handset"></i>
-									<span class="title">Call Now</span>
+								<div className="contact-info-box">
+									<i className="icon lnr-icon-phone-handset"></i>
+									<span className="title">Call Now</span>
 									<a href="tel:+92880098670">+92 (8800) - 98670</a>
 								</div>
 							</li>
 							<li>
 								{/* <!-- Contact Info Box --> */}
-								<div class="contact-info-box">
-									<span class="icon lnr-icon-envelope1"></span>
-									<span class="title">Send Email</span>
+								<div className="contact-info-box">
+									<span className="icon lnr-icon-envelope1"></span>
+									<span className="title">Send Email</span>
 									<a href="mailto:help@company.com">help@company.com</a>
 								</div>
 							</li>
 							<li>
 								{/* <!-- Contact Info Box --> */}
-								<div class="contact-info-box">
-									<span class="icon lnr-icon-clock"></span>
-									<span class="title">Send Email</span>
+								<div className="contact-info-box">
+									<span className="icon lnr-icon-clock"></span>
+									<span className="title">Send Email</span>
 									Mon - Sat 8:00 - 6:30, Sunday - CLOSED
 								</div>
 							</li>
 						</ul>
 
 
-						<ul class="social-links">
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<ul className="social-links">
+							<li><a href="#"><i className="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i className="fab fa-pinterest"></i></a></li>
+							<li><a href="#"><i className="fab fa-instagram"></i></a></li>
 						</ul>
 					</nav>
 				{/* </div><!-- End Mobile Menu --> */}
@@ -165,20 +124,20 @@ const Navbar2 = () => {
 				</div>
 
 				{/* <!-- Sticky Header  --> */}
-				<div class="sticky-header">
-					<div class="auto-container">
-						<div class="inner-container">
+				<div className="sticky-header">
+					<div className="auto-container">
+						<div className="inner-container">
 							{/* <!--Logo--> */}
-							<div class="logo">
+							<div className="logo">
 								<a href="/" title=""><img src="images/logo-2.png" alt="" title=""/></a>
 							</div>
 
 							{/* <!--Right Col--> */}
-							<div class="nav-outer">
+							<div className="nav-outer">
 								{/* <!-- Main Menu --> */}
-								<nav class="main-menu">
-									<div class="navbar-collapse show collapse clearfix">
-										<ul class="navigation clearfix">
+								<nav className="main-menu">
+									<div className="navbar-collapse show collapse clearfix">
+										<ul className="navigation clearfix">
 											{/* <!--Keep This Empty / Menu will come through Javascript--> */}
 										</ul>
 									</div>
@@ -186,7 +145,7 @@ const Navbar2 = () => {
 								{/* <!-- Main Menu End--> */}
 
 								{/* <!--Mobile Navigation Toggler--> */}
-								<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+								<div className="mobile-nav-toggler"><span className="icon lnr-icon-bars"></span></div>
 							</div>
 						</div>
 					</div>

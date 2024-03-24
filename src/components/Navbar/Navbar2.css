@@ -222,7 +222,7 @@ Main Header
     margin-right: -14px;
   }
   .main-menu .navigation > li.dropdown > a:after {
-    content: "\f107";
+    /* content: "\e5d8"; */
     position: absolute;
     right: 0;
     top: 50%;
@@ -232,7 +232,7 @@ Main Header
     line-height: 24px;
     font-size: 12px;
     z-index: 5;
-    font-family: "Font Awesome 6 Pro";
+    /* font-family: "Material Icons"; */
     margin-top: -2px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -292,8 +292,8 @@ Main Header
     color: var(--theme-color2);
   }
   .main-menu .navigation > li > ul > li.dropdown > a:after {
-    font-family: "Font Awesome 6 Pro";
-    content: "\f105";
+    /* font-family: "Font Awesome 5 Free"; */
+    /* content: "\f062"; */
     position: absolute;
     right: 0;
     top: 11px;
