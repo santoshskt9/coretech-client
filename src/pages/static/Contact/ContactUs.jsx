@@ -56,7 +56,7 @@ const ContactUs = () => {
                         </div>
                         <div className="col-xl-7 col-lg-6">
                             {/* <!-- Google Map HTML Codes --> */}
-                            <iframe src="https://www.google.com/maps/embed" width="100%" height="550" className='rounded-4' frameborder="0" allowfullscreen=""></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53563.701210828!2d-97.02387541960397!3d32.95810220820537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c29392775ee31%3A0xce442bcc373769fd!2sCoppell%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1711303653300!5m2!1sen!2sin" width="100%" height="550" className='rounded-4' frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact-items">
                                         <h4>Visit anytime</h4>
-                                        <span>Plot No 9, A Block, Ambedkarnagar, <br /> Shaktinagar, Sonebhadra, Uttar Pradesh, <br />India - 231222</span>
+                                        <a href='https://maps.app.goo.gl/42UdWMYrBT3T4CpX8' >Plot No 9, A Block, Ambedkarnagar, <br /> Shaktinagar, Sonebhadra, Uttar Pradesh, <br />India - 231222</a>
                                     </div>
                                 </li>
                             </ul>
@@ -130,7 +130,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact-items">
                                         <h4>Visit anytime</h4>
-                                        <span>Diwan deodi, Gulmandi, Chhatrapati <br />Sambhaji Nagar, Maharashtra, India</span>
+                                        <a href='https://maps.app.goo.gl/EYyynCYt3zfaNgzK7'>Diwan deodi, Gulmandi, Chhatrapati <br />Sambhaji Nagar, Maharashtra, India</a>
                                     </div>
                                 </li>
                             </ul>
