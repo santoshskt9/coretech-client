@@ -9,7 +9,7 @@
 }
 
 .hero-slider::before {
-    z-index: 777;
+    z-index: 2;
     content: '';
     position: absolute;
     background: rgba(0, 58, 157, 0.6);
@@ -20,7 +20,7 @@
 }
 
 .slider-navigation {
-    z-index: 888;
+    z-index: 3;
     position: relative;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
 }
 
 .slider-content {
-    z-index: 888;
+    z-index: 3;
     color: white;
     display: none;
 }
