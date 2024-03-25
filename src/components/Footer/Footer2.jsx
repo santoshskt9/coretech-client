@@ -33,15 +33,16 @@ const Footer2 = () => {
                             {/* <!--Footer Column--> */}
                             <div class="footer-column col-xl-3 col-lg-12 col-md-12">
                                 <div class="footer-widget about-widget">
-                                    <div class="logo"><a href="/"><img src={Brand} alt="" className='w-75' /></a></div>
+                                    <div class="logo"><Link to="/"><img src={Brand} alt="" className='w-75' /></Link></div>
                                     <div class="text fw-light">
                                     We collaborate closely with you to maximize our partnerships with top technology firms, ensuring optimal implementation, integration, and support. Harnessing cutting-edge solutions drives innovation and maximizes your tech investments.
                                     </div>
                                     <ul class="social-icon-two">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><Link to="#"><i class="fab fa-twitter"></i></Link></li>
+                                        <li><Link to="#"><i class="fab fa-facebook"></i></Link></li>
+                                        <li><Link to="https://www.linkedin.com/company/coretechinfra"><i class="fab fa-linkedin"></i></Link></li>
+                                        <li><Link to="#"><i class="fab fa-instagram"></i></Link></li>
+                                        <li><Link to="#"><i class="fab fa-youtube"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,13 +52,13 @@ const Footer2 = () => {
                                 <div class="footer-widget links-widget">
                                     <h6 class="widget-title">Explore</h6>
                                     <ul class="user-links">
-                                        <li><a href="#">About Company</a></li>
-                                        <li><a href="#">Meet the Team</a></li>
-                                        <li><a href="#">News & Media</a></li>
-                                        <li><a href="#">Blogs & Articles</a></li>
-                                        <li><a href="#">Trainings</a></li>
-                                        <li><a href="#">Career</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><Link to="#">About Company</Link></li>
+                                        <li><Link to="#">Meet the Team</Link></li>
+                                        <li><Link to="#">News & Media</Link></li>
+                                        <li><Link to="#">Blogs & Articles</Link></li>
+                                        <li><Link to="#">Trainings</Link></li>
+                                        <li><Link to="#">Career</Link></li>
+                                        <li><Link to="#">Contact</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -66,13 +67,13 @@ const Footer2 = () => {
                                 <div class="footer-widget links-widget">
                                     <h6 class="widget-title">Our Services</h6>
                                     <ul class="user-links">
-                                        <li><a href="#">Cloud Architecture</a></li>
-                                        <li><a href="#">IT Infrastructure</a></li>
-                                        <li><a href="#">Cyber Security</a></li>
-                                        <li><a href="#">Business Optimazation</a></li>
-                                        <li><a href="#">Cloud & Infra Security</a></li>
-                                        <li><a href="#">Application Development</a></li>
-                                        <li><a href="#">Service Management</a></li>
+                                        <li><Link to="#">Cloud Architecture</Link></li>
+                                        <li><Link to="#">IT Infrastructure</Link></li>
+                                        <li><Link to="#">Cyber Security</Link></li>
+                                        <li><Link to="#">Business Optimazation</Link></li>
+                                        <li><Link to="#">Cloud & Infra Security</Link></li>
+                                        <li><Link to="#">Application Development</Link></li>
+                                        <li><Link to="#">Service Management</Link></li>
                                     </ul>
                                 </div>
                                 
@@ -85,22 +86,22 @@ const Footer2 = () => {
 							<div class="widget-content">
 								<div class="outer clearfix">
 									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-1.jpg" alt=""/></a>
+										<Link to="#"><img src="images/resource/project-thumb-1.jpg" alt=""/></Link>
 									</figure>
 									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-2.jpg" alt=""/></a>
+										<Link to="#"><img src="images/resource/project-thumb-2.jpg" alt=""/></Link>
 									</figure>
 									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-3.jpg" alt=""/></a>
+										<Link to="#"><img src="images/resource/project-thumb-3.jpg" alt=""/></Link>
 									</figure>
 									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-4.jpg" alt=""/></a>
+										<Link to="#"><img src="images/resource/project-thumb-4.jpg" alt=""/></Link>
 									</figure>
 									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-5.jpg" alt=""/></a>
+										<Link to="#"><img src="images/resource/project-thumb-5.jpg" alt=""/></Link>
 									</figure>
 									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-6.jpg" alt=""/></a>
+										<Link to="#"><img src="images/resource/project-thumb-6.jpg" alt=""/></Link>
 									</figure>
 								</div>
 							</div>
@@ -113,8 +114,8 @@ const Footer2 = () => {
 							<h6 class="widget-title">Contact</h6>
 							<div class="text">66 Road Broklyn Street, 600 New York, USA</div>
 							<ul class="contact-info">
-								<li><i class="fa fa-envelope"></i> <a href="mailto:needhelp@potisen.com">needhelp@company.com</a><br/></li>
-								<li><i class="fa fa-phone-square"></i> <a href="tel:+926668880000">+92 666 888 0000</a><br/></li>
+								<li><i class="fa fa-envelope"></i> <Link to="mailto:needhelp@potisen.com">needhelp@company.com</Link><br/></li>
+								<li><i class="fa fa-phone-square"></i> <Link to="tel:+926668880000">+92 666 888 0000</Link><br/></li>
 							</ul>
 						</div>
 					</div> */}
