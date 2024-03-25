@@ -17,7 +17,7 @@ const TeamSection = () => {
                             <img src="images/about/santosh.jpg" />
                         </div>
                         <div class="caption">
-                            <h3>Santosh Kumar</h3>
+                            <h3>Santosh Kushwaha</h3>
                             <p>Project Manager</p>
                             {/* <div class="social-links">
                                 <FaFacebook />
@@ -78,7 +78,7 @@ const TeamSection = () => {
                             <img src="images/resource/user.jpg" />
                         </div>
                         <div class="caption">
-                            <h3>Vikram Verma</h3>
+                            <h3>Vikram Varma</h3>
                             <p>Chief Information Security Officer</p>
                             {/* <div class="social-links">
                                 <FaFacebook />

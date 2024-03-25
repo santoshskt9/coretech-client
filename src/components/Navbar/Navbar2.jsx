@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar2.css';
 import Brand from "../../assets/logo-4.png";
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const Navbar2 = () => {
 	return (
@@ -14,52 +15,52 @@ const Navbar2 = () => {
 						{/* <!-- Main box --> */}
 						<div className="main-box">
 							<div className="logo-box">
-								<div className="logo"><a href="/"><img src={Brand} height={50} alt="" title="Tronis"/></a></div>
+								<div className="logo"><Link to="/"><img src={Brand} height={50} alt="" title="Tronis"/></Link></div>
 							</div>
 
 							{/* <!--Nav Box--> */}
 							<div className="nav-outer">
 								<nav className="nav main-menu">
 									<ul className="navigation">
-										<li><a href="/">Home</a>
+										<li><Link to="/">Home</Link>
 											
 										</li>
-										<li className="dropdown"><a href="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown/> </a>
+										<li className="dropdown"><Link to="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown/> </Link>
 											<ul>
-												<li><a href="page-about.html">Company</a></li>
-												<li><a href="page-about.html">Partners</a></li>
-												<li><a href="page-about.html">Clients</a></li>
-												<li><a href="page-about.html">Mission & Vision</a></li>
+												<li><Link to="page-about.html">Company</Link></li>
+												<li><Link to="page-about.html">Partners</Link></li>
+												<li><Link to="page-about.html">Clients</Link></li>
+												<li><Link to="page-about.html">Mission & Vision</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><a href="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown/></a>
+										<li className="dropdown"><Link to="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown/></Link>
 											<ul>
-												<li><a href="/service-details">Cloud Architecture</a></li>
-												<li><a href="#">IT Infrastructure</a></li>
-												<li><a href="#">Cyber Security</a></li>
-												<li><a href="#">Business Optimization</a></li>
-												<li><a href="#">Service Management</a></li>
-												<li><a href="#">Cloud & Infra Security</a></li>
-												<li><a href="#">Application Development</a></li>
+												<li><Link to="/service-details">Cloud Architecture</Link></li>
+												<li><Link to="#">IT Infrastructure</Link></li>
+												<li><Link to="#">Cyber Security</Link></li>
+												<li><Link to="#">Business Optimization</Link></li>
+												<li><Link to="#">Service Management</Link></li>
+												<li><Link to="#">Cloud & Infra Security</Link></li>
+												<li><Link to="#">Application Development</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><a href="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown/></a>
+										<li className="dropdown"><Link to="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown/></Link>
 											<ul>
-												<li><a href="/training">Training</a></li>
-												<li><a href="/training">Certiification</a></li>
-												<li><a href="/training">Webinar</a></li>
+												<li><Link to="/training">Training</Link></li>
+												<li><Link to="/training">Certiification</Link></li>
+												<li><Link to="/training">Webinar</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><a href="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown/></a>
+										<li className="dropdown"><Link to="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown/></Link>
 											<ul>
-												<li><a href="#">News</a></li>
-												<li><a href="#">Blogs</a></li>
-												<li><a href="#">Articles</a></li>
-												<li><a href="#">Case Studies</a></li>
+												<li><Link to="#">News</Link></li>
+												<li><Link to="#">Blogs</Link></li>
+												<li><Link to="#">Articles</Link></li>
+												<li><Link to="#">Case Studies</Link></li>
 											</ul>
 										</li>
-										<li><a href="/career">Career</a></li>
-										<li><a href="/contact">Get in Touch</a></li>
+										<li><Link to="/career">Career</Link></li>
+										<li><Link to="/contact">Get in Touch</Link></li>
 									</ul>
 								</nav>
 								{/* <!-- Main Menu End--> */}
@@ -77,7 +78,7 @@ const Navbar2 = () => {
 					{/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
 					<nav className="menu-box">
 						<div className="upper-box">
-							<div className="nav-logo"><a href="/"><img src="images/logo.png" alt="" title=""/></a></div>
+							<div className="nav-logo"><Link to="/"><img src="images/logo.png" alt="" title=""/></Link></div>
 							<div className="close-btn"><i className="icon fa fa-times"></i></div>
 						</div>
 
@@ -90,7 +91,7 @@ const Navbar2 = () => {
 								<div className="contact-info-box">
 									<i className="icon lnr-icon-phone-handset"></i>
 									<span className="title">Call Now</span>
-									<a href="tel:+92880098670">+92 (8800) - 98670</a>
+									<Link to="tel:+92880098670">+92 (8800) - 98670</Link>
 								</div>
 							</li>
 							<li>
@@ -98,7 +99,7 @@ const Navbar2 = () => {
 								<div className="contact-info-box">
 									<span className="icon lnr-icon-envelope1"></span>
 									<span className="title">Send Email</span>
-									<a href="mailto:help@company.com">help@company.com</a>
+									<Link to="mailto:help@company.com">help@company.com</Link>
 								</div>
 							</li>
 							<li>
@@ -113,10 +114,10 @@ const Navbar2 = () => {
 
 
 						<ul className="social-links">
-							<li><a href="#"><i className="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i className="fab fa-pinterest"></i></a></li>
-							<li><a href="#"><i className="fab fa-instagram"></i></a></li>
+							<li><Link to="#"><i className="fab fa-twitter"></i></Link></li>
+							<li><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
+							<li><Link to="#"><i className="fab fa-pinterest"></i></Link></li>
+							<li><Link to="#"><i className="fab fa-instagram"></i></Link></li>
 						</ul>
 					</nav>
 				{/* </div><!-- End Mobile Menu --> */}
@@ -129,7 +130,7 @@ const Navbar2 = () => {
 						<div className="inner-container">
 							{/* <!--Logo--> */}
 							<div className="logo">
-								<a href="/" title=""><img src="images/logo-2.png" alt="" title=""/></a>
+								<Link to="/" title=""><img src="images/logo-2.png" alt="" title=""/></Link>
 							</div>
 
 							{/* <!--Right Col--> */}
