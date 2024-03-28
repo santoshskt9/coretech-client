@@ -13,15 +13,15 @@ import ContactUs from '../pages/static/Contact/ContactUs';
 const MainRouter = () => {
   return (
     <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/services' element={<Services/>}/>
-        <Route path='/service-details' element={<ServiceDetails/>}/>
-        <Route path='/blogs' element={<Blogs/>}/>
-        <Route path='/:slug' element={<BlogDetails/>}/>
-        <Route path='/training' element={<Training />}/>
-        <Route path='/careers' element={<Careers />}/>
-        <Route path='/contact' element={<ContactUs />}/>
+        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/about' element={<About/>}/>
+        <Route exact path='/services' element={<Services/>}/>
+        <Route exact path='/service-details' element={<ServiceDetails/>}/>
+        <Route exact path='/blogs' element={<Blogs/>}/>
+        <Route exact path='/:slug' element={<BlogDetails/>}/>
+        <Route exact path='/training' element={<Training />}/>
+        <Route exact path='/careers' element={<Careers />}/>
+        <Route exact path='/contact' element={<ContactUs />}/>
         <Route path='*' element={<div className="p-5 d-flex justify-content-center align-items-center"><h1 className='text-center'>Page Not Found</h1></div>} />
     </Routes>
   )
