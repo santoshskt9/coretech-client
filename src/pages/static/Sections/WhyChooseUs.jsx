@@ -10,7 +10,7 @@ function WhyChooseUs({ featuredContent }) {
                 <h4 className='fadeInLeft'>/ Why Coretech?</h4>
                 <h1 className='fadeInUp'>The Coretech Difference</h1>
                 <p className='fadeInUp'>
-                For over a decade, we've been a proud service provider, earning and maintaining the trust of the community in Saskatoon, Martensville, Warman, and surrounding areas.
+                    For over a decade, we've been a proud service provider, earning and maintaining the trust of the community in Saskatoon, Martensville, Warman, and surrounding areas.
                 </p>
 
                 <div className="featured-actions">

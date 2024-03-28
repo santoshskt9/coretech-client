@@ -38,11 +38,11 @@ const Footer2 = () => {
                                     We collaborate closely with you to maximize our partnerships with top technology firms, ensuring optimal implementation, integration, and support. Harnessing cutting-edge solutions drives innovation and maximizes your tech investments.
                                     </div>
                                     <ul class="social-icon-two">
-                                        <li><Link to="#"><i class="fab fa-twitter"></i></Link></li>
-                                        <li><Link to="#"><i class="fab fa-facebook"></i></Link></li>
-                                        <li><Link to="https://www.linkedin.com/company/coretechinfra"><i class="fab fa-linkedin"></i></Link></li>
-                                        <li><Link to="#"><i class="fab fa-instagram"></i></Link></li>
-                                        <li><Link to="#"><i class="fab fa-youtube"></i></Link></li>
+                                        <li><Link target='_blank' to="#"><i class="fab fa-twitter"></i></Link></li>
+                                        <li><Link target='_blank' to="#"><i class="fab fa-facebook"></i></Link></li>
+                                        <li><Link target='_blank' to="https://www.linkedin.com/company/coretechinfra"><i class="fab fa-linkedin"></i></Link></li>
+                                        <li><Link target='_blank' to="#"><i class="fab fa-instagram"></i></Link></li>
+                                        <li><Link target='_blank' to="#"><i class="fab fa-youtube"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
