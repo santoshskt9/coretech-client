@@ -5,6 +5,7 @@ import Featured from '../../../components/Featured/Featured';
 import TeamSection from '../Sections/TeamSection';
 import ClientsSlider from '../Sections/ClientsSlider';
 import WhyChooseUs from '../Sections/WhyChooseUs';
+import TeamSection2 from '../Sections/TeamSection2';
 
 const Home = () => {
 
@@ -59,7 +60,7 @@ const Home = () => {
             <WhyChooseUs/>
             <Featured featuredContent={featuredContent} />
             <ClientsSlider/>
-            <TeamSection/>
+            <TeamSection2/>
         </>
     );
 };

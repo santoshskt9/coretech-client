@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './TeamSection.css';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { useGlobalContext } from '../../../global/context';
 
 const TeamSection = () => {
+    const { api} = useGlobalContext();
+	const [teams, setTeams] = useState();
+
+	const getTeams = async () => {
+        try {
+            const res = await api.get(`/api/team`);
+            if (res?.status === 200) {
+                console.log(res);
+                setTeams(res?.data);
+            }
+           
+        } catch (error) {
+            console.log("Error fetching post", error);
+        }
+    }
+
+	useEffect(()=> {
+		getTeams();	
+	}, []);
+
     return (
         <section className="container-fluid team-section">
             <div className="container">

@@ -12,6 +12,7 @@ import {
 } from 'react-icons/fi';
 import { useGlobalContext } from '../../../global/context';
 import PostCard from '../../../components/Post/PostCard';
+import Accordion from '../../../components/Accordion/Accordion';
 
 const ServiceDetails = () => {
     const [latestPosts, setLatestPosts] = useState();
@@ -194,6 +195,8 @@ const ServiceDetails = () => {
                 </div>
             </section>
 
+            <Accordion/>
+
             {/* <!-- Video Section Two --> */}
             <section class="video-section-two p-0">
                 <div class="container">
@@ -274,6 +277,8 @@ const ServiceDetails = () => {
             </section>
             {/* <!-- End Contact Section --> */}
 
+
+
             {/* <!-- Call To Action Two --> */}
             <section class="call-to-action-two">
                 <div class="auto-container">
@@ -292,6 +297,8 @@ const ServiceDetails = () => {
                 </div>
             </section>
             {/* <!--End Call To Action TWo --> */}
+
+
 
         </>
     )

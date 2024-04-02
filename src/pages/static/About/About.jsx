@@ -6,6 +6,7 @@ import { PiChartBarHorizontalDuotone } from "react-icons/pi";
 import { MdOutlineWeb } from "react-icons/md";
 import { FaCloudscale } from 'react-icons/fa';
 import TeamSection from '../Sections/TeamSection';
+import TeamSection2 from '../Sections/TeamSection2';
 
 const About = () => {
     return (
@@ -110,7 +111,7 @@ const About = () => {
                 </div>
             </section>
 
-            <TeamSection/>
+            <TeamSection2/>
         </>
     )
 }

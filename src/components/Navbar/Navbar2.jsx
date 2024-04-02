@@ -27,10 +27,11 @@ const Navbar2 = () => {
 										</li>
 										<li className="dropdown"><Link to="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown/> </Link>
 											<ul>
-												<li><Link to="page-about.html">Company</Link></li>
-												<li><Link to="page-about.html">Partners</Link></li>
-												<li><Link to="page-about.html">Clients</Link></li>
-												<li><Link to="page-about.html">Mission & Vision</Link></li>
+												<li><Link to="/about">Company</Link></li>
+												<li><Link to="/team">Team</Link></li>
+												<li><Link to="/partners">Partners</Link></li>
+												<li><Link to="/clients">Clients</Link></li>
+												<li><Link to="/mission">Mission & Vision</Link></li>
 											</ul>
 										</li>
 										<li className="dropdown"><Link to="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown/></Link>
@@ -59,7 +60,7 @@ const Navbar2 = () => {
 												<li><Link to="#">Case Studies</Link></li>
 											</ul>
 										</li>
-										<li><Link to="/career">Career</Link></li>
+										{/* <li><Link to="/career">Career</Link></li> */}
 										<li><Link to="/contact">Get in Touch</Link></li>
 									</ul>
 								</nav>

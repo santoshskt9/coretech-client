@@ -9,6 +9,7 @@ import BlogDetails from '../pages/static/Blogs/BlogDetails';
 import Training from '../pages/static/Training/Training';
 import Careers from '../pages/static/Careers/Careers';
 import ContactUs from '../pages/static/Contact/ContactUs';
+import Teams from '../pages/static/Team/Teams';
 
 const MainRouter = () => {
   return (
@@ -20,8 +21,9 @@ const MainRouter = () => {
         <Route exact path='/blogs' element={<Blogs/>}/>
         <Route exact path='/:slug' element={<BlogDetails/>}/>
         <Route exact path='/training' element={<Training />}/>
-        <Route exact path='/careers' element={<Careers />}/>
+        <Route exact path='/career' element={<Careers />}/>
         <Route exact path='/contact' element={<ContactUs />}/>
+        <Route exact path='/team' element={<Teams />}/>
         <Route path='*' element={<div className="p-5 d-flex justify-content-center align-items-center"><h1 className='text-center'>Page Not Found</h1></div>} />
     </Routes>
   )
