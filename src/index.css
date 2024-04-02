@@ -97,10 +97,11 @@ li {
   color: #242323;
   font-weight: 700;
   -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   padding: 20px 40px;
 }
+
 .blockquote-one::before {
   position: absolute;
   left: 0;
@@ -112,11 +113,23 @@ li {
   border-radius: 5px;
 }
 
-h1, h2, h3, h4, h5, h6, p, blockquote, span, strong, sub, small {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+span,
+strong,
+sub,
+small {
   font-family: 'Poppins';
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
   border: none !important;
   padding: 20px !important;
@@ -133,7 +146,7 @@ input, textarea {
 }
 
 .custom-list-disc {
-  list-style:circle;
+  list-style: circle;
   padding-left: 0;
 }
 
@@ -144,7 +157,8 @@ input, textarea {
 .icon {
   margin-right: 10px;
   font-size: 20px;
-  color: green; /* Change color as needed */
+  color: green;
+  /* Change color as needed */
 }
 
 .icon-contact {
@@ -154,7 +168,8 @@ input, textarea {
 
 
 /*=== Default Form ===*/
-.form-control, .input-text {
+.form-control,
+.input-text {
   height: calc(2.25rem + 27px);
   padding: 14px 30px;
   outline: 0;
@@ -164,30 +179,44 @@ input, textarea {
   font-size: 0.9rem;
   width: 100%;
 }
-.form-control::-webkit-input-placeholder, .input-text::-webkit-input-placeholder {
+
+.form-control::-webkit-input-placeholder,
+.input-text::-webkit-input-placeholder {
   color: #686a6f;
   opacity: 1;
 }
-.form-control::-moz-placeholder, .input-text::-moz-placeholder {
+
+.form-control::-moz-placeholder,
+.input-text::-moz-placeholder {
   color: #686a6f;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, .input-text:-ms-input-placeholder {
+
+.form-control:-ms-input-placeholder,
+.input-text:-ms-input-placeholder {
   color: #686a6f;
   opacity: 1;
 }
-.form-control::-ms-input-placeholder, .input-text::-ms-input-placeholder {
+
+.form-control::-ms-input-placeholder,
+.input-text::-ms-input-placeholder {
   color: #686a6f;
   opacity: 1;
 }
-.form-control::placeholder, .input-text::placeholder {
+
+.form-control::placeholder,
+.input-text::placeholder {
   color: #686a6f;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, .input-text:-ms-input-placeholder {
+
+.form-control:-ms-input-placeholder,
+.input-text:-ms-input-placeholder {
   color: #686a6f;
 }
-.form-control::-ms-input-placeholder, .input-text::-ms-input-placeholder {
+
+.form-control::-ms-input-placeholder,
+.input-text::-ms-input-placeholder {
   color: #686a6f;
 }
 
@@ -202,3 +231,9 @@ textarea.form-control {
 }
 
 
+@media (min-width: 1386px) {
+  section {
+    transition: 0.3s;
+    padding: 4%;
+  }
+}
