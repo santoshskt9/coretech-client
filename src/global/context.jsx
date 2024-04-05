@@ -5,6 +5,7 @@ import useDidMountEffect from "./useDidMountEffect";
 
 const UserContext = createContext();
 
+
 const initialState = {
   userData: localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user"))
@@ -189,7 +190,7 @@ const UserProvider = ({ children }) => {
   }
 
   const api = axios.create({
-    baseURL: import.meta.env.REACT_APP_API_ENDPOINT || "http://server1.coretechinfra.com/",
+    baseURL: import.meta.env.VITE_API_ENDPOINT || "https://server1.coretechinfra.com/",
     timeout: 25000,
     headers: {
       Authorization: state.token,
@@ -197,7 +198,7 @@ const UserProvider = ({ children }) => {
   });
 
   const apiAuth = axios.create({
-    baseURL: import.meta.env.REACT_APP_API_ENDPOINT || "http://server1.coretechinfra.com/",
+    baseURL: import.meta.env.VITE_API_ENDPOINT || "https://server1.coretechinfra.com/",
     timeout: 25000,
     headers: {
       Authorization: state.token,
@@ -205,14 +206,14 @@ const UserProvider = ({ children }) => {
   });
   
   const apiFormData = axios.create({
-    baseURL: import.meta.env.REACT_APP_API_ENDPOINT || "http://server1.coretechinfra.com/",
+    baseURL: import.meta.env.VITE_API_ENDPOINT || "https://server1.coretechinfra.com/",
     headers: {
       "Content-Type": "multipart/form-data",
     },
   });
   
   const apiAuthFormData = axios.create({
-    baseURL: import.meta.env.REACT_APP_API_ENDPOINT || "http://server1.coretechinfra.com/",
+    baseURL: import.meta.env.VITE_API_ENDPOINT || "https://server1.coretechinfra.com/",
     headers: {
       "Content-Type": "multipart/form-data",
       Authorization: state.token,
