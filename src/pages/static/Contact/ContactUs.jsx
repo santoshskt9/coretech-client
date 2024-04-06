@@ -130,7 +130,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact-items">
                                         <h4>Visit anytime</h4>
-                                        <a href='https://maps.app.goo.gl/EYyynCYt3zfaNgzK7'>Diwan deodi, Gulmandi, Chhatrapati <br />Sambhaji Nagar, Maharashtra, India</a>
+                                        <a href='https://maps.app.goo.gl/EYyynCYt3zfaNgzK7'>Diwan deodi, Gulmandi, Chhatrapati <br/> Sambhaji Nagar, (Aurangabad), Maharashtra, <br/> India - 431001</a>
                                     </div>
                                 </li>
                             </ul>
