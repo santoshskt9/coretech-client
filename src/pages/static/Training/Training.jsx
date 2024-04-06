@@ -2,6 +2,7 @@ import React from 'react'
 import "./Training.css";
 import Hero from '../../../components/Hero/Hero'
 import { FaBook, FaCheckCircle, FaClipboard, FaClock, FaPlus, FaTimesCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Training = () => {
     return (
@@ -10,8 +11,9 @@ const Training = () => {
                 heading="Become a Cybersecurity Expert"
                 description="Sharpen your skills and launch your cybersecurity career with our comprehensive training programs"
                 imgSrc="images/service/cyber-security.png"
-                link=""
+                link="https://forms.office.com/pages/responsepage.aspx?id=W6tuGsfFYkWKTMDLiMweuWfF1Irzc7ZJu6YLiG8esd1UQldKWjc4SDNNRDgzQVFDVFlOVUwxQUFTTC4u"
                 linkText="Enroll Now"
+                linkTarget="_blank"
             />
 
 
@@ -309,7 +311,7 @@ const Training = () => {
                             {/* <p>Take the first step towards a rewarding career in cybersecurity. <br/>Enroll in our Ethical Hacking and Bug Bounty Training program today <br/>and unleash your potential as a cybersecurity expert!</p> */}
                         </div>
                         <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one light"><span class="btn-title">Enroll Now</span></a>
+                            <Link to="https://forms.office.com/pages/responsepage.aspx?id=W6tuGsfFYkWKTMDLiMweuWfF1Irzc7ZJu6YLiG8esd1UQldKWjc4SDNNRDgzQVFDVFlOVUwxQUFTTC4u" target='_blank' class="theme-btn btn-style-one light"><span class="btn-title">Enroll Now</span></Link>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
-const Hero = ({heading, description, imgSrc, link, linkText}) => {
+const Hero = ({heading, description, imgSrc, link, linkText, linkTarget}) => {
     return (
         <>
             <section className="hero">
@@ -10,7 +11,7 @@ const Hero = ({heading, description, imgSrc, link, linkText}) => {
                         <div className="col hero-content text-white">
                             <h1 className="hero-title">{heading}</h1>
                             <p className="hero-description">{description}</p>
-                            <a href={link? link : "#"} className="theme-btn btn-style-one"><span className="btn-title">{linkText}</span></a>
+                            <Link to={link? link : "#"} target={linkTarget? linkTarget : ""} className="theme-btn btn-style-one"><span className="btn-title">{linkText}</span></Link>
                         </div>
                         <div className="col-4 hero-image">
                             {/* Insert a beautiful and relevant image related to cyber security */}

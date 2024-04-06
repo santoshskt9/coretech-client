@@ -41,8 +41,9 @@ const ServiceDetails = () => {
                 heading="Defend Your Digital Assets with Our Cyber Security Solution"
                 description="Empowering businesses and individuals to navigate the digital landscape securely."
                 imgSrc="images/service/cyber-security.png"
-                link=""
-                linkText="Explore Know"
+                link="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2"
+                linkText="Book a Appointment Now"
+                linkTarget="_blank"
             />
 
 
