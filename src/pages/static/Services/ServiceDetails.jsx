@@ -13,6 +13,7 @@ import {
 import { useGlobalContext } from '../../../global/context';
 import PostCard from '../../../components/Post/PostCard';
 import Accordion from '../../../components/Accordion/Accordion';
+import { Link } from 'react-router-dom';
 
 const ServiceDetails = () => {
     const [latestPosts, setLatestPosts] = useState();
@@ -203,7 +204,7 @@ const ServiceDetails = () => {
                 <div class="container">
                     <div class="video-box-two">
                         <figure class="image"><img src="images/resource/video.jpg" alt="" />
-                            <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i><span class="ripple"></span></a>
+                            <a href="" class="play-now" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i><span class="ripple"></span></a>
                         </figure>
 
                         <div class="info-box">
@@ -288,11 +289,11 @@ const ServiceDetails = () => {
                             <h4 class="title">Get your <span class="colored">FREE</span><br /> cyber security consultation</h4>
                         </div>
                         <div class="icon-box">
-                            <span className="icon"><FiPhoneCall /></span>
+                            <Link to="tel:+19452785774" ><span className="icon"><FiPhoneCall /></span></Link>
                         </div>
                         <div class="info-box">
-                            <a href="tel:+11666999000" class="num">+11 - 666 999 000</a>
-                            <a href="mailto:needhelp@yourdomain.com" class="mail">needhelp@yourdomain.com</a>
+                            <Link href="tel:+19452785774" class="num">+1 (945) 278 5774</Link>
+                            <Link href="mailto:info@coretechinfra.com" class="mail">info@coretechinfra.com</Link>
                         </div>
                     </div>
                 </div>
