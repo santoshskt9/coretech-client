@@ -22,28 +22,28 @@ function ClientsSlider() {
             </div>
             <Slider {...settings}>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-1.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-1.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-2.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-2.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-3.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-3.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-4.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-4.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-1.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-1.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-2.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-2.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-3.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-3.webp" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretechinfra.com/assets/images/team-4.jpg" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-4.webp" alt="" />
                 </div>
             </Slider>
         </div>
