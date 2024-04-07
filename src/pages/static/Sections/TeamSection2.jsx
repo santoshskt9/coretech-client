@@ -11,14 +11,14 @@ const TeamSection2 = () => {
             "_id": "660c575715adad8d3026f54d",
             "name": "Kailash Nath",
             "jobTitle": "CEO And Co-Founder",
-            "profileImage": "https://coretech-s3.s3.ap-south-1.amazonaws.com/team/de97a611-5eef-46bb-84b9-19dd16cd153e.jpg",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/team-default.jpg",
             "__v": 0
         },
         {
             "_id": "660c5af115adad8d3026f553",
             "name": "Vikram Varma",
             "jobTitle": "Chief Information Security Officer",
-            "profileImage": "https://coretech-s3.s3.ap-south-1.amazonaws.com/team/20af5ce0-05fc-4c84-a71d-fe165e2c1701.jpeg",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/vikram.jpeg",
             "__v": 0
         },
         {
@@ -31,7 +31,7 @@ const TeamSection2 = () => {
             "_id": "660c589415adad8d3026f54f",
             "name": "Santosh Kushwaha",
             "jobTitle": "Chief Technical Officer",
-            "profileImage": "https://coretech-s3.s3.ap-south-1.amazonaws.com/team/de7730e5-ce24-436c-ba0a-d4b108561e11.jpg",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/santosh.jpg",
             "__v": 0
         },
         {
@@ -44,7 +44,7 @@ const TeamSection2 = () => {
             "_id": "660c5aac15adad8d3026f551",
             "name": "Gayatri Kushwaha ",
             "jobTitle": "Chief Design Officer",
-            "profileImage": "https://coretech-s3.s3.ap-south-1.amazonaws.com/team/143a36d1-957c-4d65-a546-49c134c8175c.jpg",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/gayatri.jpg",
             "__v": 0
         },
         
