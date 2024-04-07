@@ -13,7 +13,7 @@ const BreadCrumb2 = ({ heading }) => {
         <link rel="canonical" href={"https://www.coretechinfra.com" + route} />
       </Helmet>
       <div className="breadcrumb-section">
-        <img src="images/bg/bg1.jpg" alt="about-coretech" className='image-slide'/>
+        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/bg/bg1.jpg" alt="about-coretech" className='image-slide'/>
         <div className="breadcrumb-content">
           {/* <h5>Home <span><FaAngleDoubleRight /></span> About </h5> */}
           <h1>{heading}</h1>

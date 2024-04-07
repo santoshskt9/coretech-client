@@ -79,7 +79,7 @@ const Navbar2 = () => {
 					{/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
 					<nav className="menu-box">
 						<div className="upper-box">
-							<div className="nav-logo"><Link to="/"><img src="images/logo.png" alt="" title=""/></Link></div>
+							<div className="nav-logo"><Link to="/"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/logo.png" alt="" title=""/></Link></div>
 							<div className="close-btn"><i className="icon fa fa-times"></i></div>
 						</div>
 
@@ -131,7 +131,7 @@ const Navbar2 = () => {
 						<div className="inner-container">
 							{/* <!--Logo--> */}
 							<div className="logo">
-								<Link to="/" title=""><img src="images/logo-2.png" alt="" title=""/></Link>
+								<Link to="/" title=""><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/logo-2.png" alt="" title=""/></Link>
 							</div>
 
 							{/* <!--Right Col--> */}

@@ -38,7 +38,7 @@
     top: 30px;
     bottom: 30px;
     right: -30px;
-    background-image: url(images/icons/pattern-1.png);
+    background-image: url(https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/pattern-1.png);
     content: "";
     border-radius: 10px;
   }

@@ -17,7 +17,7 @@ const About = () => {
             <section className="mission-section container">
                 <div className="row mb-5">
                     <div className="col">
-                        <img src="images/about/mission.jpg" alt="about" className='w-100' />
+                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100' />
                     </div>
                     <div className="col p-5">
                         <h1 className='text-warning'>Our Mission</h1>
@@ -39,7 +39,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="col">
-                        <img src="images/about/mission.jpg" alt="about" className='w-100' />
+                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100' />
                     </div>
                 </div>
             </section>

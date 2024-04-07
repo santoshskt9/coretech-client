@@ -340,7 +340,7 @@ iframe {
     height: 121px;
     left: 0;
     top: 0;
-    background-image: url(images/icons/dots.png);
+    background-image: url(https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/dots.png);
     content: "";
 }
 

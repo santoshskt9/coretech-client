@@ -41,7 +41,7 @@ const ServiceDetails = () => {
             <Hero
                 heading="Defend Your Digital Assets with Our Cyber Security Solution"
                 description="Empowering businesses and individuals to navigate the digital landscape securely."
-                imgSrc="images/service/cyber-security.png"
+                imgSrc="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/service/cyber-security.png"
                 link="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2"
                 linkText="Book a Appointment Now"
                 linkTarget="_blank"
@@ -110,9 +110,9 @@ const ServiceDetails = () => {
                         <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
                             <div class="inner-column wow fadeInLeft">
                                 <div class="image-box">
-                                    <figure class="image-1 overlay-anim wow fadeInUp"><img src="images/resource/why-us-1.jpg" alt="" /></figure>
-                                    <figure class="image-2 overlay-anim wow fadeInRight"><img src="images/resource/why-us-2.jpg" alt="" /></figure>
-                                    <figure class="logo"><img src="images/favicon.png" alt="" /></figure>
+                                    <figure class="image-1 overlay-anim wow fadeInUp"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/why-us-1.jpg" alt="" /></figure>
+                                    <figure class="image-2 overlay-anim wow fadeInRight"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/why-us-2.jpg" alt="" /></figure>
+                                    <figure class="logo"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/favicon.png" alt="" /></figure>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ const ServiceDetails = () => {
             <section class="video-section-two p-0">
                 <div class="container">
                     <div class="video-box-two">
-                        <figure class="image"><img src="images/resource/video.jpg" alt="" />
+                        <figure class="image"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/video.jpg" alt="" />
                             <a href="" class="play-now" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i><span class="ripple"></span></a>
                         </figure>
 

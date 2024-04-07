@@ -10,7 +10,7 @@ const Training = () => {
             <Hero
                 heading="Become a Cybersecurity Expert"
                 description="Sharpen your skills and launch your cybersecurity career with our comprehensive training programs"
-                imgSrc="images/service/cyber-security.png"
+                imgSrc="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/service/cyber-security.png"
                 link="https://forms.office.com/pages/responsepage.aspx?id=W6tuGsfFYkWKTMDLiMweuWfF1Irzc7ZJu6YLiG8esd1UQldKWjc4SDNNRDgzQVFDVFlOVUwxQUFTTC4u"
                 linkText="Enroll Now"
                 linkTarget="_blank"
@@ -76,7 +76,7 @@ const Training = () => {
 
                         </div>
                         <div className="col">
-                            <img src="images/resource/cyber-security-thumbnail.png" alt="" className='w-100 rounded-4' />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/cyber-security-thumbnail.png" alt="" className='w-100 rounded-4' />
                         </div>
                     </div>
 

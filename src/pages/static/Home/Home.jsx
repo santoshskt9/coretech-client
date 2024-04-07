@@ -10,9 +10,9 @@ import TeamSection2 from '../Sections/TeamSection2';
 const Home = () => {
 
     const videos = [
-        'videos/pixels.mp4',
-        'videos/network.mp4',
-        'videos/security.mp4'
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/network.mp4',
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4'
     ];
 
     const slideContent = [
@@ -50,7 +50,7 @@ const Home = () => {
                 name: "Happy Clients",
             },
         ],
-        imgSrc: "images/about/1.png",
+        imgSrc: "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/1.png",
     };
 
 

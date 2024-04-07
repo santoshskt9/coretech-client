@@ -18,7 +18,7 @@ import PostCard from '../../../components/Post/PostCard';
 //     content: [
 //         {
 //             element: "heroimage",
-//             imgSrc: "images/single-blog/post-thum.jpg",
+//             imgSrc: "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/post-thum.jpg",
 //             tag: "Featured Stories",
 //             link: "#",
 //         },
@@ -52,8 +52,8 @@ import PostCard from '../../../components/Post/PostCard';
 //         {
 //             element: "images",
 //             imgArr: [
-//                 "images/single-blog/blog-thum1.jpg",
-//                 "images/single-blog/blog-thum2.jpg",
+//                 "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/blog-thum1.jpg",
+//                 "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/blog-thum2.jpg",
 //             ],
 //         },
 //         {
@@ -155,7 +155,7 @@ const getElement = (element, elementData) => {
                 <div class="row">
                     <div class="col-lg-8 m-auto">
                         <blockquote class="blockquote">
-                            <img src="images/svg/cotation.svg" alt="" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/cotation.svg" alt="" />
                             {elementData?.quote}</blockquote>
                     </div>
                 </div>
@@ -250,10 +250,10 @@ const BlogDetails = () => {
                                     <p>{moment(data?.createdAt).format("ll")} . {data?.readTime} min read . Written by {data?.author}</p>
                                     <div class="social-icon">
                                         <ul class="d-flex align-items-center justify-content-between">
-                                            <li><a href="#"><img src="images/svg/facebook.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/instagram.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/twitter.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/youtube.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/facebook.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/instagram.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/twitter.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/youtube.svg" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </div>

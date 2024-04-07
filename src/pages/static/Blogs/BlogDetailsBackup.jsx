@@ -14,15 +14,15 @@ const data = {
     content: [
         {
             element: "heroimage",
-            imgSrc: "images/single-blog/post-thum.jpg",
+            imgSrc: "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/post-thum.jpg",
             tag: "Featured Stories",
             link: "#",
         },
         {
             element: "images",
             imgArr: [
-                "images/single-blog/blog-thum1.jpg",
-                "images/single-blog/blog-thum2.jpg",
+                "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/blog-thum1.jpg",
+                "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/blog-thum2.jpg",
             ],
         },
         {
@@ -131,7 +131,7 @@ const getElement = (element, elementData) => {
                 <div class="row">
                     <div class="col-lg-8 m-auto">
                         <blockquote class="blockquote">
-                            <img src="images/svg/cotation.svg" alt="" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/cotation.svg" alt="" />
                             {elementData?.quote}</blockquote>
                     </div>
                 </div>
@@ -188,10 +188,10 @@ const BlogDetailsBackup = () => {
                                     <p>{data?.createdAt} . {data?.readTime} min read . Written by {data?.author}</p>
                                     <div class="social-icon">
                                         <ul class="d-flex align-items-center justify-content-between">
-                                            <li><a href="#"><img src="images/svg/facebook.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/instagram.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/twitter.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/youtube.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/facebook.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/instagram.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/twitter.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/youtube.svg" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@ const BlogDetailsBackup = () => {
                     <div class="row">
                         <div class="col-lg-10 m-auto">
                             <div class="post-thumb">
-                                <img src="images/single-blog/post-thum.jpg" alt="" />
+                                <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/post-thum.jpg" alt="" />
                                 <a href="#">Featured Stories</a>
                             </div>
                         </div>
@@ -231,12 +231,12 @@ const BlogDetailsBackup = () => {
                             <div class="row">
                                 <div class="col-md-6 mb-md-30">
                                     <div class="single-post-thumb">
-                                        <img src="images/single-blog/blog-thum1.jpg" alt="" />
+                                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/blog-thum1.jpg" alt="" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-md-30">
                                     <div class="single-post-thumb">
-                                        <img src="images/single-blog/blog-thum2.jpg" alt="" />
+                                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/blog-thum2.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@ const BlogDetailsBackup = () => {
                     <div class="row">
                         <div class="col-lg-8 m-auto">
                             <blockquote class="blockquote">
-                                <img src="images/svg/cotation.svg" alt="" />
+                                <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/cotation.svg" alt="" />
                                 Together third in third said, third open place moving i lesser itself bring wherein, female. Midst fruitful fourth air yielding fruitful.</blockquote>
                         </div>
                     </div>
@@ -258,7 +258,7 @@ const BlogDetailsBackup = () => {
                         <div class="col-md-8 m-auto">
                             <div class="profile-area">
                                 <div class="profile-img">
-                                    <img src="images/single-blog/profile-img.jpg" alt="" />
+                                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/profile-img.jpg" alt="" />
                                 </div>
 
                                 <div class="blog-profile-content">
@@ -267,10 +267,10 @@ const BlogDetailsBackup = () => {
                                     <h4>Follow me :</h4>
                                     <div class="social-icon">
                                         <ul class="d-flex align-items-center">
-                                            <li><a href="#"><img src="images/svg/facebook.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/instagram.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/twitter.svg" alt="" /></a></li>
-                                            <li><a href="#"><img src="images/svg/youtube.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/facebook.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/instagram.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/twitter.svg" alt="" /></a></li>
+                                            <li><a href="#"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/svg/youtube.svg" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -310,7 +310,7 @@ const BlogDetailsBackup = () => {
                                 <div class="col-lg-4 col-sm-6 mb-md-50">
                                     <div class="related-post-card">
                                         <div class="related-post-card-img">
-                                            <img src="images/single-blog/single-post1.jpg" alt="" />
+                                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/single-post1.jpg" alt="" />
                                         </div>
                                         <div class="related-post-card-content">
                                             <div class="rpc-content-timeline d-flex align-items-center justify-content-between">
@@ -326,7 +326,7 @@ const BlogDetailsBackup = () => {
                                 <div class="col-lg-4 col-sm-6 mb-md-50">
                                     <div class="related-post-card">
                                         <div class="related-post-card-img">
-                                            <img src="images/single-blog/single-post2.jpg" alt="" />
+                                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/single-post2.jpg" alt="" />
                                         </div>
                                         <div class="related-post-card-content">
                                             <div class="rpc-content-timeline d-flex align-items-center justify-content-between">
@@ -342,7 +342,7 @@ const BlogDetailsBackup = () => {
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="related-post-card">
                                         <div class="related-post-card-img">
-                                            <img src="images/single-blog/single-post6.jpg" alt="" />
+                                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/single-blog/single-post6.jpg" alt="" />
                                         </div>
                                         <div class="related-post-card-content">
                                             <div class="rpc-content-timeline d-flex align-items-center justify-content-between">
@@ -371,7 +371,7 @@ const BlogDetailsBackup = () => {
                         <div class="news-block col-xl-4 col-lg-6 col-md-6">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="/blog/abc"><img src="images/resource/news-1.jpg" alt="" /></a></figure>
+                                    <figure class="image"><a href="/blog/abc"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/news-1.jpg" alt="" /></a></figure>
                                 </div>
                                 <div class="content-box">
                                     <span class="date">12 Jan, 2023</span>
@@ -386,7 +386,7 @@ const BlogDetailsBackup = () => {
                         <div class="news-block col-xl-4 col-lg-6 col-md-6">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="/blog/abc"><img src="images/resource/news-2.jpg" alt="" /></a></figure>
+                                    <figure class="image"><a href="/blog/abc"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/news-2.jpg" alt="" /></a></figure>
                                 </div>
                                 <div class="content-box">
                                     <span class="date">15 Jan, 2023</span>
@@ -401,7 +401,7 @@ const BlogDetailsBackup = () => {
                         <div class="news-block col-xl-4 col-lg-6 col-md-6">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="/blog/abc"><img src="images/resource/news-3.jpg" alt="" /></a></figure>
+                                    <figure class="image"><a href="/blog/abc"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/news-3.jpg" alt="" /></a></figure>
                                 </div>
                                 <div class="content-box">
                                     <span class="date">22 Jan, 2023</span>

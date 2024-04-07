@@ -35,7 +35,7 @@ const TeamSection = () => {
 
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/about/santosh.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/santosh.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Santosh Kushwaha</h3>
@@ -49,7 +49,7 @@ const TeamSection = () => {
                     </div>
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Kailash Nath</h3>
@@ -63,7 +63,7 @@ const TeamSection = () => {
                     </div>
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Meghana Satyanarayana</h3>
@@ -77,7 +77,7 @@ const TeamSection = () => {
                     </div>
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Shalini Kumari</h3>
@@ -96,7 +96,7 @@ const TeamSection = () => {
                     
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Vikram Varma</h3>
@@ -110,7 +110,7 @@ const TeamSection = () => {
                     </div>
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Gayatri Kushwaha</h3>
@@ -124,7 +124,7 @@ const TeamSection = () => {
                     </div>
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Dipak Gund</h3>
@@ -138,7 +138,7 @@ const TeamSection = () => {
                     </div>
                     <div class="profile-card">
                         <div class="img">
-                            <img src="images/resource/user.jpg" />
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/user.jpg" />
                         </div>
                         <div class="caption">
                             <h3>Himanshu Sahil</h3>
