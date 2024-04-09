@@ -15,6 +15,13 @@ const TeamSection2 = () => {
             "__v": 0
         },
         {
+            "_id": "66159a49ce5cb4d116c00c1f",
+            "name": "Harsh Guglani",
+            "jobTitle": "Chief Security Architect",
+            "profileImage": "https://coretech-s3.s3.ap-south-1.amazonaws.com/team/de97a611-5eef-46bb-84b9-19dd16cd153e.jpg",
+            "__v": 0
+          },
+        {
             "_id": "660c5af115adad8d3026f553",
             "name": "Vikram Varma",
             "jobTitle": "Chief Information Security Officer",
@@ -30,23 +37,11 @@ const TeamSection2 = () => {
             },
             "_id": "660c589415adad8d3026f54f",
             "name": "Santosh Kushwaha",
-            "jobTitle": "Chief Technical Officer",
+            "jobTitle": "R&D and Operations Head",
             "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/santosh.jpg",
             "__v": 0
         },
-        {
-            "socialLinks": {
-                "facebook": "",
-                "linkedin": "",
-                "twitter": "https://twitter.com/Gayatri_Kuswaha",
-                "instagram": ""
-            },
-            "_id": "660c5aac15adad8d3026f551",
-            "name": "Gayatri Kushwaha ",
-            "jobTitle": "Chief Design Officer",
-            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/gayatri.jpg",
-            "__v": 0
-        },
+       
         
     ]);
 

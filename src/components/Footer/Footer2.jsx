@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../../global/context';
 
 const Footer2 = () => {
-    const {api} = useGlobalContext();
+    const { api } = useGlobalContext();
     const [email, setEmail] = useState('');
 
     const handleEmailChange = (e) => {
@@ -107,7 +107,7 @@ const Footer2 = () => {
                                 <ul className="user-links">
                                     <li>
                                         <Link to="#">
-                                            Coppell, Texas
+                                            405 State Highway 121, Suite A250, Lewisville, Texas, 75067, USA
                                         </Link>
                                     </li>
                                 </ul>
@@ -128,11 +128,11 @@ const Footer2 = () => {
                                         info@coretechinfra.com
                                     </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to="#">
                                             hr@coretechinfra.com
                                         </Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
 
                             </div>
