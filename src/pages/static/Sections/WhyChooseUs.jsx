@@ -10,7 +10,7 @@ function WhyChooseUs({ featuredContent }) {
                 <h4 className='fadeInLeft'>/ Why Coretech?</h4>
                 <h1 className='fadeInUp'>The Coretech Difference</h1>
                 <p className='fadeInUp'>
-                    For over a decade, we've been a proud service provider, earning and maintaining the trust of the community in Saskatoon, Martensville, Warman, and surrounding areas.
+                Building trust with our community is at the core of everything we do. For over a decade, we've been Saskatoon's IT security and development partner, safeguarding businesses in Martensville, Warman, and surrounding areas. Our commitment to innovation ensures your technology is secure, reliable, and helps you achieve your goals.
                 </p>
 
                 <div className="featured-actions">
