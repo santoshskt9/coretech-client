@@ -1,7 +1,7 @@
 import React from 'react';
 import './Featured.css';
 
-const Featured = ({featuredContent}) => {
+const Featured = ({ featuredContent }) => {
     return (
         <>
             <section className="featured-1 container">
@@ -15,8 +15,19 @@ const Featured = ({featuredContent}) => {
                     <p className='fadeInUp'>
                         {featuredContent?.description}
                     </p>
+                    <h5>{featuredContent?.content?.para}</h5>
+                    <ul>
+                        {
+                            featuredContent?.content?.list?.map((item, i) => (
+                                <li key={i}>
+                                    <strong>{item?.heading}:</strong>
+                                    {item?.description}
+                                </li>
+                            ))
+                        }
+                    </ul>
 
-                    <div className="featured-analytics">
+                    {/* <div className="featured-analytics">
                         <div className="analytics-content-1 fadeInUp">
                             <h3>{featuredContent?.analytics[0]?.count}</h3>
                             <h5>
@@ -29,7 +40,7 @@ const Featured = ({featuredContent}) => {
                                 {featuredContent?.analytics[1]?.name}
                             </h5>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>

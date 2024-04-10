@@ -40,7 +40,24 @@ const Home = () => {
     const featuredContent = {
         sectionName: "About Us",
         title: "Who we are",
-        description: "Our purpose is to help people and organizations dream bigger, move faster, and build better tomorrows for all. We offer IT consulting services that will help you improve your software architecture, create a tech-driven digital strategy, and improve operations by optimising your software portfolio. Now we has been helping organizations of different scale and structure to improve and modernise their IT strategies.",
+        description: "At Coretech, we believe technology is the fuel for a brighter future. Our purpose is to ignite your potential, helping individuals and organizations dream bigger, move faster, and build a better tomorrow.",
+        content: {
+            para: "We achieve this by providing comprehensive IT consulting services. We help you:",
+            list: [
+                {
+                    heading: "Solidify your software foundation",
+                    description: "We optimize your software architecture for agility and scalability, ensuring it supports your growth."
+                },
+                {
+                    heading: "Craft a winning digital strategy",
+                    description: "We collaborate with you to develop a tech-driven roadmap that aligns perfectly with your business goals."
+                },
+                {
+                    heading: "Streamline your software portfolio",
+                    description: "We identify opportunities to optimize your software ecosystem, maximizing efficiency and cost-effectiveness."
+                }
+            ],
+        },
         analytics: [
             {
                 count: "500+",
