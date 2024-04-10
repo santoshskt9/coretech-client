@@ -6,6 +6,7 @@ import TeamSection from '../Sections/TeamSection';
 import ClientsSlider from '../Sections/ClientsSlider';
 import WhyChooseUs from '../Sections/WhyChooseUs';
 import TeamSection2 from '../Sections/TeamSection2';
+import BlogSection from '../Sections/BlogSection';
 
 const Home = () => {
 
@@ -57,10 +58,18 @@ const Home = () => {
     return (
         <>
             <Carousel videos={videos} slideContent={slideContent} />
-            <WhyChooseUs/>
+            <WhyChooseUs />
             <Featured featuredContent={featuredContent} />
-            <ClientsSlider/>
-            <TeamSection2/>
+            {/* What we do */}
+            {/* Testimonials */}
+            
+            <ClientsSlider />
+            {/* <TeamSection2/> */}
+            <BlogSection
+                title="Latest Updates"
+                subTitle={"Blogs"}
+            />
+            {/* Contact Us  */}
         </>
     );
 };

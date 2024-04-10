@@ -27,16 +27,18 @@ function WhyChooseUs({ featuredContent }) {
                     <div className="featured-item d-flex">
                         <FaPiggyBank />
                         <div className="featured-item-content">
-                            <h4>Competative Pricing</h4>
-                            <p>Experience quality without breaking the bank - we offer fair and competitive pricing.</p>
+                            <h4>Technology</h4>
+                            <p>
+                            Analyze, architect, and co-create. We blend design, engineering, and analytics expertise to help you build the future.
+                            </p>
                         </div>
                     </div>
                     <hr />
                     <div className="featured-item d-flex">
                         <FaPiggyBank />
                         <div className="featured-item-content">
-                            <h4>Certified Experts</h4>
-                            <p>Experience quality without breaking the bank - we offer fair and competitive pricing.</p>
+                            <h4>Transformation</h4>
+                            <p>Building great technology has always been core to what we do. We've partnered with hundreds of companies across every industry to solve their most complicated technical challenges</p>
                         </div>
                     </div>
                 </div>
@@ -44,16 +46,16 @@ function WhyChooseUs({ featuredContent }) {
                     <div className="featured-item d-flex">
                         <FaPiggyBank />
                         <div className="featured-item-content">
-                            <h4>Competative Pricing</h4>
-                            <p>Experience quality without breaking the bank - we offer fair and competitive pricing.</p>
+                            <h4>Strategy</h4>
+                            <p>Go beyond the expected - Redefine what's possible, give shape to the future and get there.</p>
                         </div>
                     </div>
                     <hr />
                     <div className="featured-item d-flex">
                         <FaPiggyBank />
                         <div className="featured-item-content">
-                            <h4>Certified Experts</h4>
-                            <p>Experience quality without breaking the bank - we offer fair and competitive pricing.</p>
+                            <h4>Dedicated</h4>
+                            <p>New technologies. Shifting customers. Industry disruption. Business moves fast, and we specialize in working through change with you.</p>
                         </div>
                     </div>
                 </div>

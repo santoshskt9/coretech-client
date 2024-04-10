@@ -70,7 +70,7 @@ import PostCard from '../../../components/Post/PostCard';
 //             ],
 //             list: [],
 //         },
-       
+
 //     ],
 
 // };
@@ -149,7 +149,7 @@ const getElement = (element, elementData) => {
                     </div>
                 </div>
             );
-            
+
         case "blockquote":
             return (
                 <div class="row">
@@ -201,7 +201,7 @@ const BlogDetails = () => {
                 setData(res?.data?.post);
                 getRelatedPosts(res?.data?.post?._id);
             }
-           
+
         } catch (error) {
             console.log("Error fetching post", error);
         }
@@ -214,7 +214,7 @@ const BlogDetails = () => {
                 console.log(res);
                 setRelatedPosts(res?.data?.relatedPosts);
             }
-           
+
         } catch (error) {
             console.log("Error fetching post", error);
         }
@@ -224,10 +224,10 @@ const BlogDetails = () => {
         const content = generateContent(data);
         setContentTemplate(content);
         console.log("Param:", slug);
-        
+
     }, [data]);
 
-    useEffect(()=> {
+    useEffect(() => {
         getPostBySlug();
         window.scrollTo(0, 0)
     }, [slug]);
@@ -273,22 +273,25 @@ const BlogDetails = () => {
             </div>
 
 
-            <section class="bg-silver-light">
-                <div class="container pb-90">
-                    <div class="sec-title text-center">
-                        <span class="sub-title">News & Articles</span>
-                        <h2>Related Posts</h2>
-                    </div>
-                    <div class="row">
-                        {
-                            relatedPosts?.map((post, i) => (
-                                <PostCard data={post} key={i}/>
-                            ))
-                        }
-                    </div>
+            {
+                relatedPosts?.length ?
+                    <section class="bg-silver-light">
+                        <div class="container pb-90">
+                            <div class="sec-title text-center">
+                                <span class="sub-title">News & Articles</span>
+                                <h2>Related Posts</h2>
+                            </div>
+                            <div class="row">
+                                {
+                                    relatedPosts?.map((post, i) => (
+                                        <PostCard data={post} key={i} />
+                                    ))
+                                }
+                            </div>
 
-                </div>
-            </section>
+                        </div>
+                    </section> : null
+            }
         </>
     )
 }
