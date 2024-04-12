@@ -6,7 +6,11 @@ const WhatWeDoSection = () => {
     return (
         <>
             <section className="container-fluid  bg-light p-0">
-                <div className="container-fluid bg-black ">
+                <div className="container-fluid bg-black "
+                    style={{
+                        backgroundImage: ""
+                    }}
+                >
                     <div className="container py-5">
                         <div className="sec-title text-center">
                             <span className="sub-title">Services</span>
@@ -57,7 +61,7 @@ const WhatWeDoSection = () => {
                 <div className="container">
                     <div className="process-title text-center">
                         {/* <span className='fs-2 fw-bold'>the</span> */}
-                        <h2 className='fw-bolder'>
+                        <h2 className='fw-bolder my-3'>
                             PROCESS
                         </h2>
 

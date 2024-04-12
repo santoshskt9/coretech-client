@@ -116,14 +116,14 @@ What we do section
 ----------------------------------------------------- */
 
 .process-title {
-  position: relative;
+  /* position: relative;
   top: -10vh;
-  mix-blend-mode: difference;
+  mix-blend-mode: difference; */
   color: #ffc107;
 }
 
 .process-title h2 {
-  font-size: 100px;
+  font-size: 5em;
 }
 
 .process-title span {
