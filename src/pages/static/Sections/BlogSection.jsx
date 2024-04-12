@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import PostCard from '../../../components/Post/PostCard';
 import { useGlobalContext } from '../../../global/context';
 
-const BlogSection = ({title, subTitle}) => {
+const BlogSection = ({ title, subTitle }) => {
     const [posts, setPosts] = useState([]);
-    const {api} = useGlobalContext();
+    const { api } = useGlobalContext();
 
     const getBlogs = async () => {
         try {
@@ -19,17 +19,18 @@ const BlogSection = ({title, subTitle}) => {
         }
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         getBlogs();
-    },[]);
+    }, []);
 
     return (
         <>
-            <section class="bg-silver-light">
+            <section class="news-section bg-light">
+                <div class="bg bg-pattern-5"></div>
                 <div class="container pb-90">
-                    <div class="sec-title text-center">
+                    <div class="sec-title text-center text-white">
                         <span class="sub-title">{subTitle}</span>
-                        <h2>{title}</h2>
+                        <h2 className='text-white'>{title}</h2>
                     </div>
                     <div class="row">
                         {

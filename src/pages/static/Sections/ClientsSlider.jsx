@@ -16,35 +16,28 @@ function ClientsSlider() {
     };
     return (
         <div className="slider-container container">
-            <div className="client-slider-head">
-            <h4 className='fadeInLeft text-center'>/ Technologies</h4>
-            <h1 className='fadeInUp text-center'>We Deliver Expertise</h1>
+            {/* <div className="client-slider-head">
+                <h4 className='fadeInLeft text-center'>/ Technologies</h4>
+                <h1 className='fadeInUp text-center'>We Deliver Expertise</h1>
+            </div> */}
+            <div class="sec-title text-center">
+                <span class="sub-title">Service Partners</span>
+                <h2>We Deliver Expertise</h2>
             </div>
             <Slider {...settings}>
                 <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-1.webp" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/vmware.jpg" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-2.webp" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/azure.png" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-3.webp" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/gcp.png" alt="" />
                 </div>
                 <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-4.webp" alt="" />
+                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/aws-logo.webp" alt="" />
                 </div>
-                <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-1.webp" alt="" />
-                </div>
-                <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-2.webp" alt="" />
-                </div>
-                <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-3.webp" alt="" />
-                </div>
-                <div className="slide-logo">
-                    <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/team-4.webp" alt="" />
-                </div>
+
             </Slider>
         </div>
     );
