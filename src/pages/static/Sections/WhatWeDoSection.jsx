@@ -18,7 +18,7 @@ const WhatWeDoSection = () => {
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Development</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold">
+                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
                                     Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
                                     Angular, React, PHP, NodeJS
                                 </p>
@@ -27,7 +27,7 @@ const WhatWeDoSection = () => {
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Cyber Security</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold">
+                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
                                     Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
                                     Angular, React, PHP, NodeJS
                                 </p>
@@ -36,7 +36,7 @@ const WhatWeDoSection = () => {
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Managed Services</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold">
+                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
                                     Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
                                     Angular, React, PHP, NodeJS
                                 </p>
@@ -45,7 +45,7 @@ const WhatWeDoSection = () => {
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Corporate Training</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold">
+                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
                                     Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
                                     Angular, React, PHP, NodeJS
                                 </p>

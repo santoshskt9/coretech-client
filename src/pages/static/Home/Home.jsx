@@ -11,6 +11,7 @@ import BlogSection from '../Sections/BlogSection';
 import AboutSection from '../Sections/AboutSection';
 import WhatWeDoSection from '../Sections/WhatWeDoSection';
 import TestimonialSection from '../Sections/TestimonialSection';
+import CTASection from '../Sections/CTASection';
 
 const Home = () => {
 
@@ -81,15 +82,20 @@ const Home = () => {
             <Carousel videos={videos} slideContent={slideContent} />
             <WhyChooseUs />
             {/* <Featured featuredContent={featuredContent} /> */}
-            <AboutSection/>
-            <WhatWeDoSection/>
-            <TestimonialSection/>
-            
+            <AboutSection />
+            <WhatWeDoSection />
+            <TestimonialSection />
+
             <ClientsSlider />
             {/* <TeamSection2/> */}
             <BlogSection
                 title="Latest Updates"
                 subTitle={"Blogs"}
+            />
+            <CTASection
+                title="Book your free consultation now."
+                link="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2"
+                linkText="Register"
             />
             {/* Contact Us  */}
         </>

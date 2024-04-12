@@ -4,7 +4,7 @@ const AboutSection = () => {
     return (
         <>
             <section className="features-section">
-                <div className="bg bg-pattern-1"></div>
+                <div className="bg bg-pattern-11"></div>
                 <div className="container">
                     <div className="row">
                         {/* <!-- Content Column --> */}
