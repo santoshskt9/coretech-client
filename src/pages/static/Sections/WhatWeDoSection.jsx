@@ -7,7 +7,7 @@ const WhatWeDoSection = () => {
         <>
             <section className="container-fluid  bg-light p-0">
                 <div className="container-fluid bg-black ">
-                    <div className="container py-5 mb-5">
+                    <div className="container py-5">
                         <div className="sec-title text-center">
                             <span className="sub-title">Services</span>
                             <h2 className='mb-3 text-white'>What We Do</h2>
