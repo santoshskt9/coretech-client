@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import '../Sections/Sections.css';
 import Carousel from '../../../components/Carousel/Carousel';
 import Featured from '../../../components/Featured/Featured';
 import TeamSection from '../Sections/TeamSection';
@@ -7,6 +8,9 @@ import ClientsSlider from '../Sections/ClientsSlider';
 import WhyChooseUs from '../Sections/WhyChooseUs';
 import TeamSection2 from '../Sections/TeamSection2';
 import BlogSection from '../Sections/BlogSection';
+import AboutSection from '../Sections/AboutSection';
+import WhatWeDoSection from '../Sections/WhatWeDoSection';
+import TestimonialSection from '../Sections/TestimonialSection';
 
 const Home = () => {
 
@@ -76,9 +80,10 @@ const Home = () => {
         <>
             <Carousel videos={videos} slideContent={slideContent} />
             <WhyChooseUs />
-            <Featured featuredContent={featuredContent} />
-            {/* What we do */}
-            {/* Testimonials */}
+            {/* <Featured featuredContent={featuredContent} /> */}
+            <AboutSection/>
+            <WhatWeDoSection/>
+            <TestimonialSection/>
             
             <ClientsSlider />
             {/* <TeamSection2/> */}

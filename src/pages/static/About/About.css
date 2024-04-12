@@ -19,8 +19,8 @@
     --headings-color: var(--theme-color1);
     --link-color: var(--theme-color1);
     --link-hover-color: var(--theme-color1);
-    --text-font: "Roboto", sans-serif;
-    --title-font: "Roboto", sans-serif;
+    --text-font: "Poppins", sans-serif;
+    --title-font: "Poppins", sans-serif;
     --body-font-size: 16px;
     --body-line-height: 30px;
     --body-font-weight: 500;
@@ -118,8 +118,8 @@ body {
     color: var(--text-color);
     font-size: var(--body-font-size);
     font-family: var(--text-font);
-    font-weight: var(--body-font-weight);
-    line-height: var(--body-line-height);
+    /* font-weight: var(--body-font-weight); */
+    /* line-height: var(--body-line-height); */
 }
 
 /* -------- Headings ---------- */

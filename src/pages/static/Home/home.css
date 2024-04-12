@@ -9,13 +9,14 @@
 
 }
 
+
+
 .featured-section-3 {
     background-image: url(https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_1280.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-size: contain; */
     backdrop-filter: blur(10px);
-    /* opacity: 10%; */
+    background-size: cover;
 }
 
 /* .featured-2::before {

@@ -16,7 +16,7 @@ const Featured = ({ featuredContent }) => {
                         {featuredContent?.description}
                     </p>
                     <h5>{featuredContent?.content?.para}</h5>
-                    <ul>
+                    <ul className='custom-list'>
                         {
                             featuredContent?.content?.list?.map((item, i) => (
                                 <li key={i}>
