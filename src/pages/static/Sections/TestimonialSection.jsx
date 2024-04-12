@@ -83,8 +83,8 @@ const TestimonialSection = () => {
 
                         <div className="fact-counter-two">
                             <div className="row">
-                                <CounterBlockTwo iconClass="flaticon-campaign" count={300} title="Clothes Washed & Dry Cleaned" delay="0ms" />
-                                <CounterBlockTwo iconClass="flaticon-social-campaign" count={489} title="Customers are Happy & Satisfied" delay="300ms" />
+                                <CounterBlockTwo iconClass="flaticon-reputation" count={10} title="Years of Experience" delay="0ms" />
+                                <CounterBlockTwo iconClass="flaticon-coffee" count={300} title="Cup of Coffees" delay="300ms" />
                             </div>
                         </div>
                     </div>
