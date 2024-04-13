@@ -19,9 +19,9 @@ const Services = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldVirus className='icon'/></div>
-                                <h5 className="title"><Link to="/vapt">VAPT</Link></h5>
+                                <h5 className="title"><Link to="/vulnerability-assessment-penetration-testing">VAPT</Link></h5>
                                 <div className="text">Stay ahead of cyber threats with proactive detection and continuous monitoring.</div>
-                                <Link to="/vapt" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                                <Link to="/vulnerability-assessment-penetration-testing" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
                         </div>
 

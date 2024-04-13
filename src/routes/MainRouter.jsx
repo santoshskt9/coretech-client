@@ -21,7 +21,7 @@ const MainRouter = () => {
         <Route exact path='/services' element={<Services/>}/>
         <Route exact path='/service-details' element={<ServiceDetails/>}/>
         <Route exact path='/cyber-security' element={<CyberSecurityService/>}/>
-        <Route exact path='/vapt' element={<VAPT/>}/>
+        <Route exact path='/vulnerability-assessment-penetration-testing' element={<VAPT/>}/>
 
         <Route exact path='/blogs' element={<Blogs/>}/>
         <Route exact path='/:slug' element={<BlogDetails/>}/>
