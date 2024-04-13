@@ -171,3 +171,102 @@
       transform: scale(1.1);
     }
   }
+
+/* --------------------------------------
+  -------Carousel Two -----------------
+  -------------------------------- */
+
+  .hero-slider-two {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #8002645b;
+}
+
+.hero-slider-two::before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: rgb(45,0,55);
+    background: linear-gradient(90deg, rgba(45,0,55,0.9192051820728291) 44%, rgba(17,0,131,0.04805672268907568) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hero-slider-two .slider-navigation {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.hero-slider-two .slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fcb3ff44;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.hero-slider-two .slider-navigation .nav-btn.active {
+    background: #6b018534;
+}
+
+.hero-slider-two .slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.hero-slider-two .slider-navigation .nav-btn:hover {
+    transform: scale(1.5);
+}
+
+.hero-slider-two .video-slide {
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.hero-slider-two .video-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+.hero-slider-two .slider-content {
+    z-index: 3;
+    color: white;
+    display: none;
+    
+}
+
+.hero-slider-two .slider-content h5 {
+  width: 40vw;
+}
+
+.hero-slider-two .slider-content h1 {
+  width: 40vw;
+}
+
+.hero-slider-two .slider-content.active {
+    display: block;
+}
+
+.hero-slider-two video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -139,6 +139,26 @@ What we do section
   background-color: orange;
 }
 
+/* -------------------- */
+/* Video wrapper */
+/* --------------------------- */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+/* Video */
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+}
+
 
 /*** 
 

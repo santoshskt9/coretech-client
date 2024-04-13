@@ -8,7 +8,7 @@ const WhatWeDoSection = () => {
             <section className="container-fluid  bg-light p-0">
                 <div className="container-fluid bg-black "
                     style={{
-                        backgroundImage: ""
+                        backgroundImage: "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/pattern-4.jpg"
                     }}
                 >
                     <div className="container py-5">

@@ -36,9 +36,10 @@ const Navbar2 = () => {
 										</li>
 										<li className="dropdown"><Link to="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown/></Link>
 											<ul>
-												<li><Link to="/service-details">Cloud Architecture</Link></li>
+												<li><Link to="/vapt">VAPT</Link></li>
+												<li><Link to="#">Cloud Architecture</Link></li>
 												<li><Link to="#">IT Infrastructure</Link></li>
-												<li><Link to="#">Cyber Security</Link></li>
+												<li><Link to="/cyber-security">Cyber Security</Link></li>
 												<li><Link to="#">Business Optimization</Link></li>
 												<li><Link to="#">Service Management</Link></li>
 												<li><Link to="#">Cloud & Infra Security</Link></li>
