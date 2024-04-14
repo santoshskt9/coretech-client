@@ -2,9 +2,11 @@ import React from 'react';
 import CarouselTwo from '../../../components/Carousel/CarouselTwo';
 
 const videos = [
-    'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
-    'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
-    'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
+    'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
+    'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
+    'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
+    // 'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
+    // 'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
 ];
 
 const slideContent = [
@@ -35,7 +37,7 @@ const slideContent = [
 const VAPT = () => {
     return (
         <>
-            <CarouselTwo videos={videos} slideContent={slideContent} />
+            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
             <section className="py-5 bg-light">
             <div className="container">
                 <div className="row">

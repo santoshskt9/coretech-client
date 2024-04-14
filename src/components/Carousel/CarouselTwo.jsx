@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Carousel.css';
 
 
-const Carousel = ({videos, slideContent}) => {
+const Carousel = ({ videos, slideContent }) => {
     const [activeSlide, setActiveSlide] = useState(0);
     const sliderRef = useRef(null);
 
@@ -10,25 +10,25 @@ const Carousel = ({videos, slideContent}) => {
         setActiveSlide(index);
     };
 
-    
+
     const [timer, setTimer] = useState(0); // Separate state for timer
 
     useEffect(() => {
-      const intervalId = setInterval(() => {
-        setTimer(prevTimer => prevTimer + 1); // Increment timer state
-      }, 5000);
-    
-      return () => clearInterval(intervalId);
+        const intervalId = setInterval(() => {
+            setTimer(prevTimer => prevTimer + 1); // Increment timer state
+        }, 5000);
+
+        return () => clearInterval(intervalId);
     }, []);
-    
+
     useEffect(() => {
-      const nextSlideIndex = (activeSlide + 1) % slideContent.length;
-      setActiveSlide(nextSlideIndex);
+        const nextSlideIndex = (activeSlide + 1) % slideContent.length;
+        setActiveSlide(nextSlideIndex);
     }, [timer]); // Update activeSlide only when timer changes
     return (
         <>
             <section className='hero-slider-two' ref={sliderRef}>
-                {videos?.map((videoSrc, index) => (
+                {/* {videos?.map((videoSrc, index) => (
                     <video
                         key={index}
                         className={`video-slide ${activeSlide === index ? 'active' : ''}`}
@@ -37,7 +37,15 @@ const Carousel = ({videos, slideContent}) => {
                         muted
                         loop
                     />
-                ))}
+                ))} */}
+                <video
+                    // key={index}
+                    className={`video-slide active`}
+                    src={videos}
+                    autoPlay
+                    muted
+                    loop
+                />
                 {slideContent?.map((slide, index) => (
                     <div className={`container slider-content py-5 animated ${slide.animation} ${activeSlide === index ? 'active' : ''}`}>
                         <h1 className='fw-bold animated mb-4 text-uppercase'>{slide?.title}</h1>
