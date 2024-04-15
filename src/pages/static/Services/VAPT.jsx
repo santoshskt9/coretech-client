@@ -3,6 +3,7 @@ import CarouselTwo from '../../../components/Carousel/CarouselTwo';
 import FeatureSectionTwo from '../Sections/FeatureSectionTwo';
 import IntroductionSection from '../Sections/IntroductionSection';
 import WhySection from '../Sections/WhySection';
+import ProcessSection from '../Sections/ProcessSection';
 
 const videos = [
     'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -42,45 +43,9 @@ const VAPT = () => {
             <FeatureSectionTwo/>
             <IntroductionSection/>
             <WhySection/>
+            <ProcessSection/>
            
-            <section className="key-components-vapt-section py-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="text-center mb-4">
-                                <h2 className="section-title">Key Components of VAPT</h2>
-                                <div className="title-divider"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4">
-                            <div className="card border-0 shadow-sm mb-4">
-                                <div className="card-body">
-                                    <h3 className="card-title">Vulnerability Assessment</h3>
-                                    <p className="card-text">Identifying vulnerabilities, misconfigurations, and weaknesses in systems, networks, and applications.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="card border-0 shadow-sm mb-4">
-                                <div className="card-body">
-                                    <h3 className="card-title">Penetration <br /> Testing</h3>
-                                    <p className="card-text">Simulating real-world cyber attacks to exploit vulnerabilities and assess security controls.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="card border-0 shadow-sm mb-4">
-                                <div className="card-body">
-                                    <h3 className="card-title">Reporting and Remediation</h3>
-                                    <p className="card-text">Providing detailed reports of vulnerabilities and recommendations for remediation.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
             <section className="py-5">
                 <div className="container">
                     <h2 className="text-center mb-5">VAPT Services</h2>

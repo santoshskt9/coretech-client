@@ -52,12 +52,12 @@ const IntroductionSection = () => {
                         {/* <!-- Image Column --> */}
                         <div className="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
                             <div className="inner-column wow fadeInLeft">
-                                <figure className="image-1 overlay-anim wow fadeInUp"><img src="images/resource/about-3.jpg" alt="" /></figure>
-                                <figure className="image-2 overlay-anim wow fadeInRight"><img src="images/resource/about-4.jpg" alt="" /></figure>
+                                <figure className="image-1 overlay-anim wow fadeInUp"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/about-3.jpg" alt="" /></figure>
+                                <figure className="image-2 overlay-anim wow fadeInRight"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/about-4.jpg" alt="" /></figure>
                                 <div className="experience bounce-y">
                                     <div className="inner">
                                         <i className="icon flaticon-design"></i>
-                                        <div className="text">Founded<br /> 1966</div>
+                                        <div className="text">Founded<br /> 2023</div>
                                     </div>
                                 </div>
                             </div>
