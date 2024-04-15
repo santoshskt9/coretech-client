@@ -7,6 +7,18 @@ import { MdOutlineWeb } from "react-icons/md";
 import { FaCloudscale } from 'react-icons/fa';
 import TeamSection from '../Sections/TeamSection';
 import TeamSection2 from '../Sections/TeamSection2';
+import ClientsSlider from '../Sections/ClientsSlider';
+
+const partners = {
+    title: "Our Clients",
+    subTitle: "Clients",
+    slides: [
+        "https://conglobase.com/assets/media/Varients/SVG/conglobase_original.svg",
+        "https://www.marquistech.com/wp-content/uploads/2020/02/logo.png",
+        "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/partners/altezzasys.png",
+        "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/partners/Spyne+Black+png.webp"
+    ],
+};
 
 const About = () => {
     return (
@@ -54,7 +66,7 @@ const About = () => {
                     <div className="row">
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
-                                <div className="icon-box"><FaCloudscale className='icon'/></div>
+                                <div className="icon-box"><FaCloudscale className='icon' /></div>
                                 <h5 className="title"><a href="page-service-details.html">Cloud Architecture</a></h5>
                                 <div className="text">Streamline infrastructure, optimize performance, secure data.</div>
                                 <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
@@ -63,7 +75,7 @@ const About = () => {
 
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
-                                <div className="icon-box"><FaBuildingColumns className='icon'/></div>
+                                <div className="icon-box"><FaBuildingColumns className='icon' /></div>
                                 <h5 className="title"><a href="page-service-details.html">IT Infrastructure</a></h5>
                                 <div className="text">Optimize networks, enhance operations with IT Infrastructure Excellence.</div>
                                 <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
@@ -72,7 +84,7 @@ const About = () => {
 
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
-                                <div className="icon-box"><FaShieldHalved className='icon'/></div>
+                                <div className="icon-box"><FaShieldHalved className='icon' /></div>
                                 <h5 className="title"><a href="page-service-details.html">Cyber Security</a></h5>
                                 <div className="text">Safeguard data, protect networks, mitigate risks.</div>
                                 <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
@@ -80,7 +92,7 @@ const About = () => {
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
-                                <div className="icon-box"><FaShieldHalved className='icon'/></div>
+                                <div className="icon-box"><FaShieldHalved className='icon' /></div>
                                 <h5 className="title"><a href="page-service-details.html">Business Optimization</a></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
                                 <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
@@ -88,7 +100,7 @@ const About = () => {
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
-                                <div className="icon-box"><FaShieldHalved className='icon'/></div>
+                                <div className="icon-box"><FaShieldHalved className='icon' /></div>
                                 <h5 className="title"><a href="page-service-details.html">Service Management</a></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
                                 <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
@@ -96,7 +108,7 @@ const About = () => {
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
-                                <div className="icon-box"><FaShieldHalved className='icon'/></div>
+                                <div className="icon-box"><FaShieldHalved className='icon' /></div>
                                 <h5 className="title"><a href="page-service-details.html">Cloud & Infra Security</a></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
                                 <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
@@ -111,7 +123,13 @@ const About = () => {
                 </div>
             </section>
 
-            <TeamSection2/>
+            <ClientsSlider
+                data={partners}
+                autoplay={false}
+                dots={false}
+            />
+
+            <TeamSection2 />
         </>
     )
 }

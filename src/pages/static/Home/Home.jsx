@@ -76,6 +76,17 @@ const Home = () => {
         imgSrc: "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/1.png",
     };
 
+    const technologies = {
+        title: "We Deliver Expertise",
+        subTitle: "Service Partners",
+        slides: [
+            "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/vmware.jpg",
+            "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/azure.png",
+            "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/gcp.png",
+            "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/aws-logo.webp"
+        ],
+    };
+
 
     return (
         <>
@@ -86,7 +97,7 @@ const Home = () => {
             <WhatWeDoSection />
             <TestimonialSection />
 
-            <ClientsSlider />
+            <ClientsSlider data={technologies}/>
             {/* <TeamSection2/> */}
             <BlogSection
                 title="Latest Updates"
