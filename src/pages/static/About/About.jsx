@@ -26,38 +26,102 @@ const About = () => {
             <BreadCrumb2
                 heading="About Us"
             />
-            <section className="mission-section container">
-                <div className="row mb-5">
+
+            <section class="about-section-two">
+                <div class="container">
+                    <div class="row">
+                        <div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms">
+                            <div class="inner-column">
+
+                                <div class="sec-title">
+                                    <span class="sub-title">Welcome to Coretech</span>
+                                    <h2>Our Company</h2>
+                                    <div class="text">Founded in 2023 and headquartered in Texas, USA, Coretech Infrastructure Solutions Inc. specializes in providing innovative IT services and solutions that cater to businesses of all sizes across various industries.</div>
+                                    {/* <p class="text">Our comprehensive suite of IT services includes:</p> */}
+                                </div>
+
+                                <div class="row">
+                                    <div class="about-block col-lg-6 col-md-6">
+                                        <div class="inner-box">
+                                            <i class="icon flaticon-user-interface"></i>
+                                            <h6 class="title">Managed IT Services</h6>
+                                            <div class="text">Ensuring smooth, uninterrupted IT operations with 24/7 support.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-block col-lg-6 col-md-6">
+                                        <div class="inner-box">
+                                            <i class="icon flaticon-front-end"></i>
+                                            <h6 class="title">Cybersecurity Solutions</h6>
+                                            <div class="text">Protecting assets from cyber threats with cutting-edge security technologies.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-block col-lg-6 col-md-6">
+                                        <div class="inner-box">
+                                            <i class="icon flaticon-front-end"></i>
+                                            <h6 class="title">Cloud Services</h6>
+                                            <div class="text">Offering scalable and flexible cloud computing solutions to drive business innovation.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-block col-lg-6 col-md-6">
+                                        <div class="inner-box">
+                                            <i class="icon flaticon-front-end"></i>
+                                            <h6 class="title">Software Development</h6>
+                                            <div class="text">Creating custom software solutions tailored to meet specific business needs.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Explore now</span></a> */}
+                            </div>
+                        </div>
+
+                        {/* <!-- Image Column --> */}
+                        <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
+                            <div class="inner-column wow fadeInLeft">
+                                <figure class="image-1 overlay-anim wow fadeInUp"><img src="images/resource/about-3.jpg" alt="" /></figure>
+                                <figure class="image-2 overlay-anim wow fadeInRight"><img src="images/resource/about-4.jpg" alt="" /></figure>
+                                <div class="experience bounce-y">
+                                    <div class="inner">
+                                        <i class="icon flaticon-design"></i>
+                                        <div class="text">Founded<br /> 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mission-section container p-0 mb-5">
+                
+                <div className="row row-cols-1 row-cols-lg-2  mb-5">
+
+                    <div className="col p-5 ">
+                        <h1 className='text-warning'>Our Vision</h1>
+                        <p>Our vision is to be a global leader in IT services, pioneering innovations that redefine technology landscapes and set new industry standards. We aim to connect businesses of all sizes with emerging technologies, fostering a world where technology creates unlimited opportunities for growth and innovation.
+                        </p>
+                    </div>
                     <div className="col">
-                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100' />
+                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100 rounded-3' />
+                    </div>
+                </div>
+                <div className="row row-cols-1 row-cols-lg-2">
+                    <div className="col">
+                        <img src="https://img.freepik.com/free-photo/flight-aviation-cloudy-aircraft-airplane_1172-277.jpg?t=st=1713715859~exp=1713719459~hmac=0a27aae777940a5bc6cb7cbdd52850271c6a635f2e72f1524d0cddde891d30a1&w=740" alt="about" className='w-100 rounded-3' />
                     </div>
                     <div className="col p-5">
                         <h1 className='text-warning'>Our Mission</h1>
-                        <p>Enterprise Solutions, Inc has established itself as a premier provider of contingent labor within the industry since its establishment in 2000.
-                        </p><p>
-                            Our core objective is to effect meaningful change by providing a gateway to boundless opportunities that facilitate the connection, empowerment, and success of our talent ecosystem.
-
+                        <p>Our mission is to empower businesses with cutting-edge IT solutions that enhance operational efficiency and drive digital transformation. We commit to delivering reliable, scalable, and secure IT services tailored to meet the diverse needs of our clients, ensuring they can focus on their core business goals with confidence.
                         </p>
-                    </div>
-                </div>
-                <div className="row">
-
-                    <div className="col p-5">
-                        <h1 className='text-warning'>Our Vision</h1>
-                        <p>Enterprise Solutions, Inc has established itself as a premier provider of contingent labor within the industry since its establishment in 2000.
-                        </p><p>
-                            Our core objective is to effect meaningful change by providing a gateway to boundless opportunities that facilitate the connection, empowerment, and success of our talent ecosystem.
-
-                        </p>
-                    </div>
-                    <div className="col">
-                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100' />
                     </div>
                 </div>
             </section>
 
             <section className="services-section container pt-0">
-                <div className="auto-container">
+                <div className="container">
                     <div className="sec-title text-center">
                         <span className="sub-title">What We’re Offering</span>
                         <h2>Services we’re offering to <br />our customers.</h2>
