@@ -5,6 +5,7 @@ import IntroductionSection from '../Sections/IntroductionSection';
 import WhySection from '../Sections/WhySection';
 import ProcessSection from '../Sections/ProcessSection';
 import SubServicesSection from '../Sections/SubServicesSection';
+import VAPTFormSection from '../Sections/VAPTFormSection';
 
 const videos = [
     'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -17,21 +18,21 @@ const slideContent = [
         title: "Comprehensive Security Assessment",
         description: "Identify vulnerabilities across your network, applications, and systems with our comprehensive security assessment.",
         buttonText: 'Find your security loopholes',
-        buttonNavigation: "",
+        buttonNavigation: "#form",
         animation: 'fadeInRight',
     },
     {
         title: "Proactive Threat Detection",
         description: "Stay ahead of cyber threats with proactive detection and continuous monitoring of your IT infrastructure.",
         buttonText: 'Find your security loopholes',
-        buttonNavigation: "",
+        buttonNavigation: "#form",
         animation: 'fadeInRight',
     },
     {
         title: "Expert Penetration Testing",
         description: "Leverage our team of experienced security experts to conduct thorough penetration testing and secure your assets.",
         buttonText: 'Find your security loopholes',
-        buttonNavigation: "",
+        buttonNavigation: "#form",
         animation: 'fadeInRight',
     },
 
@@ -41,14 +42,14 @@ const VAPT = () => {
     return (
         <>
             <CarouselTwo videos={videos[0]} slideContent={slideContent} />
-            <FeatureSectionTwo/>
-            <IntroductionSection/>
-            <WhySection/>
-            <ProcessSection/>
-           <SubServicesSection/>
-           
-           
+            <FeatureSectionTwo />
+            <IntroductionSection />
+            <WhySection />
+            <ProcessSection />
+            <SubServicesSection />
             
+                <VAPTFormSection />
+
             {/* <section id="resources" class="py-5">
                 <div class="container">
                     <h2 class="text-center mb-4">Resources</h2>
