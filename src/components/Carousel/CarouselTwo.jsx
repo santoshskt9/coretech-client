@@ -3,7 +3,7 @@ import './Carousel.css';
 import { useNavigate } from 'react-router-dom';
 
 
-const Carousel = ({ videos, slideContent }) => {
+const CarouselTwo = ({ videos, slideContent }) => {
     const [activeSlide, setActiveSlide] = useState(0);
     const sliderRef = useRef(null);
     const navigate = useNavigate();
@@ -52,7 +52,7 @@ const Carousel = ({ videos, slideContent }) => {
                     <div className={`container slider-content py-5 animated ${slide.animation} ${activeSlide === index ? 'active' : ''}`}>
                         <h1 className='fw-bold animated mb-4 text-uppercase'>{slide?.title}</h1>
                         <h5 className='animated mb-4'>{slide?.description}</h5>
-                        <button className='btn btn-warning rounded-5 fw-bold animated' onClick={() => navigate(slide?.buttonNavigation)}>{slide?.buttonText}</button>
+                        <button className='btn btn-warning rounded-5 fw-bold animated' onClick={() => slide?.buttonNavigation}>{slide?.buttonText}</button>
                     </div>
                 ))}
 
@@ -70,4 +70,4 @@ const Carousel = ({ videos, slideContent }) => {
     )
 }
 
-export default Carousel;
+export default CarouselTwo;

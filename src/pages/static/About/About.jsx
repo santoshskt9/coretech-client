@@ -20,6 +20,17 @@ const partners = {
     ],
 };
 
+const technologies = {
+    title: "We Deliver Expertise",
+    subTitle: "Service Partners",
+    slides: [
+        "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/vmware.jpg",
+        "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/azure.png",
+        "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/gcp.png",
+        "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/technologies/aws-logo.webp"
+    ],
+};
+
 const About = () => {
     return (
         <>
@@ -27,7 +38,7 @@ const About = () => {
                 heading="About Us"
             />
 
-            <section class="about-section-two">
+            <section id="company" class="about-section-two">
                 <div class="container">
                     <div class="row">
                         <div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms">
@@ -95,27 +106,36 @@ const About = () => {
                 </div>
             </section>
 
-            <section className="mission-section container p-0 mb-5">
-                
-                <div className="row row-cols-1 row-cols-lg-2  mb-5">
-
-                    <div className="col p-5 ">
-                        <h1 className='text-warning'>Our Vision</h1>
-                        <p>Our vision is to be a global leader in IT services, pioneering innovations that redefine technology landscapes and set new industry standards. We aim to connect businesses of all sizes with emerging technologies, fostering a world where technology creates unlimited opportunities for growth and innovation.
-                        </p>
-                    </div>
-                    <div className="col">
-                        <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100 rounded-3' />
-                    </div>
+            <section id='mission' className="mission-section p-0 mb-5">
+                <div class="sec-title text-center">
+                    <span class="sub-title">Mission & Vision</span>
+                    <h2>We Are Inspired</h2>
+                    {/* <div class="text">Founded in 2023 and headquartered in Texas, USA, Coretech Infrastructure Solutions Inc. specializes in providing innovative IT services and solutions that cater to businesses of all sizes across various industries.</div> */}
+                    {/* <p class="text">Our comprehensive suite of IT services includes:</p> */}
                 </div>
-                <div className="row row-cols-1 row-cols-lg-2">
-                    <div className="col">
-                        <img src="https://img.freepik.com/free-photo/flight-aviation-cloudy-aircraft-airplane_1172-277.jpg?t=st=1713715859~exp=1713719459~hmac=0a27aae777940a5bc6cb7cbdd52850271c6a635f2e72f1524d0cddde891d30a1&w=740" alt="about" className='w-100 rounded-3' />
+                <div className="container">
+
+
+                    <div className="row row-cols-1 row-cols-lg-2  mb-5">
+
+                        <div className="col p-5 ">
+                            <h1 className='text-warning'>Our Vision</h1>
+                            <p>Our vision is to be a global leader in IT services, pioneering innovations that redefine technology landscapes and set new industry standards. We aim to connect businesses of all sizes with emerging technologies, fostering a world where technology creates unlimited opportunities for growth and innovation.
+                            </p>
+                        </div>
+                        <div className="col">
+                            <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100 rounded-3' />
+                        </div>
                     </div>
-                    <div className="col p-5">
-                        <h1 className='text-warning'>Our Mission</h1>
-                        <p>Our mission is to empower businesses with cutting-edge IT solutions that enhance operational efficiency and drive digital transformation. We commit to delivering reliable, scalable, and secure IT services tailored to meet the diverse needs of our clients, ensuring they can focus on their core business goals with confidence.
-                        </p>
+                    <div className="row row-cols-1 row-cols-lg-2">
+                        <div className="col">
+                            <img src="https://img.freepik.com/free-photo/flight-aviation-cloudy-aircraft-airplane_1172-277.jpg?t=st=1713715859~exp=1713719459~hmac=0a27aae777940a5bc6cb7cbdd52850271c6a635f2e72f1524d0cddde891d30a1&w=740" alt="about" className='w-100 rounded-3' />
+                        </div>
+                        <div className="col p-5">
+                            <h1 className='text-warning'>Our Mission</h1>
+                            <p>Our mission is to empower businesses with cutting-edge IT solutions that enhance operational efficiency and drive digital transformation. We commit to delivering reliable, scalable, and secure IT services tailored to meet the diverse needs of our clients, ensuring they can focus on their core business goals with confidence.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -187,11 +207,18 @@ const About = () => {
                 </div>
             </section>
 
-            <ClientsSlider
-                data={partners}
-                autoplay={false}
-                dots={false}
-            />
+            <section id="clients">
+                <ClientsSlider
+
+                    data={partners}
+                    autoplay={false}
+                    dots={false}
+                />
+            </section>
+
+            <section id="partners">
+                <ClientsSlider data={technologies} />
+            </section>
 
             <TeamSection2 />
         </>

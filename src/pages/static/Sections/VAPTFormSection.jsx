@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-const VAPTFormSection = () => {
+const VAPTFormSection = ({ref}) => {
     const vaptFormik = useFormik({
         initialValues: {
             companyName: '',
@@ -34,12 +34,12 @@ const VAPTFormSection = () => {
                 .matches(/^[\w\.\-\s]+$/, 'Invalid characters in test box details'),
         }),
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
+            console.log(JSON.stringify(values, null, 2));
         }
     });
 
     return (
-        <section id='form' className="contact-section" style={{overflowX: "hidden"}}> 
+        <section id='form' className="contact-section" style={{overflowX: "hidden"}} ref={ref}> 
             <div className="container">
                 <div className="row">
                     {/* Form Column */}

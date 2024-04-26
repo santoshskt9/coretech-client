@@ -5,17 +5,24 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const Navbar2 = () => {
+
+	const handleSectionRoute = (sectionId) => {
+		// Smooth scroll to the section with ID "mission"
+		const section = document.getElementById(sectionId);
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	return (
 		<>
 			<header className="main-header header-style-two sticky-top shadow-sm">
-			
+
 
 				<div className="header-lower">
 					<div className="container-fluid">
 						{/* <!-- Main box --> */}
 						<div className="main-box">
 							<div className="logo-box">
-								<div className="logo"><Link to="/"><img src={Brand} height={50} alt="" title="Tronis"/></Link></div>
+								<div className="logo"><Link to="/"><img src={Brand} height={50} alt="" title="Tronis" /></Link></div>
 							</div>
 
 							{/* <!--Nav Box--> */}
@@ -23,18 +30,18 @@ const Navbar2 = () => {
 								<nav className="nav main-menu">
 									<ul className="navigation">
 										<li><Link to="/">Home</Link>
-											
+
 										</li>
-										<li className="dropdown"><Link to="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown/> </Link>
+										<li className="dropdown"><Link to="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown /> </Link>
 											<ul>
-												<li><Link to="/about">Company</Link></li>
+												<li><Link to="/about" >Company</Link></li>
 												<li><Link to="/team">Team</Link></li>
-												<li><Link to="/partners">Partners</Link></li>
-												<li><Link to="/clients">Clients</Link></li>
-												<li><Link to="/mission">Mission & Vision</Link></li>
+												<li><Link to="/about" onClick={() => handleSectionRoute("partners")}>Partners</Link></li>
+												<li><Link to="/about" onClick={() => handleSectionRoute("clients")}>Clients</Link></li>
+												<li><Link to="/about" onClick={() => handleSectionRoute("mission")}>Mission & Vision</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><Link to="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown/></Link>
+										<li className="dropdown"><Link to="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
 												<li><Link to="/vulnerability-assessment-penetration-testing">VAPT</Link></li>
 												<li><Link to="#">Cloud Architecture</Link></li>
@@ -43,17 +50,17 @@ const Navbar2 = () => {
 												<li><Link to="#">Business Optimization</Link></li>
 												<li><Link to="#">Service Management</Link></li>
 												<li><Link to="#">Cloud & Infra Security</Link></li>
-												<li><Link to="#">Application Development</Link></li>
+												<li><Link to="/application-development">Application Development</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><Link to="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown/></Link>
+										<li className="dropdown"><Link to="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
 												<li><Link to="/training">Training</Link></li>
 												<li><Link to="/training">Certiification</Link></li>
 												<li><Link to="/training">Webinar</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><Link to="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown/></Link>
+										<li className="dropdown"><Link to="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
 												<li><Link to="#">News</Link></li>
 												<li><Link to="#">Blogs</Link></li>
@@ -68,7 +75,7 @@ const Navbar2 = () => {
 								{/* <!-- Main Menu End--> */}
 							</div>
 
-							
+
 						</div>
 					</div>
 				</div>
@@ -80,7 +87,7 @@ const Navbar2 = () => {
 					{/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
 					<nav className="menu-box">
 						<div className="upper-box">
-							<div className="nav-logo"><Link to="/"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/logo.png" alt="" title=""/></Link></div>
+							<div className="nav-logo"><Link to="/"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/logo.png" alt="" title="" /></Link></div>
 							<div className="close-btn"><i className="icon fa fa-times"></i></div>
 						</div>
 
@@ -122,7 +129,7 @@ const Navbar2 = () => {
 							<li><Link to="#"><i className="fab fa-instagram"></i></Link></li>
 						</ul>
 					</nav>
-				{/* </div><!-- End Mobile Menu --> */}
+					{/* </div><!-- End Mobile Menu --> */}
 
 				</div>
 
@@ -132,7 +139,7 @@ const Navbar2 = () => {
 						<div className="inner-container">
 							{/* <!--Logo--> */}
 							<div className="logo">
-								<Link to="/" title=""><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/logo-2.png" alt="" title=""/></Link>
+								<Link to="/" title=""><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/logo-2.png" alt="" title="" /></Link>
 							</div>
 
 							{/* <!--Right Col--> */}

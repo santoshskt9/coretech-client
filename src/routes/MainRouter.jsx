@@ -12,6 +12,7 @@ import ContactUs from '../pages/static/Contact/ContactUs';
 import Teams from '../pages/static/Team/Teams';
 import CyberSecurityService from '../pages/static/Services/CyberSecurityService';
 import VAPT from '../pages/static/Services/VAPT';
+import ApplicationDevelopment from '../pages/static/Services/ApplicationDevelopment';
 
 const MainRouter = () => {
   return (
@@ -22,6 +23,7 @@ const MainRouter = () => {
         <Route exact path='/service-details' element={<ServiceDetails/>}/>
         <Route exact path='/cyber-security' element={<CyberSecurityService/>}/>
         <Route exact path='/vulnerability-assessment-penetration-testing' element={<VAPT/>}/>
+        <Route exact path='/application-development' element={<ApplicationDevelopment/>}/>
 
         <Route exact path='/blogs' element={<Blogs/>}/>
         <Route exact path='/:slug' element={<BlogDetails/>}/>

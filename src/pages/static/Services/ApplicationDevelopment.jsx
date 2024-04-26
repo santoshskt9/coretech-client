@@ -15,7 +15,7 @@ const videos = [
 
 
 
-const VAPT = () => {
+const ApplicationDevelopment = () => {
     const formSectionRef = useRef(null);
 
     const navigateToSection = () => {
@@ -24,23 +24,30 @@ const VAPT = () => {
 
     const slideContent = [
         {
-            title: "Comprehensive Security Assessment",
-            description: "Identify vulnerabilities across your network, applications, and systems with our comprehensive security assessment.",
-            buttonText: 'Find your security loopholes',
+            title: "Empower Your Business with Cutting-Edge Solutions",
+            description:  "Unlock the potential of your business with our innovative software solutions. From seamless automation to enhanced customer experiences, we have you covered.",
+            buttonText:  "Explore Solutions",
             buttonNavigation: navigateToSection,
             animation: 'fadeInRight',
         },
         {
-            title: "Proactive Threat Detection",
-            description: "Stay ahead of cyber threats with proactive detection and continuous monitoring of your IT infrastructure.",
-            buttonText: 'Find your security loopholes',
+            title: "Streamline Operations, Boost Productivity",
+            description: "Transform your workflow with our integrated solutions tailored to your needs. Say goodbye to manual processes and hello to increased efficiency.",
+            buttonText:  "Learn More",
             buttonNavigation: navigateToSection,
             animation: 'fadeInRight',
         },
         {
-            title: "Expert Penetration Testing",
-            description: "Leverage our team of experienced security experts to conduct thorough penetration testing and secure your assets.",
-            buttonText: 'Find your security loopholes',
+            title: "Join the Ranks of Satisfied Clients",
+            description:  "Discover why our clients rave about our solutions. With a proven track record of success, we deliver results that exceed expectations.",
+            buttonText:  "See Success Stories",
+            buttonNavigation: navigateToSection,
+            animation: 'fadeInRight',
+        },
+        {
+            title: "Partner with Us for Your Next Success Story",
+            description:   "Take the next step towards achieving your business goals. Partner with us to unlock unlimited possibilities and propel your business forward.",
+            buttonText: "Get Started Today",
             buttonNavigation: navigateToSection,
             animation: 'fadeInRight',
         },
@@ -48,21 +55,21 @@ const VAPT = () => {
     ];
 
     const introduction = {
-        sectionTitle: "What is VAPT?",
-        title: "Vulnerability Assesment and Penetration Testing",
-        description: "VAPT stands for Vulnerability Assessment and Penetration Testing. It is a comprehensive security testing process that evaluates the security posture of an organization's systems and infrastructure.",
+        sectionTitle: "Introduction",
+        title: "What is Application Development",
+        description: "Application development is a critical function for any company that wants to leverage technology to enhance its business processes, reach new customers, or provide new services. If a company is considering developing applications, whether for internal use or for a customer-facing product, there are several steps and considerations to take into account to ensure success.",
         paragraphs: [],
         features: [
-            {
-                title: "Vulnerability Assessment",
-                description: "VA identifies and quantifies vulnerabilities in the system.",
-                iconClass: "flaticon-user-interface"
-            },
-            {
-                title: "Penetration Testing",
-                description: "Exploit these vulnerabilities to assess the effectiveness.",
-                iconClass: "flaticon-front-end"
-            },
+            // {
+            //     title: "Vulnerability Assessment",
+            //     description: "VA identifies and quantifies vulnerabilities in the system.",
+            //     iconClass: "flaticon-user-interface"
+            // },
+            // {
+            //     title: "Penetration Testing",
+            //     description: "Exploit these vulnerabilities to assess the effectiveness.",
+            //     iconClass: "flaticon-front-end"
+            // },
         ],
         cta: {
             buttonText: "Explore now",
@@ -70,14 +77,14 @@ const VAPT = () => {
         },
         images: [
             "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/about-3.jpg",
-            "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/about-4.jpg"
+            // "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/about-4.jpg"
         ],
     };
 
     return (
         <>
             <CarouselTwo videos={videos[0]} slideContent={slideContent} />
-            <FeatureSectionTwo />
+            {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction}/>
             <WhySection />
             <ProcessSection />
@@ -93,7 +100,7 @@ const VAPT = () => {
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Articles</h5>
-                                    <p class="card-text">Explore our collection of articles covering various topics related to VAPT and cybersecurity.</p>
+                                    <p class="card-text">Explore our collection of articles covering various topics related to ApplicationDevelopment and cybersecurity.</p>
                                     <a href="#" class="btn btn-primary">Read Articles</a>
                                 </div>
                             </div>
@@ -102,7 +109,7 @@ const VAPT = () => {
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Whitepapers</h5>
-                                    <p class="card-text">Download our whitepapers to learn more about VAPT methodologies and best practices.</p>
+                                    <p class="card-text">Download our whitepapers to learn more about ApplicationDevelopment methodologies and best practices.</p>
                                     <a href="#" class="btn btn-primary">Download Whitepapers</a>
                                 </div>
                             </div>
@@ -126,4 +133,4 @@ const VAPT = () => {
     )
 }
 
-export default VAPT;
+export default ApplicationDevelopment;
