@@ -27,35 +27,35 @@ const ManagedServices = () => {
 
     const slideContent = [
         {
-            title: "Empower Your Business with Cutting-Edge Solutions",
-            description: "Unlock the potential of your business with our innovative software solutions. From seamless automation to enhanced customer experiences, we have you covered.",
-            buttonText: "Explore Solutions",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Efficient Management, Proactive Support",
+            "description": "Leave the management of your IT infrastructure to the experts. Our managed services ensure proactive monitoring, maintenance, and support to keep your systems running smoothly.",
+            "buttonText": "Explore Services",
+            "buttonNavigation": "#services",
+            "animation": "fadeInRight"
         },
         {
-            title: "Streamline Operations, Boost Productivity",
-            description: "Transform your workflow with our integrated solutions tailored to your needs. Say goodbye to manual processes and hello to increased efficiency.",
-            buttonText: "Learn More",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "24/7 Monitoring and Alerting",
+            "description": "Gain peace of mind with round-the-clock monitoring and alerting. Our managed services team keeps a watchful eye on your systems, identifying and addressing issues before they impact your business.",
+            "buttonText": "Learn More",
+            "buttonNavigation": "#monitoring",
+            "animation": "fadeInRight"
         },
         {
-            title: "Join the Ranks of Satisfied Clients",
-            description: "Discover why our clients rave about our solutions. With a proven track record of success, we deliver results that exceed expectations.",
-            buttonText: "See Success Stories",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Proactive Maintenance and Updates",
+            "description": "Stay ahead of potential problems with proactive maintenance and updates. Our managed services ensure that your systems are always up-to-date, secure, and optimized for performance.",
+            "buttonText": "Discover Benefits",
+            "buttonNavigation": "#maintenance",
+            "animation": "fadeInRight"
         },
         {
-            title: "Partner with Us for Your Next Success Story",
-            description: "Take the next step towards achieving your business goals. Partner with us to unlock unlimited possibilities and propel your business forward.",
-            buttonText: "Get Started Today",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
-        },
-
+            "title": "Dedicated Support, Expert Guidance",
+            "description": "Access expert support and guidance whenever you need it. Our managed services team is available around-the-clock to provide assistance, troubleshoot issues, and offer strategic advice.",
+            "buttonText": "Get Support",
+            "buttonNavigation": "#support",
+            "animation": "fadeInRight"
+        }
     ];
+    
 
     const introduction = {
         "sectionTitle": "What are Managed Services?",

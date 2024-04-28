@@ -24,35 +24,35 @@ const CloudInfraSecurity = () => {
 
     const slideContent = [
         {
-            title: "Empower Your Business with Cutting-Edge Solutions",
-            description: "Unlock the potential of your business with our innovative software solutions. From seamless automation to enhanced customer experiences, we have you covered.",
-            buttonText: "Explore Solutions",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Secure Your Cloud Environment",
+            "description": "Protect your cloud infrastructure from cyber threats and unauthorized access. Our comprehensive security solutions ensure the integrity, confidentiality, and availability of your cloud resources.",
+            "buttonText": "Explore Solutions",
+            "buttonNavigation": "#solutions",
+            "animation": "fadeInRight"
         },
         {
-            title: "Streamline Operations, Boost Productivity",
-            description: "Transform your workflow with our integrated solutions tailored to your needs. Say goodbye to manual processes and hello to increased efficiency.",
-            buttonText: "Learn More",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Compliance and Governance",
+            "description": "Ensure compliance with industry regulations and best practices. Our cloud security services help you implement robust governance frameworks and meet regulatory requirements.",
+            "buttonText": "Learn More",
+            "buttonNavigation": "#compliance",
+            "animation": "fadeInRight"
         },
         {
-            title: "Join the Ranks of Satisfied Clients",
-            description: "Discover why our clients rave about our solutions. With a proven track record of success, we deliver results that exceed expectations.",
-            buttonText: "See Success Stories",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Identity and Access Management",
+            "description": "Control access to your cloud resources with identity and access management solutions. Our IAM services help you manage user identities, permissions, and authentication.",
+            "buttonText": "Discover Benefits",
+            "buttonNavigation": "#iam",
+            "animation": "fadeInRight"
         },
         {
-            title: "Partner with Us for Your Next Success Story",
-            description: "Take the next step towards achieving your business goals. Partner with us to unlock unlimited possibilities and propel your business forward.",
-            buttonText: "Get Started Today",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
-        },
-
+            "title": "Threat Detection and Response",
+            "description": "Detect and respond to security threats in real-time. Our threat detection and response services leverage advanced analytics and machine learning to identify and mitigate security incidents.",
+            "buttonText": "Get Started",
+            "buttonNavigation": "#threat-detection",
+            "animation": "fadeInRight"
+        }
     ];
+    
 
     const introduction = {
         "sectionTitle": "What is Cloud and Infrastructure Security?",

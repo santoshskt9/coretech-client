@@ -26,35 +26,35 @@ const Infrastructure = () => {
 
     const slideContent = [
         {
-            title: "Empower Your Business with Cutting-Edge Solutions",
-            description: "Unlock the potential of your business with our innovative software solutions. From seamless automation to enhanced customer experiences, we have you covered.",
-            buttonText: "Explore Solutions",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Optimize Your IT Infrastructure for Efficiency",
+            "description": "Maximize the performance and reliability of your IT infrastructure with our tailored solutions. From network architecture to server management, we ensure seamless operations.",
+            "buttonText": "Explore Solutions",
+            "buttonNavigation": "#solutions",
+            "animation": "fadeInRight"
         },
         {
-            title: "Streamline Operations, Boost Productivity",
-            description: "Transform your workflow with our integrated solutions tailored to your needs. Say goodbye to manual processes and hello to increased efficiency.",
-            buttonText: "Learn More",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Enhance Security and Compliance",
+            "description": "Protect your data and meet regulatory requirements with our robust security measures. From firewalls to data encryption, we prioritize the confidentiality and integrity of your information.",
+            "buttonText": "Learn More",
+            "buttonNavigation": "#security",
+            "animation": "fadeInRight"
         },
         {
-            title: "Join the Ranks of Satisfied Clients",
-            description: "Discover why our clients rave about our solutions. With a proven track record of success, we deliver results that exceed expectations.",
-            buttonText: "See Success Stories",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Scale Your Infrastructure for Growth",
+            "description": "Future-proof your business with scalable infrastructure solutions. Whether you're expanding your operations or adopting new technologies, we ensure your IT environment can support your growth.",
+            "buttonText": "See Success Stories",
+            "buttonNavigation": "#success-stories",
+            "animation": "fadeInRight"
         },
         {
-            title: "Partner with Us for Your Next Success Story",
-            description: "Take the next step towards achieving your business goals. Partner with us to unlock unlimited possibilities and propel your business forward.",
-            buttonText: "Get Started Today",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
-        },
-
+            "title": "Drive Innovation and Collaboration",
+            "description": "Enable innovation and collaboration across your organization with agile IT infrastructure. From cloud computing to collaboration tools, we empower your teams to work smarter.",
+            "buttonText": "Get Started Today",
+            "buttonNavigation": "#get-started",
+            "animation": "fadeInRight"
+        }
     ];
+    
 
     const data = {
         "introduction": {

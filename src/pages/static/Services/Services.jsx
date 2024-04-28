@@ -31,7 +31,7 @@ const Services = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaCloudscale className='icon'/></div>
-                                <h5 className="title"><Link to="#">Cloud Architecture</Link></h5>
+                                <h5 className="title"><Link to="/cloud-architecture">Cloud Architecture</Link></h5>
                                 <div className="text">Streamline infrastructure, optimize performance, secure data.</div>
                                 <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
@@ -40,7 +40,7 @@ const Services = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaBuildingColumns className='icon'/></div>
-                                <h5 className="title"><Link to="#">IT Infrastructure</Link></h5>
+                                <h5 className="title"><Link to="/it-infrastructure">IT Infrastructure</Link></h5>
                                 <div className="text">Optimize networks, enhance operations with IT Infrastructure Excellence.</div>
                                 <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
@@ -57,7 +57,7 @@ const Services = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon'/></div>
-                                <h5 className="title"><Link to="#">Business Optimization</Link></h5>
+                                <h5 className="title"><Link to="/business-optimization">Business Optimization</Link></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
                                 <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
@@ -65,7 +65,7 @@ const Services = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon'/></div>
-                                <h5 className="title"><Link to="#">Service Management</Link></h5>
+                                <h5 className="title"><Link to="managed-services">Managed Services</Link></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
                                 <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
@@ -73,7 +73,7 @@ const Services = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon'/></div>
-                                <h5 className="title"><Link to="#">Cloud & Infra Security</Link></h5>
+                                <h5 className="title"><Link to="/cloud-infrastructure">Cloud & Infra Security</Link></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
                                 <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>

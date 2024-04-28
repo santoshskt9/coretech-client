@@ -14,10 +14,49 @@ import { useGlobalContext } from '../../../global/context';
 import PostCard from '../../../components/Post/PostCard';
 import Accordion from '../../../components/Accordion/Accordion';
 import { Link } from 'react-router-dom';
+import CarouselTwo from '../../../components/Carousel/CarouselTwo';
 
 const CyberSecurityService = () => {
     const [latestPosts, setLatestPosts] = useState();
     const { api } = useGlobalContext();
+
+    const videos = [
+        'https://cdn.pixabay.com/video/2023/08/22/177227-857004303_large.mp4',
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
+    ];
+
+    const slideContent = [
+        {
+            "title": "Protect Your Digital Assets",
+            "description": "Safeguard your organization's digital assets against cyber threats and attacks. Our cyber security solutions provide comprehensive protection for networks, systems, and data.",
+            "buttonText": "Explore Solutions",
+            "buttonNavigation": "#solutions",
+            "animation": "fadeInRight"
+        },
+        {
+            "title": "Threat Intelligence",
+            "description": "Stay ahead of cyber threats with actionable threat intelligence. Our solutions gather, analyze, and disseminate information about potential threats to your organization's security.",
+            "buttonText": "Learn More",
+            "buttonNavigation": "#threat-intelligence",
+            "animation": "fadeInRight"
+        },
+        {
+            "title": "Incident Response",
+            "description": "Be prepared to respond to security incidents swiftly and effectively. Our incident response services help you detect, contain, and mitigate cyber attacks to minimize damage and downtime.",
+            "buttonText": "Discover Benefits",
+            "buttonNavigation": "#incident-response",
+            "animation": "fadeInRight"
+        },
+        {
+            "title": "Security Awareness Training",
+            "description": "Empower your employees with security awareness training. Our programs educate staff about common cyber threats, best practices, and how to avoid falling victim to attacks.",
+            "buttonText": "Get Started",
+            "buttonNavigation": "#security-training",
+            "animation": "fadeInRight"
+        }
+    ];
+    
 
     const getLatestPosts = async () => {
         try {
@@ -37,20 +76,20 @@ const CyberSecurityService = () => {
         window.scrollTo(0, 0)
     }, []);
 
-    
+
 
     return (
         <>
-            <Hero
+            {/* <Hero
                 heading="Defend Your Digital Assets with Our Cyber Security Solution"
                 description="Empowering businesses and individuals to navigate the digital landscape securely."
                 imgSrc="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/service/cyber-security.png"
                 link="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2"
                 linkText="Book a Appointment Now"
                 linkTarget="_blank"
-            />
+            /> */}
 
-
+            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
 
             <section class="why-choose-us-two ">
                 <div class="container">
@@ -192,15 +231,15 @@ const CyberSecurityService = () => {
 
                     <div class="row">
                         {
-                            latestPosts?.map((post, i)=> (
-                                <PostCard data={post} key={i}/>
+                            latestPosts?.map((post, i) => (
+                                <PostCard data={post} key={i} />
                             ))
                         }
                     </div>
                 </div>
             </section>
 
-            <Accordion/>
+            <Accordion />
 
             {/* <!-- Video Section Two --> */}
             <section class="video-section-two p-0">

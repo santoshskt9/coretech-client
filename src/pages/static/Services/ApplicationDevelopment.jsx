@@ -19,7 +19,7 @@ const ApplicationDevelopment = () => {
     };
 
     const videos = [
-        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
+        'https://cdn.pixabay.com/video/2019/10/15/27920-366469249_large.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
     ];

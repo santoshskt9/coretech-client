@@ -13,11 +13,11 @@ const ProcessSection = ({data}) => {
                         <h2>{data?.title}</h2>
                     </div>
 
-                    <div className="row">
+                    <div className="row justify-content-center">
                         {/* <!-- Process block --> */}
                         {
                             data?.process?.map((process, index) => (
-                                <div className="process-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" key={index}>
+                                <div className="process-block col-lg-4 col-md-6 col-sm-12 fadeInUp" key={index}>
                                     <div className="inner-box">
                                         <div className="icon-box">
                                             <span className="count">{process?.stepId}</span>

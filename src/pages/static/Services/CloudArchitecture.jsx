@@ -26,35 +26,35 @@ const CloudArchitecture = () => {
 
     const slideContent = [
         {
-            title: "Empower Your Business with Cutting-Edge Solutions",
-            description: "Unlock the potential of your business with our innovative software solutions. From seamless automation to enhanced customer experiences, we have you covered.",
-            buttonText: "Explore Solutions",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Unlock the Power of Cloud Architecture",
+            "description": "Leverage the flexibility and scalability of cloud architecture to transform your IT infrastructure. Embrace innovation and drive business growth with our cloud solutions.",
+            "buttonText": "Explore Solutions",
+            "buttonNavigation": "#solutions",
+            "animation": "fadeInRight"
         },
         {
-            title: "Streamline Operations, Boost Productivity",
-            description: "Transform your workflow with our integrated solutions tailored to your needs. Say goodbye to manual processes and hello to increased efficiency.",
-            buttonText: "Learn More",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Optimize Performance and Efficiency",
+            "description": "Maximize the performance and efficiency of your applications and services with our cloud architecture solutions. Experience seamless scalability and reliability.",
+            "buttonText": "Learn More",
+            "buttonNavigation": "#performance",
+            "animation": "fadeInRight"
         },
         {
-            title: "Join the Ranks of Satisfied Clients",
-            description: "Discover why our clients rave about our solutions. With a proven track record of success, we deliver results that exceed expectations.",
-            buttonText: "See Success Stories",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Secure Your Cloud Environment",
+            "description": "Protect your sensitive data and applications with robust security measures. Our cloud architecture solutions ensure compliance and mitigate cyber threats.",
+            "buttonText": "Explore Security",
+            "buttonNavigation": "#security",
+            "animation": "fadeInRight"
         },
         {
-            title: "Partner with Us for Your Next Success Story",
-            description: "Take the next step towards achieving your business goals. Partner with us to unlock unlimited possibilities and propel your business forward.",
-            buttonText: "Get Started Today",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
-        },
-
+            "title": "Achieve Cost Savings and Flexibility",
+            "description": "Reduce infrastructure costs and enhance flexibility with our cloud architecture solutions. Pay only for what you use and scale resources as needed.",
+            "buttonText": "Get Started",
+            "buttonNavigation": "#get-started",
+            "animation": "fadeInRight"
+        }
     ];
+    
 
     const introduction = {
         "sectionTitle": "What is Cloud Architecture?",

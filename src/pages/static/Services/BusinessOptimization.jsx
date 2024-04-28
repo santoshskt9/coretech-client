@@ -27,35 +27,35 @@ const BusinessOptimization = () => {
 
     const slideContent = [
         {
-            title: "Empower Your Business with Cutting-Edge Solutions",
-            description: "Unlock the potential of your business with our innovative software solutions. From seamless automation to enhanced customer experiences, we have you covered.",
-            buttonText: "Explore Solutions",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Unlock Your Business Potential",
+            "description": "Maximize efficiency, productivity, and profitability with our business optimization solutions. Empower your organization to achieve peak performance and sustainable growth.",
+            "buttonText": "Explore Solutions",
+            "buttonNavigation": "#solutions",
+            "animation": "fadeInRight"
         },
         {
-            title: "Streamline Operations, Boost Productivity",
-            description: "Transform your workflow with our integrated solutions tailored to your needs. Say goodbye to manual processes and hello to increased efficiency.",
-            buttonText: "Learn More",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Streamline Processes and Workflows",
+            "description": "Identify inefficiencies and bottlenecks in your business processes. Our optimization solutions streamline workflows, reducing costs and enhancing agility.",
+            "buttonText": "Learn More",
+            "buttonNavigation": "#processes",
+            "animation": "fadeInRight"
         },
         {
-            title: "Join the Ranks of Satisfied Clients",
-            description: "Discover why our clients rave about our solutions. With a proven track record of success, we deliver results that exceed expectations.",
-            buttonText: "See Success Stories",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
+            "title": "Data-Driven Decision Making",
+            "description": "Harness the power of data analytics to drive informed decision-making. Our optimization solutions provide actionable insights for strategic planning and resource allocation.",
+            "buttonText": "Discover Insights",
+            "buttonNavigation": "#data-analytics",
+            "animation": "fadeInRight"
         },
         {
-            title: "Partner with Us for Your Next Success Story",
-            description: "Take the next step towards achieving your business goals. Partner with us to unlock unlimited possibilities and propel your business forward.",
-            buttonText: "Get Started Today",
-            buttonNavigation: navigateToSection,
-            animation: 'fadeInRight',
-        },
-
+            "title": "Continuous Improvement and Innovation",
+            "description": "Foster a culture of continuous improvement and innovation within your organization. Our optimization solutions promote agility, adaptability, and competitiveness.",
+            "buttonText": "Start Innovating",
+            "buttonNavigation": "#innovation",
+            "animation": "fadeInRight"
+        }
     ];
+    
 
     const introduction = {
         "sectionTitle": "What is Business Optimization?",
