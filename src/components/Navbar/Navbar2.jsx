@@ -50,9 +50,9 @@ const Navbar2 = () => {
 												<li><Link to="/it-infrastructure">IT Infrastructure</Link></li>
 												<li><Link to="/cyber-security">Cyber Security</Link></li>
 												<li><Link to="/business-optimization">Business Optimization</Link></li>
-												<li><Link to="/managed-services">Service Management</Link></li>
+												<li><Link to="/managed-services">Managed Services</Link></li>
 												<li><Link to="/cloud-and-infra-security">Cloud & Infra Security</Link></li>
-												<li><Link to="/application-development">Application Development</Link></li>
+												<li><Link to="/application-development">App Development</Link></li>
 											</ul>
 										</li>
 										<li className="dropdown"><Link to="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>

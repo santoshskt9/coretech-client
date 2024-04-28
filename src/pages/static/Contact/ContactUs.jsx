@@ -48,7 +48,7 @@ const ContactUs = () => {
                                         </div>
                                         <div className="contact-items">
                                             <h4>Visit anytime</h4>
-                                            <span>405 State Highway 121, <br/>Suite A250, Lewisville, <br/>Texas, 75067, USA</span>
+                                            <span>Vista Point North <br/>405 State Highway 121, <br/>Suite A250, Lewisville, <br/>Texas, 75067, USA</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -56,7 +56,7 @@ const ContactUs = () => {
                         </div>
                         <div className="col-xl-7 col-lg-6">
                             {/* <!-- Google Map HTML Codes --> */}
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.45765807141!2d-96.98364152529604!3d32.99170767298508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2ec146c00001%3A0x2e44d15e28713eb5!2s405%20State%20Hwy%20121%20Building%20A%20Suite%20A250%2C%20Lewisville%2C%20TX%2075057%2C%20USA!5e0!3m2!1sen!2sin!4v1713008902104!5m2!1sen!2sin" width="100%" height="550" className='rounded-4' frameborder="0" allowfullscreen=""></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3346.4578352604344!2d-96.981067!3d32.991703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2e6ea5f206db%3A0x1e31269da04d94f1!2sRegus%20-%20Lewisville%20-%20Vista%20Point%20North!5e0!3m2!1sen!2sin!4v1714313080357!5m2!1sen!2sin" width="100%" height="550" className='rounded-4' frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
