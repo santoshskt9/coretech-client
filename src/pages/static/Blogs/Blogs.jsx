@@ -70,6 +70,10 @@ const Blogs = () => {
         getNews();
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
 
     return (
         <>

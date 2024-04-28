@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BreadCrumb2 from '../../../components/BreadCrumb/BreadCrumb2';
 import './About.css';
 import { FaBuildingColumns, FaChartSimple, FaShieldHalved } from 'react-icons/fa6';
@@ -32,6 +32,11 @@ const technologies = {
 };
 
 const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     return (
         <>
             <BreadCrumb2

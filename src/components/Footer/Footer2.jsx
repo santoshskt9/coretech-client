@@ -27,6 +27,12 @@ const Footer2 = () => {
         }
     };
 
+    const handleSectionRoute = (sectionId) => {
+		// Smooth scroll to the section with ID "mission"
+		const section = document.getElementById(sectionId);
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
+
 
 
     return (
@@ -75,13 +81,13 @@ const Footer2 = () => {
                                 <div className="footer-widget links-widget">
                                     <h6 className="widget-title">Explore</h6>
                                     <ul className="user-links">
-                                        <li><Link to="#">About Company</Link></li>
-                                        <li><Link to="#">Meet the Team</Link></li>
-                                        <li><Link to="#">News & Media</Link></li>
-                                        <li><Link to="#">Blogs & Articles</Link></li>
-                                        <li><Link to="#">Trainings</Link></li>
-                                        <li><Link to="#">Career</Link></li>
-                                        <li><Link to="#">Contact</Link></li>
+                                        <li><Link to="/about" onClick={() => handleSectionRoute("company")}>About Company</Link></li>
+                                        <li><Link to="/team">Meet the Team</Link></li>
+                                        <li><Link to="/news">News & Media</Link></li>
+                                        <li><Link to="/blogs">Blogs & Articles</Link></li>
+                                        <li><Link to="/training">Trainings</Link></li>
+                                        <li><Link to="/careers">Career</Link></li>
+                                        <li><Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,13 +96,14 @@ const Footer2 = () => {
                                 <div className="footer-widget links-widget">
                                     <h6 className="widget-title">Our Services</h6>
                                     <ul className="user-links">
-                                        <li><Link to="#">Cloud Architecture</Link></li>
-                                        <li><Link to="#">IT Infrastructure</Link></li>
-                                        <li><Link to="#">Cyber Security</Link></li>
-                                        <li><Link to="#">Business Optimazation</Link></li>
-                                        <li><Link to="#">Cloud & Infra Security</Link></li>
-                                        <li><Link to="#">Application Development</Link></li>
-                                        <li><Link to="#">Service Management</Link></li>
+                                        <li><Link to="/vulnerability-assessment-penetration-testing">VAPT</Link></li>
+                                        <li><Link to="/cloud-architecture">Cloud Architecture</Link></li>
+                                        <li><Link to="/it-infrastructure">IT Infrastructure</Link></li>
+                                        <li><Link to="/cyber-security">Cyber Security</Link></li>
+                                        <li><Link to="/business-optimization">Business Optimazation</Link></li>
+                                        <li><Link to="/cloud-and-infra-security">Cloud & Infra Security</Link></li>
+                                        <li><Link to="/application-development">Application Development</Link></li>
+                                        <li><Link to="/managed-services">Managed Services</Link></li>
                                     </ul>
                                 </div>
 
@@ -106,25 +113,25 @@ const Footer2 = () => {
                                 <h5 className='widget-title'><FaLocationArrow className='me-2' /> Corporate Office</h5>
                                 <ul className="user-links">
                                     <li>
-                                        <Link to="#">
+                                        <Link to="https://maps.app.goo.gl/5vKKcueaj1c5Lyg76" target='_blank'>
                                             405 State Highway 121, Suite A250, Lewisville, Texas, 75067, USA
                                         </Link>
                                     </li>
                                 </ul>
                                 <h5 className='widget-title'><FaPhoneAlt className='me-2' /> Call us on</h5>
                                 <ul className="user-links">
-                                    <li><Link to="#">
+                                    <li><Link to="tel: +19452785774">
                                         USA: +1 (945) 278 5774
                                     </Link></li>
                                     <li>
-                                        <Link to='#'>
+                                        <Link to='tel: +917757881212'>
                                             India: +91 (775) 788 1212
                                         </Link>
                                     </li>
                                 </ul>
                                 <h5 className='widget-title'><FaMessage className='me-2' /> Mail us on</h5>
                                 <ul className="user-links">
-                                    <li><Link to="#">
+                                    <li><Link to="mailto:info@coretechinfra.com">
                                         info@coretechinfra.com
                                     </Link>
                                     </li>

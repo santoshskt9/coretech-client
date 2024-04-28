@@ -1,11 +1,14 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import BreadCrumb2 from '../../../components/BreadCrumb/BreadCrumb2'
 import { PiEnvelope, PiEnvelopeFill, PiNavigationArrowFill, PiPhoneCallFill } from 'react-icons/pi'
 import './ContactUs.css';
 import { FaMap } from 'react-icons/fa';
 
 const ContactUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     return (
         <>
             <BreadCrumb2

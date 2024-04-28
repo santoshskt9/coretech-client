@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import CarouselTwo from '../../../components/Carousel/CarouselTwo';
 import FeatureSectionTwo from '../Sections/FeatureSectionTwo';
 import IntroductionSection from '../Sections/IntroductionSection';
@@ -192,6 +192,11 @@ const VAPT = () => {
             buttonLink: "",
         }
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
 
     return (
         <>

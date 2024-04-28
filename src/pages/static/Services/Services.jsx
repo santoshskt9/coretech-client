@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { FaCloudscale, FaShieldVirus } from 'react-icons/fa';
 import { FaBuildingColumns, FaShieldHalved } from 'react-icons/fa6';
@@ -6,6 +6,9 @@ import BreadCrumb2 from '../../../components/BreadCrumb/BreadCrumb2';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     return (
         <>
             <BreadCrumb2

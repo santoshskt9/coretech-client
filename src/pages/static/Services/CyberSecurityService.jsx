@@ -34,7 +34,10 @@ const CyberSecurityService = () => {
 
     useEffect(() => {
         getLatestPosts();
+        window.scrollTo(0, 0)
     }, []);
+
+    
 
     return (
         <>

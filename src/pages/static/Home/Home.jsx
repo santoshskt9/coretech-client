@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
 import '../Sections/Sections.css';
 import Carousel from '../../../components/Carousel/Carousel';
@@ -94,6 +94,9 @@ const Home = () => {
         ],
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     return (
         <>

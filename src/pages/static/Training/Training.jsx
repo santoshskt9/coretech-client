@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Training.css";
 import Hero from '../../../components/Hero/Hero'
 import { FaBook, FaCheckCircle, FaClipboard, FaClock, FaPlus, FaTimesCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Training = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             <Hero
