@@ -18,7 +18,8 @@ const Home = () => {
     const videos = [
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/network.mp4',
-        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4'
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4',
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4',
     ];
 
     const slideContent = [
@@ -38,6 +39,12 @@ const Home = () => {
             title: 'Security and Compliance',
             description: 'Want to secure your infrastructure?',
             buttonText: 'Learn More About Security',
+            animation: 'fadeInLeft',
+        },
+        {
+            title: 'Automation Services',
+            description: 'Coretech provides cloud and automation services to help businesses achieve their IT objectives',
+            buttonText: 'Learn More About Automation Services',
             animation: 'fadeInLeft',
         },
     ];
