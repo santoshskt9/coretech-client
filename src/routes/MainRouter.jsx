@@ -18,6 +18,7 @@ import CloudArchitecture from '../pages/static/Services/CloudArchitecture';
 import BusinessOptimization from '../pages/static/Services/BusinessOptimization';
 import ManagedServices from '../pages/static/Services/ManagedServices';
 import CloudInfraSecurity from '../pages/static/Services/CloudInfraSecurity';
+import NotFound from '../pages/static/Error/NotFound';
 
 const MainRouter = () => {
   return (
@@ -41,7 +42,8 @@ const MainRouter = () => {
         <Route exact path='/career' element={<Careers />}/>
         <Route exact path='/contact' element={<ContactUs />}/>
         <Route exact path='/team' element={<Teams />}/>
-        <Route path='*' element={<div className="p-5 d-flex justify-content-center align-items-center"><h1 className='text-center'>Page Not Found</h1></div>} />
+        <Route exact path='/404' element={<NotFound />}/>
+        <Route path='*' element={<NotFound/>} />
     </Routes>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './BlogDetails.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import { useGlobalContext } from '../../../global/context';
 import moment from 'moment';
@@ -186,6 +186,7 @@ const BlogDetails = () => {
     const [contentTemplate, setContentTemplate] = useState(``);
     const [data, setData] = useState();
     const [relatedPosts, setRelatedPosts] = useState();
+    const navigate = useNavigate();
 
     const generateContent = (data) => {
         return data?.content?.map((content, i) => {
@@ -204,6 +205,7 @@ const BlogDetails = () => {
 
         } catch (error) {
             console.log("Error fetching post", error);
+            navigate("404");
         }
     }
 
