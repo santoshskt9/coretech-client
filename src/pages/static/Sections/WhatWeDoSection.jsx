@@ -22,36 +22,32 @@ const WhatWeDoSection = () => {
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Development</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
-                                    Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
-                                    Angular, React, PHP, NodeJS
+                                <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
+                                Software development uses concepts and methods from engineering, computer science, and mathematical analysis to create stable, effective, and user-friendly software.
                                 </p>
                             </div>
                             <div className="col p-5">
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Cyber Security</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
-                                    Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
-                                    Angular, React, PHP, NodeJS
+                                <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
+                                We offer a range of expert Vulnerability Assessment and Penetration Testing (VAPT) services to safeguard your digital assets and ensure the security of your applications and systems based on OWASP, Logical function, CVE, CWE,CVSS,CWSS.
                                 </p>
                             </div>
                             <div className="col p-5">
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Managed Services</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
-                                    Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
-                                    Angular, React, PHP, NodeJS
+                                <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
+                                    Bring industrialized cloud services together with patented tools and automation that speed migration, provides data sovereignty and mitigate risks.
                                 </p>
                             </div>
                             <div className="col p-5">
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Corporate Training</h2>
                                 </Link>
-                                <p className="text w-75 fw-semibold" style={{color: "lightgrey"}}>
-                                    Frontend, Backend, HTML, CSS, JavaScript, SASS, Wordpress,
-                                    Angular, React, PHP, NodeJS
+                                <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
+                                    Ethical Hacking and Bug Bounty Training program is designed to equip you with the knowledge and skills needed to protect organizations from cyber threats and vulnerabilities.
                                 </p>
                             </div>
                         </div>
