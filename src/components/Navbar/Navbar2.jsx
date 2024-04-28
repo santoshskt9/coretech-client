@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navbar2.css';
 import Brand from "../../assets/logo-4.png";
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
@@ -11,6 +11,8 @@ const Navbar2 = () => {
 		const section = document.getElementById(sectionId);
 		section.scrollIntoView({ behavior: 'smooth' });
 	};
+
+	
 
 	return (
 		<>
@@ -34,7 +36,7 @@ const Navbar2 = () => {
 										</li>
 										<li className="dropdown"><Link to="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown /> </Link>
 											<ul>
-												<li><Link to="/about" >Company</Link></li>
+												<li><Link to="/about" onClick={() => handleSectionRoute("company")} >Company</Link></li>
 												<li><Link to="/team">Team</Link></li>
 												<li><Link to="/about" onClick={() => handleSectionRoute("partners")}>Partners</Link></li>
 												<li><Link to="/about" onClick={() => handleSectionRoute("clients")}>Clients</Link></li>
@@ -44,12 +46,12 @@ const Navbar2 = () => {
 										<li className="dropdown"><Link to="/services" className='d-flex align-items-center'>Services <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
 												<li><Link to="/vulnerability-assessment-penetration-testing">VAPT</Link></li>
-												<li><Link to="#">Cloud Architecture</Link></li>
-												<li><Link to="#">IT Infrastructure</Link></li>
+												<li><Link to="/cloud-architecture">Cloud Architecture</Link></li>
+												<li><Link to="/it-infrastructure">IT Infrastructure</Link></li>
 												<li><Link to="/cyber-security">Cyber Security</Link></li>
-												<li><Link to="#">Business Optimization</Link></li>
-												<li><Link to="#">Service Management</Link></li>
-												<li><Link to="#">Cloud & Infra Security</Link></li>
+												<li><Link to="/business-optimization">Business Optimization</Link></li>
+												<li><Link to="/managed-services">Service Management</Link></li>
+												<li><Link to="/cloud-and-infra-security">Cloud & Infra Security</Link></li>
 												<li><Link to="/application-development">Application Development</Link></li>
 											</ul>
 										</li>

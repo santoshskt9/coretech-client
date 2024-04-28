@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 
 
-const IntroductionSection = ({data}) => {
+const IntroductionSection = ({ data }) => {
     return (
         <>
             <section className="about-section-two">
                 <div className="container">
                     <div className="row">
-                        <div className="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms">
+                        <div className={`content-column ${data?.images?.length ? "col-xl-6 col-lg-7" : ""} col-md-12 col-sm-12 order-2 fadeInRight`} data-wow-delay="600ms">
                             <div className="inner-column">
                                 {/* <div className="float-text">VAPT</div> */}
                                 <div className="sec-title">
@@ -46,23 +46,30 @@ const IntroductionSection = ({data}) => {
 
                                 </div>
 
-                                <Link to={data?.cta?.buttonLink} className="theme-btn btn-style-one"><span className="btn-title">{data?.cta?.buttonText}</span></Link>
+                                {
+                                    data?.cta ? 
+                                    <Link to={data?.cta?.buttonLink} className="theme-btn btn-style-one"><span className="btn-title">{data?.cta?.buttonText}</span></Link> : null
+                                }
                             </div>
                         </div>
 
                         {/* <!-- Image Column --> */}
-                        <div className="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
-                            <div className="inner-column wow fadeInLeft">
-                                <figure className="image-1 overlay-anim wow fadeInUp"><img src={data?.images[0]} alt="" /></figure>
-                                <figure className="image-2 overlay-anim wow fadeInRight"><img src={data?.images[1]} alt="" /></figure>
-                                <div className="experience bounce-y">
-                                    <div className="inner">
-                                        <i className="icon flaticon-design"></i>
-                                        <div className="text">Founded<br /> 2023</div>
+                        {
+                            data?.images?.length ?
+                                <div className="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
+                                    <div className="inner-column wow fadeInLeft">
+                                        <figure className="image-1 overlay-anim wow fadeInUp"><img src={data?.images[0]} alt="" /></figure>
+                                        <figure className="image-2 overlay-anim wow fadeInRight"><img src={data?.images[1]} alt="" /></figure>
+                                        <div className="experience bounce-y">
+                                            <div className="inner">
+                                                <i className="icon flaticon-design"></i>
+                                                <div className="text">Founded<br /> 2023</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div> :
+                                null
+                        }
                     </div>
                 </div>
             </section>

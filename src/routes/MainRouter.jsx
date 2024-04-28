@@ -13,6 +13,11 @@ import Teams from '../pages/static/Team/Teams';
 import CyberSecurityService from '../pages/static/Services/CyberSecurityService';
 import VAPT from '../pages/static/Services/VAPT';
 import ApplicationDevelopment from '../pages/static/Services/ApplicationDevelopment';
+import Infrastructure from '../pages/static/Services/Infrastructure';
+import CloudArchitecture from '../pages/static/Services/CloudArchitecture';
+import BusinessOptimization from '../pages/static/Services/BusinessOptimization';
+import ManagedServices from '../pages/static/Services/ManagedServices';
+import CloudInfraSecurity from '../pages/static/Services/CloudInfraSecurity';
 
 const MainRouter = () => {
   return (
@@ -24,6 +29,11 @@ const MainRouter = () => {
         <Route exact path='/cyber-security' element={<CyberSecurityService/>}/>
         <Route exact path='/vulnerability-assessment-penetration-testing' element={<VAPT/>}/>
         <Route exact path='/application-development' element={<ApplicationDevelopment/>}/>
+        <Route exact path='/it-infrastructure' element={<Infrastructure/>}/>
+        <Route exact path='/cloud-architecture' element={<CloudArchitecture/>}/>
+        <Route exact path='/business-optimization' element={<BusinessOptimization/>}/>
+        <Route exact path='/managed-services' element={<ManagedServices/>}/>
+        <Route exact path='/cloud-and-infra-security' element={<CloudInfraSecurity/>}/>
 
         <Route exact path='/blogs' element={<Blogs/>}/>
         <Route exact path='/:slug' element={<BlogDetails/>}/>

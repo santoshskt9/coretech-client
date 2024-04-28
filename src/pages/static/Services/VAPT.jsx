@@ -15,6 +15,7 @@ const videos = [
 
 
 
+
 const VAPT = () => {
     const formSectionRef = useRef(null);
 
@@ -44,7 +45,7 @@ const VAPT = () => {
             buttonNavigation: navigateToSection,
             animation: 'fadeInRight',
         },
-    
+
     ];
 
     const introduction = {
@@ -74,17 +75,133 @@ const VAPT = () => {
         ],
     };
 
+    const whyVapt = {
+        sectionTitle: "Why VAPT?",
+        title: "It's Very Crucial",
+        description: "VAPT (Vulnerability Assessment and Penetration Testing) is crucial for organizations to identify and address security vulnerabilities in their systems before malicious actors exploit them.",
+        paragraphs: [
+            "By conducting VAPT, organizations can proactively identify and mitigate security weaknesses, protect sensitive data, and prevent potential cyber attacks."
+        ],
+        services: [
+            {
+                title: "Proactive Security Measures",
+                description: "Identify and mitigate potential security risks and vulnerabilities.",
+            },
+            {
+                title: "Compliance Requirements",
+                description: "Exploit these vulnerabilities to assess the effectiveness.",
+            },
+            {
+                title: "Risk Reduction",
+                description: "Identifying and addressing vulnerabilities early on.",
+            },
+            {
+                title: "Protecting Customer Data",
+                description: "Protect sensitive customer data, such as personal and financial information.",
+            },
+            {
+                title: "Maintaining Reputation",
+                description: "Maintain a positive reputation by demonstrating a commitment.",
+            },
+            {
+                title: "Cost Savings",
+                description: "Organizations avoid the costly consequences of security breaches.",
+            },
+        ],
+
+    };
+
+    const process = {
+        sectionTitle: "Work Process",
+        title: "3 easy working steps",
+        process: [
+            {
+                stepId: 1,
+                title: "Vulnerability Assessment",
+                description: "Identifying vulnerabilities, misconfigurations, and weaknesses in systems, networks, and applications.",
+                iconClass: "flaticon-concept",
+            },
+            {
+                stepId: 2,
+                title: "Penetration Testing",
+                description: "Simulating real-world cyber attacks to exploit vulnerabilities and assess security controls.",
+                iconClass: "flaticon-programmer",
+            },
+            {
+                stepId: 3,
+                title: "Reporting and Remediation",
+                description: "Providing detailed reports of vulnerabilities and recommendations for remediation.",
+                iconClass: "flaticon-access",
+            },
+        ],
+    };
+
+    const services = {
+        sectionTitle: "What We’re Offering under VAPT",
+        title: `Services we’re offering to clients to secure thier business`,
+        analytics: [
+            {
+                count: 15,
+                caption: "Audits Performed"
+            },
+            {
+                count: 195,
+                caption: "Amount Saved"
+            },
+        ],
+        services: [
+            {
+                index: "01",
+                title: "Web Application Security Testing",
+                description: "Ensure the security of your web applications through comprehensive testing.",
+                iconClass: "flaticon-color-sample",
+                link: "",
+            },
+            {
+                index: "02",
+                title: "Network Security Testing",
+                description: "Evaluate the security of your network infrastructure to prevent unauthorized access.",
+                iconClass: "flaticon-front-end",
+                link: "",
+            },
+            {
+                index: "03",
+                title: "System Security Testing",
+                description: "Assess the security of your systems and servers to identify vulnerabilities.",
+                iconClass: "flaticon-online-shopping",
+                link: "",
+            },
+            {
+                index: "04",
+                title: "API Security Testing",
+                description: "Ensure the security of your APIs to protect data and prevent unauthorized access.",
+                iconClass: "flaticon-advertising",
+                link: "",
+            },
+            {
+                index: "05",
+                title: "Android Application Security Testing",
+                description: "Evaluate the security of your Android applications to identify and fix vulnerabilities.",
+                iconClass: "flaticon-advertising",
+                link: "",
+            },
+        ],
+        cta: {
+            text: "Make your first quality web and app design & development",
+            buttonText: "Find Your Solution",
+            buttonLink: "",
+        }
+    };
+
     return (
         <>
             <CarouselTwo videos={videos[0]} slideContent={slideContent} />
             <FeatureSectionTwo />
-            <IntroductionSection data={introduction}/>
-            <WhySection />
-            <ProcessSection />
-            <SubServicesSection />
-
+            <IntroductionSection data={introduction} />
+            <WhySection data={whyVapt} />
+            <ProcessSection data={process} />
+            <SubServicesSection data={services} />
             <VAPTFormSection ref={formSectionRef} />
-
             {/* <section id="resources" class="py-5">
                 <div class="container">
                     <h2 class="text-center mb-4">Resources</h2>
@@ -119,9 +236,6 @@ const VAPT = () => {
                     </div>
                 </div>
             </section> */}
-
-
-
         </>
     )
 }
