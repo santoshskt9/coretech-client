@@ -58,8 +58,8 @@ const Navbar2 = () => {
 										<li className="dropdown"><Link to="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
 												<li><Link to="/training">Training</Link></li>
-												<li><Link to="/training">Certiification</Link></li>
-												<li><Link to="/training">Webinar</Link></li>
+												{/* <li><Link to="/training">Certiification</Link></li>
+												<li><Link to="/training">Webinar</Link></li> */}
 											</ul>
 										</li>
 										<li className="dropdown"><Link to="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown /></Link>
