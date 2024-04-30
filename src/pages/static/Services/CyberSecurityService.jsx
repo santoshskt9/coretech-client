@@ -21,6 +21,7 @@ const CyberSecurityService = () => {
     const { api } = useGlobalContext();
 
     const videos = [
+        'https://cdn.pixabay.com/video/2023/08/22/177225-857004298_large.mp4',
         'https://cdn.pixabay.com/video/2023/08/22/177227-857004303_large.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -89,7 +90,7 @@ const CyberSecurityService = () => {
                 linkTarget="_blank"
             /> */}
 
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} align='center'/>
 
             <section class="why-choose-us-two ">
                 <div class="container">

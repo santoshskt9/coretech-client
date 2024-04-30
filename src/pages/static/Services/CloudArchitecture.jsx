@@ -199,7 +199,7 @@ const CloudArchitecture = () => {
 
     return (
         <>
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} />
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction} />
             <WhySection data={benefits} />

@@ -17,6 +17,7 @@ const CloudInfraSecurity = () => {
     };
 
     const videos = [
+        'https://cdn.pixabay.com/video/2016/02/16/2182-155747492_large.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -192,7 +193,7 @@ const CloudInfraSecurity = () => {
 
     return (
         <>
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} />
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction} />
             <WhySection data={benefits} />

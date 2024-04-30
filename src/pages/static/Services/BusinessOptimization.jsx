@@ -20,6 +20,7 @@ const BusinessOptimization = () => {
     };
 
     const videos = [
+        'https://cdn.pixabay.com/video/2021/09/28/89986-620432887_large.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -194,7 +195,7 @@ const BusinessOptimization = () => {
 
     return (
         <>
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} />
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction} />
             <WhySection data={benefits} />

@@ -19,7 +19,8 @@ const ApplicationDevelopment = () => {
     };
 
     const videos = [
-        'https://cdn.pixabay.com/video/2019/10/15/27920-366469249_large.mp4',
+        'https://cdn.pixabay.com/video/2024/02/23/201625-916080356_large.mp4',
+        'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
     ];
@@ -211,7 +212,7 @@ const ApplicationDevelopment = () => {
 
     return (
         <>
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} array={false}/>
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction} />
             <WhySection data={benifits} />

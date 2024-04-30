@@ -20,6 +20,7 @@ const ManagedServices = () => {
     };
 
     const videos = [
+        'https://cdn.pixabay.com/video/2022/12/05/141672-778334998_large.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -195,7 +196,7 @@ const ManagedServices = () => {
 
     return (
         <>
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} color="dark"/>
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction} />
             <WhySection data={benefits} />

@@ -19,6 +19,7 @@ const Infrastructure = () => {
     };
 
     const videos = [
+        'https://cdn.pixabay.com/video/2018/03/09/14900-259623335_large.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
         'https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4',
@@ -217,7 +218,7 @@ const Infrastructure = () => {
 
     return (
         <>
-            <CarouselTwo videos={videos[0]} slideContent={slideContent} />
+            <CarouselTwo videos={videos} slideContent={slideContent} />
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={data?.introduction} />
             <WhySection data={data?.benefits} />
