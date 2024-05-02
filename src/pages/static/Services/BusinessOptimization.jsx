@@ -184,6 +184,7 @@ const BusinessOptimization = () => {
             }
         ],
         "cta": {
+            text: "Focus on what's more important for you, rest on us",
             "buttonText": "Get Started",
             "buttonLink": "#contact"
         }

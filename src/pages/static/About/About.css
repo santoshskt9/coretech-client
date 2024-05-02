@@ -396,6 +396,7 @@ iframe {
 .service-block .text {
     position: relative;
     margin-bottom: 60px;
+    min-height: 4.5em;
 }
 
 .service-block .read-more {

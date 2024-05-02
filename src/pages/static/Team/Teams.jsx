@@ -15,47 +15,47 @@ const slideContent = [
 		buttonText: 'Learn More About Team',
 		animation: 'fadeInUp',
 	},
-	
+
 ];
 
 const Teams = () => {
-	const { api} = useGlobalContext();
+	const { api } = useGlobalContext();
 	const [teams, setTeams] = useState();
 
 	const getTeams = async () => {
-        try {
-            const res = await api.get(`/api/team`);
-            if (res?.status === 200) {
-                console.log(res);
-                setTeams(res?.data);
-            }
-           
-        } catch (error) {
-            console.log("Error fetching post", error);
-        }
-    }
+		try {
+			const res = await api.get(`/api/team`);
+			if (res?.status === 200) {
+				console.log(res);
+				setTeams(res?.data);
+			}
 
-	useEffect(()=> {
+		} catch (error) {
+			console.log("Error fetching post", error);
+		}
+	}
+
+	useEffect(() => {
 		window.scrollTo(0, 0);
-		getTeams();	
+		getTeams();
 	}, []);
 
-  return (
-    <>
-	<Carousel videos={videos} slideContent={slideContent} />
-        <section class="">
-		<div class="container pb-90">
-			<div class="row justify-content-center">
-				{
-					teams?.map((member, i)=> (
-						<TeamCard data={member} key={i}/>
-					))
-				}
-			</div>
-		</div>
-	</section>
-    </>
-  )
+	return (
+		<>
+			<Carousel videos={videos} slideContent={slideContent} />
+			<section class="">
+				<div class="container pb-90">
+					<div class="row justify-content-center">
+						{
+							teams?.map((member, i) => (
+								<TeamCard data={member} key={i} />
+							))
+						}
+					</div>
+				</div>
+			</section>
+		</>
+	)
 }
 
 export default Teams;

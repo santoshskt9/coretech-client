@@ -184,6 +184,7 @@ const ManagedServices = () => {
             }
         ],
         "cta": {
+            text: "Get your services more organised",
             "buttonText": "Get Started",
             "buttonLink": "#contact"
         }

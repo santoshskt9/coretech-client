@@ -50,77 +50,41 @@ const testimonials = [
 
 
 const TestimonialSection = () => {
-
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        appendDots: dots => (
-            <ul style={{ marginTop: '20px', listStyle: 'none', padding: 0, textAlign: 'center' }}>
-                {dots.map((dot, index) => (
-                    <li key={index} style={{ display: 'inline-block', margin: '0 5px' }}>
-                        {dot}
-                    </li>
-                ))}
-            </ul>
-        ),
-        customPaging: i => (
-            <div
-                style={{
-                    width: '10px',
-                    height: '10px',
-                    borderRadius: '50%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                }}
-            />
-        ),
+        autoplay: true,
+        autoplaySpeed: 3000,
     };
 
     return (
-        <>
-            <div className="testimonial-section-three">
-                <div className="container-fluid p-0">
-                    <div className="outer-box">
-                        <div className="carousel-outer">
-                            <Slider {...settings}>
-
-                                {
-                                    testimonials?.map((testimonial, i) => (
-                                        <div className="testimonial-block-three" key={i}>
-                                            <div className="inner-box">
-                                                <div className="thumb">
-                                                    <img src={testimonial?.avatarUrl} alt="" />
-                                                    <span className="icon fa fa-quote-right"></span>
-                                                </div>
-                                                <div className="text">{testimonial?.review}</div>
-                                                <h6 className="name">{testimonial?.name} <span className="designation"> - &nbsp; {testimonial?.designation}</span></h6>
-                                            </div>
+        <div className="testimonial-section-three">
+            <div className="container-fluid p-0">
+                <div className="outer-box">
+                    <div className="carousel-outer">
+                        <Slider {...settings}>
+                            {testimonials.map((testimonial, i) => (
+                                <div className="testimonial-block-three" key={i}>
+                                    <div className="inner-box">
+                                        <div className="thumb">
+                                            <img src={testimonial?.avatarUrl} alt="" />
+                                            <span className="icon fa fa-quote-right"></span>
                                         </div>
-                                    ))
-                                }
-                            </Slider>
-                        </div>
-
-                        <div className="banner-box">
-                            <div className="inner-box" style={{ backgroundImage: 'url(images/resource/banner-1.jpg)' }}>
-                                <h3 className='fs-1 fw-bold'>Our organization is <br />one of the most<br /> successful<br /> organization.</h3>
-                                <a href="page-about.html" className="theme-btn btn-style-one light"><span className="btn-title">Explore now</span></a>
-                            </div>
-                        </div>
-
-                        <div className="fact-counter-two">
-                            <div className="row">
-                                <CounterBlockTwo iconClass="flaticon-reputation" count={10} title="Years of Experience" delay="0ms" />
-                                <CounterBlockTwo iconClass="flaticon-coffee" count={300} title="Cup of Coffees" delay="300ms" />
-                            </div>
-                        </div>
+                                        <div className="text">{testimonial?.review}</div>
+                                        <h6 className="name">{testimonial?.name} <span className="designation"> - &nbsp; {testimonial?.designation}</span></h6>
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
                     </div>
+                    {/* Add the rest of your component structure here */}
                 </div>
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
 export default TestimonialSection;

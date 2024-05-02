@@ -9,9 +9,9 @@ const TeamSection2 = () => {
     const [teams, setTeams] = useState([
         {
             "_id": "660c575715adad8d3026f54d",
-            "name": "Kailash Nath",
+            "name": "Kailash Nath Patel",
             "jobTitle": "CEO And Co-Founder",
-            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/team-default.jpg",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
             "__v": 0
         },
         // {
@@ -25,7 +25,7 @@ const TeamSection2 = () => {
             "_id": "6625347b56f56aa75c3d640c",
             "name": "Ashutosh Singh",
             "jobTitle": "Chief Data Architect",
-            "profileImage": "https://coretech-s3.s3.ap-south-1.amazonaws.com/team/de97a611-5eef-46bb-84b9-19dd16cd153e.jpg",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
             "__v": 0
         },
         {

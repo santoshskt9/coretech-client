@@ -190,6 +190,13 @@
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+
+.service-block-three .inner-box .text {
+
+min-height: 9em;
+}
+
+
 .service-block-three .inner-box:hover {
   background-color: var(--bg-theme-color2);
 }

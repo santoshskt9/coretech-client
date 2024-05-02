@@ -181,6 +181,7 @@ const CloudInfraSecurity = () => {
             }
         ],
         "cta": {
+            "text": "Secure your cloud and infrastructure",
             "buttonText": "Get Started",
             "buttonLink": "#contact"
         }

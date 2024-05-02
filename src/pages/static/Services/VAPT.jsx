@@ -187,7 +187,7 @@ const VAPT = () => {
             },
         ],
         cta: {
-            text: "Make your first quality web and app design & development",
+            text: "Make your first quality web and app auditing",
             buttonText: "Find Your Solution",
             buttonLink: "",
         }

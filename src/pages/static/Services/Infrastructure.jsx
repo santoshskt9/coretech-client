@@ -169,6 +169,7 @@ const Infrastructure = () => {
                 }
             ],
             "cta": {
+                "text": "Optimize Your IT Infrastructure for Efficiency",
                 "buttonText": "Get Started",
                 "buttonLink": "#contact"
             }

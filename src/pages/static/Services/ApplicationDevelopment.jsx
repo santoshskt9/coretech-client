@@ -201,6 +201,7 @@ const ApplicationDevelopment = () => {
             }
         ],
         "cta": {
+            "text": "Make your first quality web and app development",
             "buttonText": "Get Started",
             "buttonLink": "#contact"
         },

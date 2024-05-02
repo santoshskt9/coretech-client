@@ -188,6 +188,7 @@ const CloudArchitecture = () => {
             }
         ],
         "cta": {
+            "text": "Optimize your cloud infrastructure to ensure performance, security, and cost-effectiveness",
             "buttonText": "Get Started",
             "buttonLink": "#contact"
         }
