@@ -6,6 +6,7 @@ import WhySection from '../Sections/WhySection';
 import ProcessSection from '../Sections/ProcessSection';
 import SubServicesSection from '../Sections/SubServicesSection';
 import VAPTFormSection from '../Sections/VAPTFormSection';
+import ITInfrastructureForm from '../Sections/ITInfrastructureForm';
 
 
 
@@ -225,7 +226,7 @@ const Infrastructure = () => {
             <WhySection data={data?.benefits} />
             <ProcessSection data={data?.process} />
             <SubServicesSection data={data?.services} />
-            <VAPTFormSection ref={formSectionRef} />
+            <ITInfrastructureForm ref={formSectionRef} />
 
             {/* <section id="resources" class="py-5">
                 <div class="container">

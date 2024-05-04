@@ -4,11 +4,36 @@ import BreadCrumb2 from '../../../components/BreadCrumb/BreadCrumb2'
 import { PiEnvelope, PiEnvelopeFill, PiNavigationArrowFill, PiPhoneCallFill } from 'react-icons/pi'
 import './ContactUs.css';
 import { FaMap } from 'react-icons/fa';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const ContactUs = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+
+    const formik = useFormik({
+        initialValues: {
+            form_name: '',
+            form_email: '',
+            form_subject: '',
+            form_phone: '',
+            form_message: '',
+        },
+        validationSchema: Yup.object({
+            form_name: Yup.string().required('Name is required'),
+            form_email: Yup.string().email('Invalid email').required('Email is required'),
+            form_subject: Yup.string().required('Subject is required'),
+            form_phone: Yup.string(),
+            form_message: Yup.string().required('Message is required'),
+        }),
+        onSubmit: (values, { setSubmitting, resetForm }) => {
+            // Handle form submission here
+            console.log(values);
+            setSubmitting(false);
+            resetForm();
+        },
+    });
     return (
         <>
             <BreadCrumb2
@@ -143,50 +168,62 @@ const ContactUs = () => {
                 </div>
             </section>
 
-            <section class="team-contact-form">
-                <div class="container pb-100">
-                    <div class="sec-title text-center">
-                        <span class="sub-title">Contact With Us Now</span>
-                        <h2 class="section-title__title">Feel Free to Write Our <br /> Technology Experts</h2>
+            <section className="team-contact-form">
+                <div className="container pb-100">
+                    <div className="sec-title text-center">
+                        <span className="sub-title">Contact With Us Now</span>
+                        <h2 className="section-title__title">Feel Free to Write Our <br /> Technology Experts</h2>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            {/* <!-- Contact Form --> */}
-                            <form id="contact_form" name="contact_form" class="" action="" method="post">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="mb-3">
-                                            <input name="form_name" class="form-control" type="text" placeholder="Enter Name" />
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                            <form id="contact_form" name="contact_form" onSubmit={formik.handleSubmit}>
+                                <div className="row">
+                                    <div className="col-sm-6">
+                                        <div className="mb-3">
+                                            <input name="form_name" className="form-control" type="text" placeholder="Enter Name" value={formik.values.form_name} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.form_name && formik.errors.form_name ? (
+                                                <div className="error">{formik.errors.form_name}</div>
+                                            ) : null}
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="mb-3">
-                                            <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="mb-3">
-                                            <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject" />
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="mb-3">
-                                            <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone" />
+                                    <div className="col-sm-6">
+                                        <div className="mb-3">
+                                            <input name="form_email" className="form-control required email" type="email" placeholder="Enter Email" value={formik.values.form_email} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.form_email && formik.errors.form_email ? (
+                                                <div className="error">{formik.errors.form_email}</div>
+                                            ) : null}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                                <div className="row">
+                                    <div className="col-sm-6">
+                                        <div className="mb-3">
+                                            <input name="form_subject" className="form-control required" type="text" placeholder="Enter Subject" value={formik.values.form_subject} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.form_subject && formik.errors.form_subject ? (
+                                                <div className="error">{formik.errors.form_subject}</div>
+                                            ) : null}
+                                        </div>
+                                    </div>
+                                    <div className="col-sm-6">
+                                        <div className="mb-3">
+                                            <input name="form_phone" className="form-control" type="text" placeholder="Enter Phone" value={formik.values.form_phone} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.form_phone && formik.errors.form_phone ? (
+                                                <div className="error">{formik.errors.form_phone}</div>
+                                            ) : null}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mb-3 text-center">
-                                    <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                                    <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
-                                    <button type="reset" class="theme-btn btn-style-one"><span class="btn-title">Reset</span></button>
+                                <div className="mb-3">
+                                    <textarea name="form_message" className="form-control required" rows="5" placeholder="Enter Message" value={formik.values.form_message} onChange={formik.handleChange} onBlur={formik.handleBlur}></textarea>
+                                    {formik.touched.form_message && formik.errors.form_message ? (
+                                        <div className="error">{formik.errors.form_message}</div>
+                                    ) : null}
+                                </div>
+                                <div className="mb-3 text-center">
+                                    <button type="submit" className="theme-btn btn-style-one" disabled={formik.isSubmitting}><span className="btn-title">Send message</span></button>
+                                    <button type="reset" className="theme-btn btn-style-one"><span className="btn-title">Reset</span></button>
                                 </div>
                             </form>
-                            {/* <!-- Contact Form Validation--> */}
                         </div>
                     </div>
                 </div>

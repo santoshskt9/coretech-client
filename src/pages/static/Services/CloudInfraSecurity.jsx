@@ -7,6 +7,7 @@ import ProcessSection from '../Sections/ProcessSection';
 import SubServicesSection from '../Sections/SubServicesSection';
 import VAPTFormSection from '../Sections/VAPTFormSection';
 import ProcessSection2 from '../Sections/ProcessSection2';
+import CloudInfraForm from '../Sections/CloudInfraForm';
 
 
 const CloudInfraSecurity = () => {
@@ -200,7 +201,7 @@ const CloudInfraSecurity = () => {
             <WhySection data={benefits} />
             <ProcessSection2 data={process} />
             <SubServicesSection data={services} />
-            <VAPTFormSection ref={formSectionRef} />
+            <CloudInfraForm ref={formSectionRef} />
 
             {/* <section id="resources" class="py-5">
                 <div class="container">

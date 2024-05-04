@@ -7,6 +7,7 @@ import ProcessSection from '../Sections/ProcessSection';
 import SubServicesSection from '../Sections/SubServicesSection';
 import VAPTFormSection from '../Sections/VAPTFormSection';
 import ProcessSection2 from '../Sections/ProcessSection2';
+import BusinessOptimizationForm from '../Sections/BusinessOptimizationForm';
 
 
 
@@ -184,7 +185,7 @@ const BusinessOptimization = () => {
             }
         ],
         "cta": {
-            text: "Focus on what's more important for you, rest on us",
+            "text": "Focus on what's more important for you, rest on us",
             "buttonText": "Get Started",
             "buttonLink": "#contact"
         }
@@ -202,7 +203,7 @@ const BusinessOptimization = () => {
             <WhySection data={benefits} />
             <ProcessSection2 data={process} />
             <SubServicesSection data={services} />
-            <VAPTFormSection ref={formSectionRef} />
+            <BusinessOptimizationForm ref={formSectionRef} />
 
             {/* <section id="resources" class="py-5">
                 <div class="container">

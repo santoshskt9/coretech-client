@@ -15,6 +15,7 @@ import PostCard from '../../../components/Post/PostCard';
 import Accordion from '../../../components/Accordion/Accordion';
 import { Link } from 'react-router-dom';
 import CarouselTwo from '../../../components/Carousel/CarouselTwo';
+import VAPTFormSection from '../Sections/VAPTFormSection';
 
 const CyberSecurityService = () => {
     const [latestPosts, setLatestPosts] = useState();
@@ -343,7 +344,7 @@ const CyberSecurityService = () => {
             </section>
             {/* <!--End Call To Action TWo --> */}
 
-
+<VAPTFormSection/>
 
         </>
     )
