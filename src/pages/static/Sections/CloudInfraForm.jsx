@@ -44,7 +44,7 @@ const CloudInfraForm = ({ ref }) => {
                 if (res?.status === 201) {
                     console.log(res?.message);
                     toast.success(res?.message || 'Your request has been successfully submitted!');
-                    vaptFormik.resetForm();
+                    formik.resetForm();
                 }
             } catch (error) {
                 console.log('Error: ', error);
