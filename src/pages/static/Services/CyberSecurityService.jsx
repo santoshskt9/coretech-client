@@ -58,7 +58,7 @@ const CyberSecurityService = () => {
             "animation": "fadeInRight"
         }
     ];
-    
+
 
     const getLatestPosts = async () => {
         try {
@@ -91,7 +91,7 @@ const CyberSecurityService = () => {
                 linkTarget="_blank"
             /> */}
 
-            <CarouselTwo videos={videos} slideContent={slideContent} align='center'/>
+            <CarouselTwo videos={videos} slideContent={slideContent} align='center' />
 
             <section class="why-choose-us-two ">
                 <div class="container">
@@ -244,7 +244,7 @@ const CyberSecurityService = () => {
             <Accordion />
 
             {/* <!-- Video Section Two --> */}
-            <section class="video-section-two p-0">
+            {/* <section class="video-section-two p-0">
                 <div class="container">
                     <div class="video-box-two">
                         <figure class="image"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/video.jpg" alt="" />
@@ -257,15 +257,15 @@ const CyberSecurityService = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* <!-- End Video Section Two --> */}
 
             {/* <!-- Contact Section Two --> */}
-            <section class="contact-section-two pull-up pull-down">
+            {/* <section class="contact-section-two pull-up pull-down">
                 <div class="bg bg-pattern-14"></div>
                 <div class="container">
                     <div class="row">
-                        {/* <!-- Title Column --> */}
+                        
                         <div class="title-column col-lg-5 col-md-12">
                             <div class="inner-column">
                                 <div class="sec-title light">
@@ -280,12 +280,12 @@ const CyberSecurityService = () => {
                             </div>
                         </div>
 
-                        {/* <!-- Form Column --> */}
+                        
                         <div class="form-column col-lg-7 col-md-12 col-sm-12">
                             <div class="inner-column">
-                                {/* <!-- Contact Form --> */}
+                               
                                 <div class="contact-form style-two wow fadeInLeft">
-                                    {/* <!--Contact Form--> */}
+                                    
                                     <form method="post" action="" id="contact-form">
                                         <div class="row">
                                             <div class="form-group col-lg-6 col-md-6">
@@ -314,13 +314,13 @@ const CyberSecurityService = () => {
                                         </div>
                                     </form>
                                 </div>
-                                {/* <!--End Contact Form --> */}
+                               
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* <!-- End Contact Section --> */}
 
 
@@ -344,7 +344,7 @@ const CyberSecurityService = () => {
             </section>
             {/* <!--End Call To Action TWo --> */}
 
-<VAPTFormSection/>
+            <VAPTFormSection />
 
         </>
     )

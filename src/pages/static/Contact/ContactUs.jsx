@@ -6,32 +6,46 @@ import './ContactUs.css';
 import { FaMap } from 'react-icons/fa';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useGlobalContext } from '../../../global/context';
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
+const {api} = useGlobalContext();
+    
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
 
     const formik = useFormik({
         initialValues: {
-            form_name: '',
-            form_email: '',
-            form_subject: '',
-            form_phone: '',
-            form_message: '',
+            name: '',
+            email: '',
+            subject: '',
+            phone: '',
+            message: '',
         },
         validationSchema: Yup.object({
-            form_name: Yup.string().required('Name is required'),
-            form_email: Yup.string().email('Invalid email').required('Email is required'),
-            form_subject: Yup.string().required('Subject is required'),
-            form_phone: Yup.string(),
-            form_message: Yup.string().required('Message is required'),
+            name: Yup.string().required('Name is required'),
+            email: Yup.string().email('Invalid email').required('Email is required'),
+            subject: Yup.string().required('Subject is required'),
+            phone: Yup.string(),
+            message: Yup.string().required('Message is required'),
         }),
-        onSubmit: (values, { setSubmitting, resetForm }) => {
+        onSubmit: async (values, { setSubmitting, resetForm }) => {
             // Handle form submission here
             console.log(values);
+
             setSubmitting(false);
-            resetForm();
+            try {
+                const res = await api.post('/api/contactus', values);
+                if (res?.status === 201) {
+                    resetForm();
+                    toast.success("Your message sent to our support team");
+                }
+            } catch (error) {
+                toast.error(error?.message);
+            }
+           
         },
     });
     return (
@@ -180,17 +194,17 @@ const ContactUs = () => {
                                 <div className="row">
                                     <div className="col-sm-6">
                                         <div className="mb-3">
-                                            <input name="form_name" className="form-control" type="text" placeholder="Enter Name" value={formik.values.form_name} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                            {formik.touched.form_name && formik.errors.form_name ? (
-                                                <div className="error">{formik.errors.form_name}</div>
+                                            <input name="name" className="form-control" type="text" placeholder="Enter Name" value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.name && formik.errors.name ? (
+                                                <div className="error">{formik.errors.name}</div>
                                             ) : null}
                                         </div>
                                     </div>
                                     <div className="col-sm-6">
                                         <div className="mb-3">
-                                            <input name="form_email" className="form-control required email" type="email" placeholder="Enter Email" value={formik.values.form_email} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                            {formik.touched.form_email && formik.errors.form_email ? (
-                                                <div className="error">{formik.errors.form_email}</div>
+                                            <input name="email" className="form-control required email" type="email" placeholder="Enter Email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.email && formik.errors.email ? (
+                                                <div className="error">{formik.errors.email}</div>
                                             ) : null}
                                         </div>
                                     </div>
@@ -198,25 +212,25 @@ const ContactUs = () => {
                                 <div className="row">
                                     <div className="col-sm-6">
                                         <div className="mb-3">
-                                            <input name="form_subject" className="form-control required" type="text" placeholder="Enter Subject" value={formik.values.form_subject} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                            {formik.touched.form_subject && formik.errors.form_subject ? (
-                                                <div className="error">{formik.errors.form_subject}</div>
+                                            <input name="subject" className="form-control required" type="text" placeholder="Enter Subject" value={formik.values.subject} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.subject && formik.errors.subject ? (
+                                                <div className="error">{formik.errors.subject}</div>
                                             ) : null}
                                         </div>
                                     </div>
                                     <div className="col-sm-6">
                                         <div className="mb-3">
-                                            <input name="form_phone" className="form-control" type="text" placeholder="Enter Phone" value={formik.values.form_phone} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                            {formik.touched.form_phone && formik.errors.form_phone ? (
-                                                <div className="error">{formik.errors.form_phone}</div>
+                                            <input name="phone" className="form-control" type="text" placeholder="Enter Phone" value={formik.values.phone} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                                            {formik.touched.phone && formik.errors.phone ? (
+                                                <div className="error">{formik.errors.phone}</div>
                                             ) : null}
                                         </div>
                                     </div>
                                 </div>
                                 <div className="mb-3">
-                                    <textarea name="form_message" className="form-control required" rows="5" placeholder="Enter Message" value={formik.values.form_message} onChange={formik.handleChange} onBlur={formik.handleBlur}></textarea>
-                                    {formik.touched.form_message && formik.errors.form_message ? (
-                                        <div className="error">{formik.errors.form_message}</div>
+                                    <textarea name="message" className="form-control required" rows="5" placeholder="Enter Message" value={formik.values.message} onChange={formik.handleChange} onBlur={formik.handleBlur}></textarea>
+                                    {formik.touched.message && formik.errors.message ? (
+                                        <div className="error">{formik.errors.message}</div>
                                     ) : null}
                                 </div>
                                 <div className="mb-3 text-center">
