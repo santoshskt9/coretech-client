@@ -80,7 +80,19 @@ const TestimonialSection = () => {
                             ))}
                         </Slider>
                     </div>
-                    {/* Add the rest of your component structure here */}
+                    <div className="banner-box">
+                            <div className="inner-box" style={{ backgroundImage: 'url(images/resource/banner-1.jpg)' }}>
+                                <h3 className='fs-1 fw-bold'>Our organization is <br />one of the most<br /> successful<br /> organization.</h3>
+                                <a href="page-about.html" className="theme-btn btn-style-one light"><span className="btn-title">Explore now</span></a>
+                            </div>
+                        </div>
+
+                        <div className="fact-counter-two">
+                            <div className="row">
+                                <CounterBlockTwo iconClass="flaticon-reputation" count={10} title="Years of Experience" delay="0ms" />
+                                <CounterBlockTwo iconClass="flaticon-coffee" count={300} title="Cup of Coffees" delay="300ms" />
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
