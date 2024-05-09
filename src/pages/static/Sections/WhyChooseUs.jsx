@@ -19,7 +19,7 @@ function WhyChooseUs({ featuredContent }) {
                         <h2>The Coretech Difference</h2>
                     </div>
                     <p className='fadeInUp'>
-                        Building trust with our community is at the core of everything we do. For over a decade, we've been Saskatoon's IT security and development partner, safeguarding businesses in Martensville, Warman, and surrounding areas. Our commitment to innovation ensures your technology is secure, reliable, and helps you achieve your goals.
+                    At Coretech, our mission is to build trust with our community by providing unparalleled IT security and development services. For over a decade, we have been serving businesses in USA and India.
                     </p>
 
                     <div className="featured-actions">
