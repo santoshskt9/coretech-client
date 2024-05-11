@@ -19,7 +19,7 @@ function WhyChooseUs({ featuredContent }) {
                         <h2>The Coretech Difference</h2>
                     </div>
                     <p className='fadeInUp'>
-                    At Coretech, our mission is to build trust with our community by providing unparalleled IT security and development services. For over a decade, we have been serving businesses in USA and India.
+                    Building trust with our community is at the core of everything we do. We aim to help every industry succeed by implementing efficient and smart IT solutions and services.
                     </p>
 
                     <div className="featured-actions">

@@ -20,7 +20,7 @@ const WhatWeDoSection = () => {
                         <div className="row row-cols-1 row-cols-md-2">
                             <div className="col p-5">
                                 <Link to="" className="mb-3 text-warning    ">
-                                    <h2>Development</h2>
+                                    <h2>Web Development</h2>
                                 </Link>
                                 <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
                                 Software development uses concepts and methods from engineering, computer science, and mathematical analysis to create stable, effective, and user-friendly software.

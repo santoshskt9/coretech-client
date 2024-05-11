@@ -1429,6 +1429,7 @@ What we do section
   background-image: url(https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/dots-4.png);
   background-position: right bottom;
   background-repeat: no-repeat;
+  min-height: 450px;
 }
 .service-block-two .inner-box:before {
   position: absolute;
