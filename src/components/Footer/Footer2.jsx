@@ -151,7 +151,7 @@ const Footer2 = () => {
                 <div className="footer-bottom">
                     <div className="auto-container">
                         <div className="inner-container">
-                            <div className="copyright-text"><p>&copy; {new Date().getFullYear()} Coretech Infrastructure Solutions, Inc. All Rights Reserved.</p></div>
+                            <div className="copyright-text"><p>&copy; {new Date().getFullYear()} Coretech Infrastructure Solutions, Inc. All Rights Reserved. <span><Link to="/privacy-policy">Privacy Policy</Link></span> <span><Link to="/terms-of-use">Terms of Use</Link></span></p></div>
                         </div>
                     </div>
                 </div>

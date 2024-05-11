@@ -865,6 +865,8 @@ What we do section
 .feature-block-two .content {
   position: relative;
   padding-left: 90px;
+  display: flex;
+  align-items: center;
 }
 .feature-block-two .icon {
   position: absolute;
@@ -878,7 +880,7 @@ What we do section
       -ms-flex-pack: center;
           justify-content: center;
   left: 0;
-  top: 20px;
+  /* top: 20px; */
   font-size: 62px;
   line-height: 1em;
   color: var(--theme-color2);
@@ -891,6 +893,7 @@ What we do section
   color: var(--theme-color1);
   font-weight: 800;
   margin-bottom: 10px;
+  font-size: 22px;
 }
 .feature-block-two .title a {
   color: var(--theme-color1);

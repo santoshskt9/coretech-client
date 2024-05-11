@@ -13,7 +13,7 @@ const FeatureSectionTwo = () => {
                                     <div className="content">
                                         <span className="icon"><i className="flaticon-trophy"></i></span>
                                         <h6 className="title">Award winning service</h6>
-                                        <div className="text">Lorem ium dolor sit amet pisicing elit sed do ut.</div>
+                                        {/* <div className="text">Lorem ium dolor sit amet pisicing elit sed do ut.</div> */}
                                     </div>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@ const FeatureSectionTwo = () => {
                                     <div className="content">
                                         <span className="icon"><i className="flaticon-medal"></i></span>
                                         <h6 className="title">Best quality testing</h6>
-                                        <div className="text">Lorem ium dolor sit amet pisicing elit sed do ut.</div>
+                                        {/* <div className="text">Lorem ium dolor sit amet pisicing elit sed do ut.</div> */}
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@ const FeatureSectionTwo = () => {
                                     <div className="content">
                                         <span className="icon"><i className="flaticon-satisfaction"></i></span>
                                         <h6 className="title">Satisfaction guarantee</h6>
-                                        <div className="text">Lorem ium dolor sit amet pisicing elit sed do ut.</div>
+                                        {/* <div className="text">Lorem ium dolor sit amet pisicing elit sed do ut.</div> */}
                                     </div>
                                 </div>
                             </div>

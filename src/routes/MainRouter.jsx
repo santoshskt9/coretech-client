@@ -19,6 +19,11 @@ import BusinessOptimization from '../pages/static/Services/BusinessOptimization'
 import ManagedServices from '../pages/static/Services/ManagedServices';
 import CloudInfraSecurity from '../pages/static/Services/CloudInfraSecurity';
 import NotFound from '../pages/static/Error/NotFound';
+import PrivacyPolicy from '../pages/static/Legal/PrivacyPolicy';
+import TermsOfUse from '../pages/static/Legal/TermsOfUse';
+import CyberSecurityTraining from '../pages/static/Training/CyberSecurity/CyberSecurityTraining';
+import SalesforceAdministrator from '../pages/static/Training/Salesforce/SalesforceAdministrator';
+import SalesforceDeveloper from '../pages/static/Training/Salesforce/SalesforceDeveloper';
 
 const MainRouter = () => {
   return (
@@ -37,12 +42,18 @@ const MainRouter = () => {
         <Route exact path='/cloud-and-infra-security' element={<CloudInfraSecurity/>}/>
 
         <Route exact path='/blogs' element={<Blogs/>}/>
-        <Route exact path='/:slug' element={<BlogDetails/>}/>
-        <Route exact path='/training' element={<Training />}/>
+        <Route exact path='/learn/cyber-security' element={<CyberSecurityTraining />}/>
+        <Route exact path='/learn/salesforce/administrator' element={<SalesforceAdministrator />}/>
+        <Route exact path='/learn/salesforce/developer' element={<SalesforceDeveloper />}/>
         <Route exact path='/career' element={<Careers />}/>
         <Route exact path='/contact' element={<ContactUs />}/>
         <Route exact path='/team' element={<Teams />}/>
+        <Route exact path='/privacy-policy' element={<PrivacyPolicy/>} />
+        <Route exact path='/terms-of-use' element={<TermsOfUse/>} />
+
+
         <Route exact path='/404' element={<NotFound />}/>
+        <Route exact path='/:slug' element={<BlogDetails/>}/>
         <Route path='*' element={<NotFound/>} />
     </Routes>
   )

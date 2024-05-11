@@ -12,7 +12,7 @@ const Navbar2 = () => {
 		section.scrollIntoView({ behavior: 'smooth' });
 	};
 
-	
+
 
 	return (
 		<>
@@ -52,12 +52,18 @@ const Navbar2 = () => {
 												<li><Link to="/business-optimization">Business Optimization</Link></li>
 												<li><Link to="/managed-services">Managed Services</Link></li>
 												<li><Link to="/cloud-and-infra-security">Cloud & Infra Security</Link></li>
-												<li><Link to="/application-development">App Development</Link></li>
+												<li><Link to="/application-development">Application Development</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><Link to="/training" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
+										<li className="dropdown"><Link to="#" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
-												<li><Link to="/training">Training</Link></li>
+												<li><Link to="/learn/cyber-security">Cyber Security</Link></li>
+												<li className="dropdown"><Link to="#">Salesforce</Link>
+													<ul>
+														<li><Link to="/learn/salesforce/administrator">Salesforce Administrator</Link></li>
+														<li><Link to="/learn/salesforce/developer">Salesforce Developer</Link></li>
+													</ul>
+												</li>
 												{/* <li><Link to="/training">Certiification</Link></li>
 												<li><Link to="/training">Webinar</Link></li> */}
 											</ul>
