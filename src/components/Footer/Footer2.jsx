@@ -64,13 +64,13 @@ const Footer2 = () => {
                                 <div className="footer-widget about-widget">
                                     <div className="logo"><Link to="/"><img src={Brand} alt="" className='w-75' /></Link></div>
                                     <div className="text fw-light">
-                                        We collaborate closely with you to maximize our partnerships with top technology firms, ensuring optimal implementation, integration, and support. Harnessing cutting-edge solutions drives innovation and maximizes your tech investments.
+                                    We collaborate closely with you to maximize our partnerships with leading technology firms, ensuring optimal implementation, integration, and support. By harnessing cutting-edge solutions, we drive innovation and maximize the return on your technology investments.
                                     </div>
                                     <ul className="social-icon-two">
                                         <li><Link target='_blank' to="https://twitter.com/CoretechInfra"><i className="fab fa-twitter"></i></Link></li>
                                         <li><Link target='_blank' to="https://www.facebook.com/coretechinfra"><i className="fab fa-facebook"></i></Link></li>
                                         <li><Link target='_blank' to="https://www.linkedin.com/company/coretechinfra"><i className="fab fa-linkedin"></i></Link></li>
-                                        {/* <li><Link target='_blank' to="#"><i className="fab fa-instagram"></i></Link></li> */}
+                                        <li><Link target='_blank' to="https://www.instagram.com/coretechinfra"><i className="fab fa-instagram"></i></Link></li>
                                         <li><Link target='_blank' to="https://www.youtube.com/@CoretechInfra"><i className="fab fa-youtube"></i></Link></li>
                                     </ul>
                                 </div>
@@ -86,7 +86,7 @@ const Footer2 = () => {
                                         <li><Link to="/news">News & Media</Link></li>
                                         <li><Link to="/blogs">Blogs & Articles</Link></li>
                                         <li><Link to="/training">Trainings</Link></li>
-                                        <li><Link to="/careers">Career</Link></li>
+                                        <li><Link to="/career">Career</Link></li>
                                         <li><Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>

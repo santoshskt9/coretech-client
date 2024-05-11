@@ -8,6 +8,7 @@ import { FaCloudscale } from 'react-icons/fa';
 import TeamSection from '../Sections/TeamSection';
 import TeamSection2 from '../Sections/TeamSection2';
 import ClientsSlider from '../Sections/ClientsSlider';
+import CareerSection from '../Sections/CareerSection';
 
 const partners = {
     title: "Our Clients",
@@ -156,58 +157,58 @@ const About = () => {
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaCloudscale className='icon' /></div>
-                                <h5 className="title"><a href="page-service-details.html">Cloud Architecture</a></h5>
+                                <h5 className="title"><a href="#">Cloud Architecture</a></h5>
                                 <div className="text">Streamline infrastructure, optimize performance, secure data.</div>
-                                <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
+                                <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
 
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaBuildingColumns className='icon' /></div>
-                                <h5 className="title"><a href="page-service-details.html">IT Infrastructure</a></h5>
+                                <h5 className="title"><a href="#">IT Infrastructure</a></h5>
                                 <div className="text">Optimize networks, enhance operations with IT Infrastructure Excellence.</div>
-                                <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
+                                <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
 
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon' /></div>
-                                <h5 className="title"><a href="page-service-details.html">Cyber Security</a></h5>
+                                <h5 className="title"><a href="#">Cyber Security</a></h5>
                                 <div className="text">Safeguard data, protect networks, mitigate risks.</div>
-                                <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
+                                <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon' /></div>
-                                <h5 className="title"><a href="page-service-details.html">Business Optimization</a></h5>
+                                <h5 className="title"><a href="#">Business Optimization</a></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-                                <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
+                                <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon' /></div>
-                                <h5 className="title"><a href="page-service-details.html">Service Management</a></h5>
+                                <h5 className="title"><a href="#">Service Management</a></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-                                <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
+                                <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon' /></div>
-                                <h5 className="title"><a href="page-service-details.html">Cloud & Infra Security</a></h5>
+                                <h5 className="title"><a href="#">Cloud & Infra Security</a></h5>
                                 <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-                                <a href="page-service-details.html" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
+                                <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
                     </div>
 
                     <div className="bottom-box">
                         <div className="text">Trust the experts for all your <strong>web design & development</strong> needs.</div>
-                        <a href="page-services.html" className="theme-btn btn-style-one"><span className="btn-title">Explore now</span></a>
+                        <a href="#" className="theme-btn btn-style-one"><span className="btn-title">Explore now</span></a>
                     </div>
                 </div>
             </section>
@@ -226,6 +227,7 @@ const About = () => {
             </section>
 
             <TeamSection2 />
+            <CareerSection/>
         </>
     )
 }

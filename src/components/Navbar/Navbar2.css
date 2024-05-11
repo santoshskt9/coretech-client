@@ -952,4 +952,219 @@ Main Header
     color: var(--theme-color2);
   }
  
-  
+  /*Social Icon One*/
+.social-icon-one {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.social-icon-one li {
+  position: relative;
+  margin-left: 27px;
+}
+.social-icon-one li:first-child {
+  margin-left: 0;
+}
+.social-icon-one li a {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.social-icon-one li a:hover {
+  color: var(--theme-color2);
+}
+
+/*Social Icon Two*/
+.social-icon-two {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.social-icon-two li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+.social-icon-two li:first-child {
+  margin-left: 0;
+}
+.social-icon-two li a {
+  position: relative;
+  display: block;
+  line-height: 42px;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: var(--bg-theme-color1);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.social-icon-two li a:hover {
+  color: #ffffff;
+  background-color: var(--bg-theme-color2);
+}
+
+/*Social Icon Three*/
+.social-icon-three {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.social-icon-three li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.social-icon-three li a {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  color: #2f3529;
+  border-radius: 50%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.social-icon-three li a:hover {
+  color: var(--theme-color2);
+}
+
+/*=== List Style One ===*/
+.list-style-one {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+.list-style-one li {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #8f8f8f;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list-style-one li i {
+  margin-right: 10px;
+  color: var(--theme-color2);
+  font-size: 14px;
+  line-height: 20px;
+}
+.list-style-one li a {
+  display: inline-block;
+  color: #8f8f8f;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.list-style-one li a:hover {
+  color: #ffffff;
+}
+
+/*=== List Style Two ===*/
+.list-style-two {
+  position: relative;
+}
+.list-style-two li {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--theme-color1);
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+.list-style-two li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--theme-color2);
+  font-size: 18px;
+  line-height: 26px;
+}
+.list-style-two li a {
+  display: inline-block;
+  color: var(--theme-color1);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.list-style-two li a:hover {
+  color: #ffffff;
+}
+
+/*=== List Style Three ===*/
+.list-style-three {
+  position: relative;
+}
+.list-style-three li {
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--theme-color1);
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.list-style-three li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "\f058";
+  font-weight: 900;
+  font-family: "FontAwesome";
+  color: var(--theme-color2);
+}
+.list-style-three li a {
+  display: inline-block;
+  color: #ffffff;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.list-style-three li a:hover {
+  color: #ffffff;
+}
+.list-style-three.two-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.list-style-three.two-column li {
+  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-right: 10px;
+}

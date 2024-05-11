@@ -10,7 +10,7 @@ const TeamSection2 = () => {
         {
             "_id": "660c575715adad8d3026f54d",
             "name": "Kailash Nath Patel",
-            "jobTitle": "CEO And Co-Founder",
+            "jobTitle": "Founder & CEO",
             "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
             "__v": 0
         },
