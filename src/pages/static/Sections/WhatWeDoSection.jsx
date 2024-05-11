@@ -18,14 +18,7 @@ const WhatWeDoSection = () => {
 
                         </div>
                         <div className="row row-cols-1 row-cols-md-2">
-                            <div className="col p-5">
-                                <Link to="" className="mb-3 text-warning    ">
-                                    <h2>Web Development</h2>
-                                </Link>
-                                <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
-                                Software development uses concepts and methods from engineering, computer science, and mathematical analysis to create stable, effective, and user-friendly software.
-                                </p>
-                            </div>
+                            
                             <div className="col p-5">
                                 <Link to="" className="mb-3 text-warning    ">
                                     <h2>Cyber Security</h2>
@@ -40,6 +33,14 @@ const WhatWeDoSection = () => {
                                 </Link>
                                 <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
                                     Bring industrialized cloud services together with patented tools and automation that speed migration, provides data sovereignty and mitigate risks.
+                                </p>
+                            </div>
+                            <div className="col p-5">
+                                <Link to="" className="mb-3 text-warning    ">
+                                    <h2>Web Development</h2>
+                                </Link>
+                                <p className="text w-75 fw-semibold" style={{ color: "lightgrey" }}>
+                                We specialize in crafting cutting-edge web-based solutions that not only add value to your customers' experiences but also prioritize delivering captivating user experiences.
                                 </p>
                             </div>
                             <div className="col p-5">
