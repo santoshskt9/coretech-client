@@ -13,7 +13,7 @@ const CareerSection = () => {
                         <div className="col sec-title p-5">
                             <h2 className='mb-4'>Work with us!</h2>
                             <p className="text mb-4">
-                                Give your career the opportunity to grow and thrive in a safe and pioneering environment focused on creating impact for customers and patients.
+                                Give your career the opportunity to grow and thrive in a safe and pioneering environment focused on creating impact for customers and businesses.
                             </p>
                             <a href="#" className="theme-btn btn-style-one"><span className="btn-title">Find Opportunities</span></a>
                         </div>
