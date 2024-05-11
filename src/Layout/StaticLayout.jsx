@@ -7,7 +7,7 @@ import Navbar2 from '../components/Navbar/Navbar2';
 const StaticLayout = ({ children }) => {
     return (
         <>
-            <Navbar2/>
+            <Navbar2 />
             {children}
             {/* <Footer /> */}
             <Footer2/>

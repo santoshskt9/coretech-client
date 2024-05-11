@@ -17,7 +17,7 @@ const Navbar2 = () => {
 	return (
 		<>
 				
-			<header className="main-header header-style-two sticky-top shadow-sm">
+			<header className="main-header header-style-two sticky-top shadow-sm" >
 
 				<div className="header-lower">
 					<div className="container-fluid">

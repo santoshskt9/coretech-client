@@ -33,7 +33,7 @@ const Services = () => {
                                 <div className="icon-box"><FaCloudscale className='icon'/></div>
                                 <h5 className="title"><Link to="/cloud-architecture">Cloud Architecture</Link></h5>
                                 <div className="text">Streamline infrastructure, optimize performance, secure data.</div>
-                                <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                                <Link to="/cloud-architecture" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@ const Services = () => {
                                 <div className="icon-box"><FaBuildingColumns className='icon'/></div>
                                 <h5 className="title"><Link to="/it-infrastructure">IT Infrastructure</Link></h5>
                                 <div className="text">Optimize networks, enhance operations with IT Infrastructure Excellence.</div>
-                                <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                                <Link to="/it-infrastructure" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
                         </div>
 
@@ -58,24 +58,32 @@ const Services = () => {
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon'/></div>
                                 <h5 className="title"><Link to="/business-optimization">Business Optimization</Link></h5>
-                                <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-                                <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                                <div className="text">Streamline operations and maximize efficiency with our Business Optimization services</div>
+                                <Link to="/business-optimization" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon'/></div>
-                                <h5 className="title"><Link to="managed-services">Managed Services</Link></h5>
-                                <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-                                <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                                <h5 className="title"><Link to="/managed-services">Managed Services</Link></h5>
+                                <div className="text">Efficiently manage your IT infrastructure with our expert Managed Services.</div>
+                                <Link to="/managed-services" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
                         </div>
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaShieldHalved className='icon'/></div>
-                                <h5 className="title"><Link to="/cloud-infrastructure">Cloud & Infra Security</Link></h5>
-                                <div className="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-                                <Link to="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                                <h5 className="title"><Link to="/cloud-and-infra-security">Cloud & Infra Security</Link></h5>
+                                <div className="text">Protect your cloud infrastructure with our robust security solutions.</div>
+                                <Link to="/cloud-and-infra-security" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
+                            </div>
+                        </div>
+                        <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                            <div className="inner-box">
+                                <div className="icon-box"><FaShieldHalved className='icon'/></div>
+                                <h5 className="title"><Link to="/application-development">Application Development</Link></h5>
+                                <div className="text">Crafting tailored applications to meet your business's unique needs.</div>
+                                <Link to="/application-development" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</Link>
                             </div>
                         </div>
                     </div>
