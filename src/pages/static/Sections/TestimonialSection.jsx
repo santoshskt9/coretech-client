@@ -26,21 +26,21 @@ const testimonials = [
         "rating": 5
     },
     {
-        "avatarUrl": "images/resource/thumb-4.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/D5603AQEzxz6aVfXnkw/profile-displayphoto-shrink_100_100/0/1675697170181?e=1721260800&v=beta&t=-K9mqnU1Ned5J_AetWBQQCaNNGc_raT3M2gliQwMiIc",
         "name": "Michael Brown",
         "designation": "Training Manager",
         "review": "The corporate training programs offered by Coretech Infrastructure Solutions Inc. were instrumental in enhancing our team's skills. Their tailored approach and comprehensive curriculum empowered us to tackle emerging IT challenges effectively.",
         "rating": 5
     },
     {
-        "avatarUrl": "images/resource/thumb-5.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/C5603AQFyC70rNlW2gA/profile-displayphoto-shrink_200_200/0/1516782163460?e=1721260800&v=beta&t=QsXgCliu5usRYFTklYbwggGIcIAGDV-uJVP_SAph-J0",
         "name": "Sarah Adams",
         "designation": "IT Manager",
         "review": "We're extremely satisfied with Coretech Infrastructure Solutions Inc.'s cloud services. Their expertise in cloud computing helped us optimize our infrastructure for scalability and security while reducing operational costs.",
         "rating": 5
     },
     {
-        "avatarUrl": "images/resource/thumb-6.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/C4D03AQEkoxyz3u9GOg/profile-displayphoto-shrink_200_200/0/1613020863425?e=1721260800&v=beta&t=oSt91Sn06_m0Wb1oxfriMn_hrif3APazarskLT14Rso",
         "name": "David Wilson",
         "designation": "Operations Manager",
         "review": "Choosing Coretech Infrastructure Solutions Inc. for managed services was a game-changer for our organization. Their proactive approach and swift response to any issues ensured seamless IT operations, allowing us to focus on our core business.",
