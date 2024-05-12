@@ -7,7 +7,10 @@ const SalesforceDeveloper = () => {
 
                 <h1 className='mb-5'><strong>Salesforce Developer</strong></h1>
                 <p><strong>As more businesses rely on data and analytics for everything from sales and marketing to planning and customer management,&nbsp;Salesforce Developers are in high demand across nearly all industries&nbsp;and you can find a niche in anything from banking and software to healthcare and entertainment.</strong></p>
-                <p>Here is the list of some of the popular companies which work for Salesforce technologies.</p>
+                {/* <p>
+                    Here is the list of some of the popular companies which work for Salesforce technologies.
+
+                </p>
                 <ul className='unstyled-list'>
                     <li>Accenture</li>
                     <li>Capgemini</li>
@@ -17,7 +20,7 @@ const SalesforceDeveloper = () => {
                     <li>Cognizant</li>
                     <li>Wipro</li>
                     <li>Tech Mahindra</li>
-                </ul>
+                </ul> */}
                 <h2 className="">Table of Content</h2>
                 <ul>
                     <li>Program Overview</li>

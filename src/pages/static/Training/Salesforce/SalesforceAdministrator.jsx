@@ -9,7 +9,7 @@ const SalesforceAdministrator = () => {
                     <p>
                         As more businesses rely on data and analytics for everything from sales and marketing to planning and customer management, Salesforce Administrators are in high demand across nearly all industries and you can find a niche in anything from banking and software to healthcare and entertainment.
                     </p>
-                    <p>
+                    {/* <p>
                         Here is the list of some of the popular companies which work for Salesforce technologies.
                     </p>
                     <ul>
@@ -21,7 +21,7 @@ const SalesforceAdministrator = () => {
                         <li>Cognizant</li>
                         <li>Wipro</li>
                         <li>Tech Mahindra</li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
             <div className="row mt-5">
