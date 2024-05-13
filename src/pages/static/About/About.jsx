@@ -37,7 +37,7 @@ const About = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
-    
+
     return (
         <>
             <BreadCrumb2
@@ -52,8 +52,11 @@ const About = () => {
 
                                 <div class="sec-title">
                                     <span class="sub-title">Welcome to Coretech</span>
-                                    <h2>Our Company</h2>
-                                    <div class="text">Founded in 2023 and headquartered in Texas, USA, Coretech Infrastructure Solutions Inc. specializes in providing innovative IT services and solutions that cater to businesses of all sizes across various industries.</div>
+                                    <h2>Empowering Your Digital Transformation.</h2>
+                                    {/* <div class="text">Founded in 2023 and headquartered in Texas, USA, Coretech Infrastructure Solutions Inc. specializes in providing innovative IT services and solutions that cater to businesses of all sizes across various industries.</div> */}
+                                    {/* <div class="text">Coretech Infrastructure Solutions Inc – Empowering Your Digital Transformation.
+                                    </div> */}
+                                    <p class="text">Coretech Infrastructure Solutions Inc has rapidly emerged as a leader in innovative IT services and consultancy. We are dedicated to helping businesses of all sizes, from startups to Fortune 500 companies, navigate their digital journeys with ease and efficiency.</p>
                                     {/* <p class="text">Our comprehensive suite of IT services includes:</p> */}
                                 </div>
 
@@ -61,8 +64,8 @@ const About = () => {
                                     <div class="about-block col-lg-6 col-md-6">
                                         <div class="inner-box">
                                             <i class="icon flaticon-user-interface"></i>
-                                            <h6 class="title">Managed IT Services</h6>
-                                            <div class="text">Ensuring smooth, uninterrupted IT operations with 24/7 support.</div>
+                                            <h6 class="title"> Cloud Solutions</h6>
+                                            <div class="text">Deployment, migration, and management across major platforms (AWS, Azure, Google Cloud).</div>
                                         </div>
                                     </div>
 
@@ -70,15 +73,7 @@ const About = () => {
                                         <div class="inner-box">
                                             <i class="icon flaticon-front-end"></i>
                                             <h6 class="title">Cybersecurity Solutions</h6>
-                                            <div class="text">Protecting assets from cyber threats with cutting-edge security technologies.</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="about-block col-lg-6 col-md-6">
-                                        <div class="inner-box">
-                                            <i class="icon flaticon-front-end"></i>
-                                            <h6 class="title">Cloud Services</h6>
-                                            <div class="text">Offering scalable and flexible cloud computing solutions to drive business innovation.</div>
+                                            <div class="text">Comprehensive security assessments, incident response, and compliance strategies.</div>
                                         </div>
                                     </div>
 
@@ -86,7 +81,15 @@ const About = () => {
                                         <div class="inner-box">
                                             <i class="icon flaticon-front-end"></i>
                                             <h6 class="title">Software Development</h6>
-                                            <div class="text">Creating custom software solutions tailored to meet specific business needs.</div>
+                                            <div class="text">Custom software solutions, mobile app development, and system integration.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-block col-lg-6 col-md-6">
+                                        <div class="inner-box">
+                                            <i class="icon flaticon-front-end"></i>
+                                            <h6 class="title">IT Consultancy</h6>
+                                            <div class="text">Strategic IT consulting, project management, and IT infrastructure optimization.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -100,13 +103,16 @@ const About = () => {
                             <div class="inner-column wow fadeInLeft">
                                 <figure class="image-1 overlay-anim wow fadeInUp"><img src="images/resource/about-3.jpg" alt="" /></figure>
                                 <figure class="image-2 overlay-anim wow fadeInRight"><img src="images/resource/about-4.jpg" alt="" /></figure>
-                                <div class="experience bounce-y">
+                                {/* <div class="experience bounce-y">
                                     <div class="inner">
                                         <i class="icon flaticon-design"></i>
                                         <div class="text">Founded<br /> 2023</div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
+                            <p className="text mt-4">
+                            Our team consists of highly skilled IT professionals, each with deep expertise in various technology stacks and industries, enabling us to offer tailored solutions that meet the unique needs of our clients.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +233,7 @@ const About = () => {
             </section>
 
             <TeamSection2 />
-            <CareerSection/>
+            <CareerSection />
         </>
     )
 }

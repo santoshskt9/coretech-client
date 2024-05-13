@@ -60,12 +60,12 @@ const IntroductionSection = ({ data }) => {
                                     <div className="inner-column wow fadeInLeft">
                                         <figure className="image-1 overlay-anim wow fadeInUp"><img src={data?.images[0]} alt="" /></figure>
                                         <figure className="image-2 overlay-anim wow fadeInRight"><img src={data?.images[1]} alt="" /></figure>
-                                        <div className="experience bounce-y">
+                                        {/* <div className="experience bounce-y">
                                             <div className="inner">
                                                 <i className="icon flaticon-design"></i>
                                                 <div className="text">Founded<br /> 2023</div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div> :
                                 null
