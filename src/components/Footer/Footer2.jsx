@@ -85,7 +85,7 @@ const Footer2 = () => {
                                         <li><Link to="/team">Meet the Team</Link></li>
                                         <li><Link to="/news">News & Media</Link></li>
                                         <li><Link to="/blogs">Blogs & Articles</Link></li>
-                                        <li><Link to="/training">Trainings</Link></li>
+                                        <li><Link to="#">Learn</Link></li>
                                         <li><Link to="/career">Career</Link></li>
                                         <li><Link to="/contact">Contact</Link></li>
                                     </ul>
@@ -124,10 +124,18 @@ const Footer2 = () => {
                                         USA: +1 (945) 278 5774
                                     </Link></li>
                                     <li>
+                                        <Link to='tel: +918050572875'>
+                                            India: +91 805 057 2875
+                                        </Link>
+                                        <Link to='tel: +917757881212' className='ms-5'>
+                                            +91 775 788 1212
+                                        </Link>
+                                    </li>
+                                    {/* <li>
                                         <Link to='tel: +917757881212'>
                                             India: +91 (775) 788 1212
                                         </Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                                 <h5 className='widget-title'><FaMessage className='me-2' /> Mail us on</h5>
                                 <ul className="user-links">
