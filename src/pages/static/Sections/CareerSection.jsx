@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const CareerSection = () => {
     return (
@@ -15,7 +16,7 @@ const CareerSection = () => {
                             <p className="text mb-4">
                                 Give your career the opportunity to grow and thrive in a safe and pioneering environment focused on creating impact for customers and businesses.
                             </p>
-                            <a href="#" className="theme-btn btn-style-one"><span className="btn-title">Find Opportunities</span></a>
+                            <Link to="/career" className="theme-btn btn-style-one"><span className="btn-title">Find Opportunities</span></Link>
                         </div>
                         <div className="col">
                             <img src="https://img.freepik.com/free-vector/business-career-concept-with-ladder-goal-target-background_1017-45408.jpg?t=st=1715422831~exp=1715426431~hmac=619f8e09076c615f900dfe7292202a8d3f51d6f1f4f0715030f79dfc4fb98325&w=740" alt="" className='w-100' />

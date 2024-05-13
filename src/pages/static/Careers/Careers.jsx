@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Careers() {
   const [jobListings, setJobListings] = useState([
@@ -15,12 +15,17 @@ function Careers() {
     (filterDepartment === '' || job.department === filterDepartment)
   );
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
+
+
   return (
     <div>
       <div className="jumbotron jumbotron-fluid bg-dark text-white text-center py-5">
         <div className="container">
           <h1>Join Our Team</h1>
-          <p>We're shaping the future of [your industry].</p>
+          <p>We're shaping the future of Technology</p>
         </div>
       </div>
 

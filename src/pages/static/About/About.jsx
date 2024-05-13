@@ -52,7 +52,7 @@ const About = () => {
 
                                 <div class="sec-title">
                                     <span class="sub-title">Welcome to Coretech</span>
-                                    <h2>Empowering Your Digital Transformation.</h2>
+                                    <h2>Empowering Your Digital Transformation</h2>
                                     {/* <div class="text">Founded in 2023 and headquartered in Texas, USA, Coretech Infrastructure Solutions Inc. specializes in providing innovative IT services and solutions that cater to businesses of all sizes across various industries.</div> */}
                                     {/* <div class="text">Coretech Infrastructure Solutions Inc – Empowering Your Digital Transformation.
                                     </div> */}
@@ -156,7 +156,7 @@ const About = () => {
                 <div className="container">
                     <div className="sec-title text-center">
                         <span className="sub-title">What We’re Offering</span>
-                        <h2>Services we’re offering to <br />our customers.</h2>
+                        <h2>Services we’re offering to <br />our customers</h2>
                     </div>
 
                     <div className="row">
