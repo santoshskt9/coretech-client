@@ -1,8 +1,9 @@
 import React from 'react';
 import { FiTarget } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 
-const ProcessSection2 = ({ data }) => {
+const ProcessSection2 = ({ data, size='md' }) => {
     return (
         <>
             <section class="services-section-three">
@@ -17,12 +18,12 @@ const ProcessSection2 = ({ data }) => {
                             data?.process?.map((process, i) => (
                                 <div class="service-block-three col-lg-3 col-md-6 col-sm-12 fadeInUp">
                                     <div class="inner-box">
-                                        <div class="content">
+                                        <div class="content" style={{minHeight: `${size==='lg' ? '444px' : ''}`}}>
                                             <div class="icon-box"><span className="icon"><FiTarget /></span></div>
-                                            <h5 class="title"><a href="page-service-details.html">{process?.title}</a></h5>
+                                            <h5 class="title"><Link to="#">{process?.title}</Link></h5>
                                             <div class="text">{process?.description}</div>
                                         </div>
-                                        <a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+                                        <Link to="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></Link>
                                     </div>
                                 </div>
                             ))

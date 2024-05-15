@@ -202,7 +202,7 @@ const ManagedServices = () => {
             {/* <FeatureSectionTwo /> */}
             <IntroductionSection data={introduction} />
             <WhySection data={benefits} />
-            <ProcessSection2 data={process} />
+            <ProcessSection2 data={process} size='lg'/>
             <SubServicesSection data={services} />
             <ManagedServicesForm ref={formSectionRef} />
 
