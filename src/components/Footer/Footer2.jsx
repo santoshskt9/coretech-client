@@ -127,9 +127,9 @@ const Footer2 = () => {
                                         <Link to='tel: +918050572875'>
                                             India: +91 805 057 2875
                                         </Link>
-                                        <Link to='tel: +917757881212' className='ms-5'>
+                                        {/* <Link to='tel: +917757881212' className='ms-5'>
                                             +91 775 788 1212
-                                        </Link>
+                                        </Link> */}
                                     </li>
                                     {/* <li>
                                         <Link to='tel: +917757881212'>

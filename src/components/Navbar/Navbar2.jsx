@@ -34,6 +34,19 @@ const Navbar2 = () => {
 										<li><Link to="/">Home</Link>
 
 										</li>
+										<li className="dropdown"><Link to="#" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
+											<ul>
+												<li><Link to="/learn/cyber-security">Cyber Security</Link></li>
+												<li className="dropdown"><Link to="#">Salesforce</Link>
+													<ul>
+														<li><Link to="/learn/salesforce/administrator">Salesforce Administrator</Link></li>
+														<li><Link to="/learn/salesforce/developer">Salesforce Developer</Link></li>
+													</ul>
+												</li>
+												{/* <li><Link to="/training">Certiification</Link></li>
+												<li><Link to="/training">Webinar</Link></li> */}
+											</ul>
+										</li>
 										<li className="dropdown"><Link to="/about" className='d-flex align-items-center'>About <MdOutlineKeyboardArrowDown /> </Link>
 											<ul>
 												<li><Link to="/about" onClick={() => handleSectionRoute("company")} >Company</Link></li>
@@ -55,23 +68,11 @@ const Navbar2 = () => {
 												<li><Link to="/application-development">Application Development</Link></li>
 											</ul>
 										</li>
-										<li className="dropdown"><Link to="#" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
-											<ul>
-												<li><Link to="/learn/cyber-security">Cyber Security</Link></li>
-												<li className="dropdown"><Link to="#">Salesforce</Link>
-													<ul>
-														<li><Link to="/learn/salesforce/administrator">Salesforce Administrator</Link></li>
-														<li><Link to="/learn/salesforce/developer">Salesforce Developer</Link></li>
-													</ul>
-												</li>
-												{/* <li><Link to="/training">Certiification</Link></li>
-												<li><Link to="/training">Webinar</Link></li> */}
-											</ul>
-										</li>
-										<li className="dropdown"><Link to="/blogs" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown /></Link>
+										
+										<li className="dropdown"><Link to="#" className='d-flex align-items-center'>Insight Hub <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
 												<li><Link to="#">News</Link></li>
-												<li><Link to="#">Blogs</Link></li>
+												<li><Link to="/blogs">Blogs</Link></li>
 												<li><Link to="#">Articles</Link></li>
 												<li><Link to="#">Case Studies</Link></li>
 											</ul>

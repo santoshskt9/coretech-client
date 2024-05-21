@@ -78,7 +78,7 @@ const Blogs = () => {
     return (
         <>
             <BreadCrumb2 heading="Blogs, News, Articles & Case Studies" />
-            <section class="bg-silver-light">
+            <section class="bg-light">
                 <div class="container pb-90">
                     <div class="sec-title">
                         <span class="sub-title">All Blogs</span>

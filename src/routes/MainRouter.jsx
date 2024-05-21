@@ -24,6 +24,7 @@ import TermsOfUse from '../pages/static/Legal/TermsOfUse';
 import CyberSecurityTraining from '../pages/static/Training/CyberSecurity/CyberSecurityTraining';
 import SalesforceAdministrator from '../pages/static/Training/Salesforce/SalesforceAdministrator';
 import SalesforceDeveloper from '../pages/static/Training/Salesforce/SalesforceDeveloper';
+import InsightHub from '../pages/static/Insight/InsightHub';
 
 const MainRouter = () => {
   return (
@@ -42,6 +43,8 @@ const MainRouter = () => {
         <Route exact path='/cloud-and-infra-security' element={<CloudInfraSecurity/>}/>
 
         <Route exact path='/blogs' element={<Blogs/>}/>
+        <Route exact path='/insight-hub' element={<InsightHub/>}/>
+
         <Route exact path='/learn/cyber-security' element={<CyberSecurityTraining />}/>
         <Route exact path='/learn/salesforce/administrator' element={<SalesforceAdministrator />}/>
         <Route exact path='/learn/salesforce/developer' element={<SalesforceDeveloper />}/>

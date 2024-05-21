@@ -28,13 +28,13 @@ const TeamSection2 = () => {
             "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
             "__v": 0
         },
-        {
-            "_id": "660c5af115adad8d3026f553",
-            "name": "Vikram Varma",
-            "jobTitle": "Chief Information Security Officer",
-            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/vikram.jpeg",
-            "__v": 0
-        },
+        // {
+        //     "_id": "660c5af115adad8d3026f553",
+        //     "name": "Vikram Varma",
+        //     "jobTitle": "Chief Information Security Officer",
+        //     "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/vikram.jpeg",
+        //     "__v": 0
+        // },
         {
             "socialLinks": {
                 "facebook": "https://www.facebook.com/santoshskt9",
