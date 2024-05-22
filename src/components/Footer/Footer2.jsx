@@ -149,6 +149,7 @@ const Footer2 = () => {
                                         </Link>
                                     </li> */}
                                 </ul>
+                                <Link to="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2" target='_blank' className="theme-btn btn-style-three light"><span className="btn-title">Schedule a Meeting</span></Link>
 
                             </div>
                         </div>
