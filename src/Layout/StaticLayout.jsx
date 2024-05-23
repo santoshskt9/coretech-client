@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Footer2 from '../components/Footer/Footer2';
 import Navbar2 from '../components/Navbar/Navbar2';
+import WhatsAppButton from '../components/Actions/WhatsAppButton';
 
 const StaticLayout = ({ children }) => {
     return (
@@ -11,6 +12,7 @@ const StaticLayout = ({ children }) => {
             {children}
             {/* <Footer /> */}
             <Footer2/>
+            <WhatsAppButton phoneNumber="+19452785774" message="Hello!" />
         </>
     )
 }
