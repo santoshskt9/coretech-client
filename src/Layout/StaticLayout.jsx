@@ -4,11 +4,12 @@ import Footer from '../components/Footer/Footer';
 import Footer2 from '../components/Footer/Footer2';
 import Navbar2 from '../components/Navbar/Navbar2';
 import WhatsAppButton from '../components/Actions/WhatsAppButton';
+import Navbar3 from '../components/Navbar/Navbar3';
 
 const StaticLayout = ({ children }) => {
     return (
         <>
-            <Navbar2 />
+            <Navbar3 />
             {children}
             {/* <Footer /> */}
             <Footer2/>

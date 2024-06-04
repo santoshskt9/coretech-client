@@ -9,7 +9,7 @@ const SubServicesSection = ({data}) => {
         // dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: (data?.services.length) <= 4 ? data.services.length : 4,
         slidesToScroll: 1,
         appendDots: dots => (
             <ul style={{ marginTop: '20px', listStyle: 'none', padding: 0, textAlign: 'center' }}>

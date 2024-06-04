@@ -1,309 +1,396 @@
-import React, { useEffect, useState } from 'react';
-import './ServicesDetails.css';
-import Hero from '../../../components/Hero/Hero';
-import { FaShieldHalved } from 'react-icons/fa6';
+import React, { useEffect, useState } from "react";
+import "./ServicesDetails.css";
+import Hero from "../../../components/Hero/Hero";
+import { FaShieldHalved } from "react-icons/fa6";
 import {
-    FiShield,
-    FiLock,
-    FiCheckCircle,
-    FiAlertCircle,
-    FiMonitor,
-    FiTarget, FiSettings, FiActivity, FiAlertOctagon, FiTrendingUp, FiPhoneCall
-} from 'react-icons/fi';
-import { useGlobalContext } from '../../../global/context';
-import PostCard from '../../../components/Post/PostCard';
-import Accordion from '../../../components/Accordion/Accordion';
-import { Link } from 'react-router-dom';
+  FiShield,
+  FiLock,
+  FiCheckCircle,
+  FiAlertCircle,
+  FiMonitor,
+  FiTarget,
+  FiSettings,
+  FiActivity,
+  FiAlertOctagon,
+  FiTrendingUp,
+  FiPhoneCall,
+} from "react-icons/fi";
+import { useGlobalContext } from "../../../global/context";
+import PostCard from "../../../components/Post/PostCard";
+import Accordion from "../../../components/Accordion/Accordion";
+import { Link } from "react-router-dom";
+import { CloudIcon, DataIcon } from "../../../components/Icons";
 
 const ServiceDetails = () => {
-    const [latestPosts, setLatestPosts] = useState();
-    const { api } = useGlobalContext();
+  const [latestPosts, setLatestPosts] = useState();
+  const { api } = useGlobalContext();
 
-    const getLatestPosts = async () => {
-        try {
-            const res = await api.get(`/api/post/latest`);
-            if (res?.status === 200) {
-                console.log(res);
-                setLatestPosts(res?.data);
-            }
-
-        } catch (error) {
-            console.log("Error fetching post", error);
-        }
+  const getLatestPosts = async () => {
+    try {
+      const res = await api.get(`/api/post/latest`);
+      if (res?.status === 200) {
+        console.log(res);
+        setLatestPosts(res?.data);
+      }
+    } catch (error) {
+      console.log("Error fetching post", error);
     }
+  };
 
-    useEffect(() => {
-        getLatestPosts();
-    }, []);
+  useEffect(() => {
+    getLatestPosts();
+  }, []);
 
-    return (
-        <>
-            <Hero
-                heading="Defend Your Digital Assets with Our Cyber Security Solution"
-                description="Empowering businesses and individuals to navigate the digital landscape securely."
-                imgSrc="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/service/cyber-security.png"
-                link="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2"
-                linkText="Book a Appointment Now"
-                linkTarget="_blank"
-            />
+  return (
+    <>
+      <Hero
+        heading="Defend Your Digital Assets with Our Cyber Security Solution"
+        description="Empowering businesses and individuals to navigate the digital landscape securely."
+        imgSrc="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/service/cyber-security.png"
+        link="https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2"
+        linkText="Book a Appointment Now"
+        linkTarget="_blank"
+      />
 
+      <div
+        className="sticky-top "
+        style={{ backgroundColor: "limegreen", top: "78px", margin: 0, zIndex: 100}}
+      >
+        <ul
+          className="d-flex mx-4 text-white fw-semibold fs-5"
+          style={{
+            margin: "0px",
+            paddingTop: "5px",
+            paddingBottom: "5px",
+            color: "white",
+          }}
+        >
+          <li className="me-5">
+            <a href="#solution" className="text-white me-5">
+              SOLUTIONS
+            </a>
+            <a href="#benefits" className="text-white me-5">
+              BENEFITS
+            </a>
+            <a href="#get-started" className="text-white me-5">
+              GET STARTED
+            </a>
+          </li>
+          
+        </ul>
+        <div
+          style={{
+            height: "6px",
+            width: "100%",
+            background:
+              "radial-gradient(circle, rgba(45,255,7,1) 6%, rgba(33,56,1,1) 100%)",
+            margin: 0,
+          }}
+        />
+      </div>
 
+      <div className="container-fluid py-5 bg-dark">
+        <div className="mx-5 d-flex">
+          <div
+            style={{
+              width: "10px",
+              //   height: "100%",
+              backgroundColor: "yellow",
+              marginRight: "30px",
+            }}
+          />
+          <div>
+            <div className="d-flex mb-4">
+              <div
+                className="service-icon p-2"
+                style={{
+                  backgroundColor: "limegreen",
+                  // borderRadius: "10px",
+                  width: "50px",
+                  height: "50px",
+                  marginRight: "20px",
+                }}
+              >
+                <CloudIcon color="white" />
+              </div>
+              <div
+                className="service-icon p-2"
+                style={{
+                  backgroundColor: "limegreen",
+                  // borderRadius: "10px",
+                  width: "50px",
+                  height: "50px",
+                  marginRight: "20px",
+                }}
+              >
+                <DataIcon color="white" />
+              </div>
+            </div>
+            <h5 className="text-white mb-4">SEE IT IN ACTION</h5>
+            <p className="text-white fs-2 mb-4" style={{ maxWidth: "40.33%" }}>
+              <b className="text-white">Carhartt:</b>{" "}
+              <i>The human side of large-scale transformation</i>
+            </p>
+            <a
+              href=""
+              className="btn btn-success fw-semibold fs-5 rounded-5 px-3"
+            >
+              Read story
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <section class="why-choose-us-two ">
-                <div class="container">
-                    <div class="sec-title">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <span class="sub-title">Cyber Security Benefits</span>
-                                <h2>See why you should<br /> choose cyber security</h2>
-                            </div>
-                            <div class="col-lg-6 d-flex justify-content-end">
-                                <div class="text">In today's interconnected world, cyber threats abound, posing significant risks to businesses and individuals alike. Our comprehensive cyber security solutions are designed to protect your digital assets and safeguard your peace of mind.</div>
-                            </div>
-                        </div>
-                    </div>
+      <section id="solution"
+        className="container-fluid "
+        style={{ backgroundColor: "limegreen", padding: "5em 3.5em" }}
+      >
+        <h1 className="text-white" style={{ fontSize: "58px" }}>
+          Our Governance & Compliance <br />{" "}
+          <i className="fw-bold">solutions</i>
+        </h1>
 
-                    <div class="row">
-                        <div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms">
-                            <div class="inner-column">
-                                <div class="feature-block-six">
-                                    <div class="inner-box">
-                                        <span class="icon"><FiShield /></span>
-                                        <h5 class="title">Advanced Threat Detection</h5>
-                                        <div class="text">Utilize cutting-edge technologies to identify and neutralize cyber threats in real-time.</div>
-                                    </div>
-                                </div>
+        <div className="row row-cols-3">
+          <div
+            className="col"
+            style={{ marginTop: "3.8em", paddingLeft: "25px" }}
+          >
+            <h5 className="text-white mb-3 fw-bold">ISO Certification</h5>
+            <p className="text-white">
+              ISO certification services provide comprehensive support for
+              organizations seeking compliance with ISO standards. They include
+              gap analysis to assess current practices, implementation of
+              standards, development of documentation, conducting internal
+              audits, and assisting in achieving certification.
+            </p>
+          </div>
+          <div
+            className="col"
+            style={{ marginTop: "3.8em", paddingLeft: "25px" }}
+          >
+            <h5 className="text-white mb-3 fw-bold">ISO Certification</h5>
+            <p className="text-white">
+              ISO certification services provide comprehensive support for
+              organizations seeking compliance with ISO standards. They include
+              gap analysis to assess current practices, implementation of
+              standards, development of documentation, conducting internal
+              audits, and assisting in achieving certification.
+            </p>
+          </div>
+          <div
+            className="col"
+            style={{ marginTop: "3.8em", paddingLeft: "25px" }}
+          >
+            <h5 className="text-white mb-3 fw-bold">ISO Certification</h5>
+            <p className="text-white">
+              ISO certification services provide comprehensive support for
+              organizations seeking compliance with ISO standards. They include
+              gap analysis to assess current practices, implementation of
+              standards, development of documentation, conducting internal
+              audits, and assisting in achieving certification.
+            </p>
+          </div>
+          <div
+            className="col"
+            style={{ marginTop: "3.8em", paddingLeft: "25px" }}
+          >
+            <h5 className="text-white mb-3 fw-bold">ISO Certification</h5>
+            <p className="text-white">
+              ISO certification services provide comprehensive support for
+              organizations seeking compliance with ISO standards. They include
+              gap analysis to assess current practices, implementation of
+              standards, development of documentation, conducting internal
+              audits, and assisting in achieving certification.
+            </p>
+          </div>
+          <div
+            className="col"
+            style={{ marginTop: "3.8em", paddingLeft: "25px" }}
+          >
+            <h5 className="text-white mb-3 fw-bold">ISO Certification</h5>
+            <p className="text-white">
+              ISO certification services provide comprehensive support for
+              organizations seeking compliance with ISO standards. They include
+              gap analysis to assess current practices, implementation of
+              standards, development of documentation, conducting internal
+              audits, and assisting in achieving certification.
+            </p>
+          </div>
+          <div
+            className="col"
+            style={{ marginTop: "3.8em", paddingLeft: "25px" }}
+          >
+            <h5 className="text-white mb-3 fw-bold">ISO Certification</h5>
+            <p className="text-white">
+              ISO certification services provide comprehensive support for
+              organizations seeking compliance with ISO standards. They include
+              gap analysis to assess current practices, implementation of
+              standards, development of documentation, conducting internal
+              audits, and assisting in achieving certification.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                                <div class="feature-block-six">
-                                    <div class="inner-box">
-                                        <span class="icon"><FiLock /></span>
-                                        <h5 class="title">Data Encryption</h5>
-                                        <div class="text">Secure sensitive information with robust encryption algorithms, ensuring confidentiality and integrity.</div>
-                                    </div>
-                                </div>
+      <section className="container-fluid" id="benefits" style={{ padding: "5em 3.5em" }}>
+        <div className="row">
+          <div className="col-7">
+            <h1 style={{ fontSize: "52px", color: "limegreen" }}>
+              <b>The Coretech Approach</b> to <i>Governance & Compliance</i>
+            </h1>
+          </div>
+          <div className="col">
+            <p>
+              Our approach is collaborative, pragmatic, and results-oriented. We
+              work closely with you to understand your specific needs and tailor
+              our services to fit your unique environment. We focus on not just
+              achieving compliance but also on driving continuous improvement
+              and adding value to your organization.
+            </p>
+          </div>
+        </div>
+        <h2
+          style={{
+            marginTop: "2em",
+            fontSize: "2.2rem",
+            color: "limegreen",
+          }}
+        >
+          Benefits of Partnering with Coretech for Governance & Compliance
+        </h2>
 
-                                <div class="feature-block-six">
-                                    <div class="inner-box">
-                                        <span class="icon"><FiCheckCircle /></span>
-                                        <h5 class="title">Compliance Assurance</h5>
-                                        <div class="text">Ensure regulatory compliance with industry standards such as GDPR, HIPAA, and PCI-DSS.</div>
-                                    </div>
-                                </div>
-                                {/* <div class="feature-block-six">
-                                    <div class="inner-box">
-                                        <span class="icon"><FiAlertCircle /></span>
-                                        <h5 class="title">Incident Response</h5>
-                                        <div class="text">Swift and effective response to security incidents, minimizing impact and facilitating recovery.</div>
-                                    </div>
-                                </div>
-                                <div class="feature-block-six">
-                                    <div class="inner-box">
-                                        <span class="icon"><FiMonitor /></span>
-                                        <h5 class="title">Continuous Monitoring</h5>
-                                        <div class="text">Proactive monitoring and threat intelligence to stay ahead of evolving cyber threats.</div>
-                                    </div>
-                                </div> */}
+        <div className="d-flex justify-content-between flex-wrap">
+          <div
+            className="service-benefits d-flex align-items-center"
+            style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+          >
+            <i
+              className={`icon flaticon-concept`}
+              style={{ fontSize: "70px", marginRight: "25px" }}
+            ></i>
+            <div className="benefits-content">
+              <h5 style={{ fontWeight: "bold", color: "limegreen" }}>
+                Reduced Risk
+              </h5>
+              <p>Identify and mitigate risks to protect your business.</p>
+            </div>
+          </div>
+          <div
+            className="service-benefits d-flex align-items-center"
+            style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+          >
+            <i
+              className={`icon flaticon-concept`}
+              style={{ fontSize: "70px", marginRight: "25px" }}
+            ></i>
+            <div className="benefits-content">
+              <h5 style={{ fontWeight: "bold", color: "limegreen" }}>
+                Reduced Risk
+              </h5>
+              <p>Identify and mitigate risks to protect your business.</p>
+            </div>
+          </div>
+          <div
+            className="service-benefits d-flex align-items-center"
+            style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+          >
+            <i
+              className={`icon flaticon-concept`}
+              style={{ fontSize: "70px", marginRight: "25px" }}
+            ></i>
+            <div className="benefits-content">
+              <h5 style={{ fontWeight: "bold", color: "limegreen" }}>
+                Reduced Risk
+              </h5>
+              <p>Identify and mitigate risks to protect your business.</p>
+            </div>
+          </div>
+          <div
+            className="service-benefits d-flex align-items-center"
+            style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+          >
+            <i
+              className={`icon flaticon-concept`}
+              style={{ fontSize: "70px", marginRight: "25px" }}
+            ></i>
+            <div className="benefits-content">
+              <h5 style={{ fontWeight: "bold", color: "limegreen" }}>
+                Reduced Risk
+              </h5>
+              <p>Identify and mitigate risks to protect your business.</p>
+            </div>
+          </div>
+          <div
+            className="service-benefits d-flex align-items-center"
+            style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+          >
+            <i
+              className={`icon flaticon-concept`}
+              style={{ fontSize: "70px", marginRight: "25px" }}
+            ></i>
+            <div className="benefits-content">
+              <h5 style={{ fontWeight: "bold", color: "limegreen" }}>
+                Reduced Risk
+              </h5>
+              <p>Identify and mitigate risks to protect your business.</p>
+            </div>
+          </div>
+          <div
+            className="service-benefits d-flex align-items-center"
+            style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+          >
+            <i
+              className={`icon flaticon-concept`}
+              style={{ fontSize: "70px", marginRight: "25px" }}
+            ></i>
+            <div className="benefits-content">
+              <h5 style={{ fontWeight: "bold", color: "limegreen" }}>
+                Reduced Risk
+              </h5>
+              <p>Identify and mitigate risks to protect your business.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                            </div>
-                        </div>
-
-                        <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
-                            <div class="inner-column wow fadeInLeft">
-                                <div class="image-box">
-                                    <figure class="image-1 overlay-anim wow fadeInUp"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/why-us-1.jpg" alt="" /></figure>
-                                    <figure class="image-2 overlay-anim wow fadeInRight"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/why-us-2.jpg" alt="" /></figure>
-                                    <figure class="logo"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/favicon.png" alt="" /></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="services-section-three">
-                <div class="container">
-                    <div class="sec-title text-center">
-                        <span class="sub-title">How It Works</span>
-                        <h2>Discover how we safeguard <br />your digital journey.</h2>
-                    </div>
-
-                    <div class="row">
-                        <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                            <div class="inner-box">
-                                <div class="content">
-                                    <div class="icon-box"><span className="icon"><FiTarget /></span></div>
-                                    <h5 class="title"><a href="#">Assessment</a></h5>
-                                    <div class="text">Conduct a comprehensive assessment of your existing security posture and vulnerabilities.</div>
-                                </div>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                            <div class="inner-box">
-                                <div class="content">
-                                    <div class="icon-box"><span className="icon"><FiSettings /></span></div>
-                                    <h5 class="title"><a href="#">Implementation</a></h5>
-                                    <div class="text">Deploy customized security solutions based on assessment findings for cyber defense.</div>
-                                </div>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                            <div class="inner-box">
-                                <div class="content">
-                                    <div class="icon-box"><span className="icon"><FiActivity /></span></div>
-                                    <h5 class="title"><a href="#">Monitoring</a></h5>
-                                    <div class="text">Continuously monitor network traffic, logs, and user activity for signs of suspicious behavior.</div>
-                                </div>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-
-
-                        <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                            <div class="inner-box">
-                                <div class="content">
-                                    <div class="icon-box"><span className="icon"><FiAlertOctagon /></span></div>
-                                    <h5 class="title"><a href="#">Incident Response</a></h5>
-                                    <div class="text">Swiftly respond to security incidents with predefined incident response procedures.</div>
-                                </div>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section class="news-section">
-                <div class="bg bg-pattern-1"></div>
-                <div class="container">
-                    <div class="sec-title text-center">
-                        <span class="sub-title">News & Articles</span>
-                        <h2>Latest from the blog</h2>
-                    </div>
-
-                    <div class="row">
-                        {
-                            latestPosts?.map((post, i)=> (
-                                <PostCard data={post} key={i}/>
-                            ))
-                        }
-                    </div>
-                </div>
-            </section>
-
-            <Accordion/>
-
-            {/* <!-- Video Section Two --> */}
-            <section class="video-section-two p-0">
-                <div class="container">
-                    <div class="video-box-two">
-                        <figure class="image"><img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/video.jpg" alt="" />
-                            <a href="" class="play-now" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i><span class="ripple"></span></a>
-                        </figure>
-
-                        <div class="info-box">
-                            <h2 class="title">1599</h2>
-                            <div class="text">Projects have been<br /> completed</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- End Video Section Two --> */}
-
-            {/* <!-- Contact Section Two --> */}
-            <section class="contact-section-two pull-up pull-down">
-                <div class="bg bg-pattern-14"></div>
-                <div class="container">
-                    <div class="row">
-                        {/* <!-- Title Column --> */}
-                        <div class="title-column col-lg-5 col-md-12">
-                            <div class="inner-column">
-                                <div class="sec-title light">
-                                    <span class="sub-title">Get in touch</span>
-                                    <h2>We are Here to<br /> Help You & Your<br /> Business</h2>
-                                    <div class="text">Alteration in some form, lipsum is simply free text by injected humou or randomised</div>
-                                </div>
-                                <div class="timing">
-                                    <span class="tilte">Timings</span>
-                                    <div class="time">9:00 am - 5:00 pm</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* <!-- Form Column --> */}
-                        <div class="form-column col-lg-7 col-md-12 col-sm-12">
-                            <div class="inner-column">
-                                {/* <!-- Contact Form --> */}
-                                <div class="contact-form style-two wow fadeInLeft">
-                                    {/* <!--Contact Form--> */}
-                                    <form method="post" action="" id="contact-form">
-                                        <div class="row">
-                                            <div class="form-group col-lg-6 col-md-6">
-                                                <input type="text" name="full_name" placeholder="Your Name" required />
-                                            </div>
-
-                                            <div class="form-group col-lg-6 col-md-6">
-                                                <input type="text" name="Email" placeholder="Email Address" required />
-                                            </div>
-
-                                            <div class="form-group col-lg-6 col-md-6">
-                                                <input type="text" name="Phone" placeholder="Phone Number" required />
-                                            </div>
-
-                                            <div class="form-group col-lg-6 col-md-6">
-                                                <input type="text" name="Subject" placeholder="Subject" required />
-                                            </div>
-
-                                            <div class="form-group col-lg-12">
-                                                <textarea name="message" placeholder="Write a Message" required></textarea>
-                                            </div>
-
-                                            <div class="form-group col-lg-12">
-                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Send a message</span></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                {/* <!--End Contact Form --> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- End Contact Section --> */}
-
-
-
-            {/* <!-- Call To Action Two --> */}
-            <section class="call-to-action-two">
-                <div class="auto-container">
-                    <div class="outer-box wow fadeIn">
-                        <div class="title-box">
-                            <h4 class="title">Get your <span class="colored">FREE</span><br /> cyber security consultation</h4>
-                        </div>
-                        <div class="icon-box">
-                            <Link to="tel:+19452785774" ><span className="icon"><FiPhoneCall /></span></Link>
-                        </div>
-                        <div class="info-box">
-                            <Link href="tel:+19452785774" class="num">+1 (945) 278 5774</Link>
-                            <Link href="mailto:info@coretechinfra.com" class="mail">info@coretechinfra.com</Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!--End Call To Action TWo --> */}
-
-
-
-        </>
-    )
-}
+      <section id="get-started"
+        className="container-fluid"
+        style={{ padding: "5em 3.5em", backgroundColor: "greenyellow" }}
+      >
+        <div className="row">
+          <div className="col-7">
+            <h1 style={{ fontSize: "52px", color: "green" }}>
+              Get Started With Coretech
+            </h1>
+            <p className="mt-4">
+              Ready to strengthen your governance and compliance framework?
+              Contact Coretech today for a free consultation. Let's discuss how
+              we can help you achieve your goals and build a more resilient and
+              successful organization.
+            </p>
+          </div>
+          <div className="col px-5">
+            <button style={{ width: "100%", height: "50%", fontSize: "35px", fontWeight: '500' }}>
+              Schedule a Meeting
+            </button>
+            <button
+              style={{
+                width: "100%",
+                height: "50%",
+                fontSize: "35px",
+                color: "white",
+                fontWeight: '500',
+                background:
+                  "linear-gradient(121deg, rgba(141,221,0,1) 6%, rgba(33,56,1,1) 100%)",
+              }}
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default ServiceDetails;

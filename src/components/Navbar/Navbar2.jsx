@@ -24,7 +24,7 @@ const Navbar2 = () => {
 						{/* <!-- Main box --> */}
 						<div className="main-box">
 							<div className="logo-box">
-								<div className="logo"><Link to="/"><img src={Brand} height={50} alt="" title="Tronis" /></Link></div>
+								<div className="logo"><Link to="/"><img src={Brand} height={50} alt="" title="Coretech" /></Link></div>
 							</div>
 
 							{/* <!--Nav Box--> */}

@@ -25,6 +25,14 @@ import CyberSecurityTraining from '../pages/static/Training/CyberSecurity/CyberS
 import SalesforceAdministrator from '../pages/static/Training/Salesforce/SalesforceAdministrator';
 import SalesforceDeveloper from '../pages/static/Training/Salesforce/SalesforceDeveloper';
 import InsightHub from '../pages/static/Insight/InsightHub';
+import Data from '../pages/static/Services/Data';
+import Cloud from '../pages/static/Services/Cloud';
+import SecurityAndPrivacy from '../pages/static/Services/SecurityAndPrivacy';
+import ArtificialIntelligence from '../pages/static/Services/ArtificialIntelligence';
+import GovernanceCompliance from '../pages/static/Services/GovernanceCompliance';
+import PlanningExecution from '../pages/static/Services/PlanningExecution';
+import DevelopmentIntegration from '../pages/static/Services/DevelopmentIntegration';
+import ServiceOperations from '../pages/static/Services/ServiceOperations';
 
 const MainRouter = () => {
   return (
@@ -41,6 +49,16 @@ const MainRouter = () => {
         <Route exact path='/business-optimization' element={<BusinessOptimization/>}/>
         <Route exact path='/managed-services' element={<ManagedServices/>}/>
         <Route exact path='/cloud-and-infra-security' element={<CloudInfraSecurity/>}/>
+
+        {/* Main Services */}
+        <Route exact path='/services/data' element={<Data/>}/>
+        <Route exact path='/services/cloud' element={<Cloud/>}/>
+        <Route exact path='/services/security-and-privacy' element={<SecurityAndPrivacy/>}/>
+        <Route exact path='/services/artificial-intelligence' element={<ArtificialIntelligence/>}/>
+        <Route exact path='/services/governance-and-complaince' element={<GovernanceCompliance/>}/>
+        <Route exact path='/services/planning-and-execution' element={<PlanningExecution/>}/>
+        <Route exact path='/services/development-and-integration' element={<DevelopmentIntegration/>}/>
+        <Route exact path='/services/service-operations' element={<ServiceOperations/>}/>
 
         <Route exact path='/blogs' element={<Blogs/>}/>
         <Route exact path='/insight-hub' element={<InsightHub/>}/>
