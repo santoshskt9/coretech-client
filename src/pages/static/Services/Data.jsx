@@ -76,35 +76,42 @@ const Data = () => {
       {
         title: "Enterprise Data Strategy and Roadmap",
         description:
-          "Map multidomain MDM roadmap for customer, supplier, product",
+          "Map multidomain MDM roadmap for customer, supplier, product.",
+        iconClass: "flaticon-graph",
       },
       {
         title: "Data-Driven Decision-Making",
         description:
-          " Understand business and make informed decisions using reliable data.",
+          "Understand business and make informed decisions using reliable data.",
+        iconClass: "flaticon-bar-chart",
       },
       {
         title: "Improved Operational Efficiency",
         description:
           "Streamline processes and identify opportunities for cost savings.",
+        iconClass: "flaticon-settings",
       },
       {
         title: "Enhanced Customer Experience",
         description:
           "Personalize interactions and tailor offerings based on customer data.",
+        iconClass: "flaticon-user",
       },
       {
         title: "Competitive Advantage",
         description:
           "Gain a strategic edge over competitors by leveraging data-driven insights.",
+        iconClass: "flaticon-graph-1",
       },
       {
         title: "Future-Ready",
         description:
           "Build a scalable and flexible data infrastructure that can adapt to changing business needs.",
+        iconClass: "flaticon-update",
       },
     ],
   };
+  
 
 
   const services = {

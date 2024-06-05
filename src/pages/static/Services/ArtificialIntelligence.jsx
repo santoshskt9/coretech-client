@@ -75,34 +75,41 @@ const ArtificialIntelligence = () => {
         title: "Enhanced Decision-Making",
         description:
           "Leverage AI-driven insights to make informed and strategic business decisions.",
+        iconClass: "flaticon-bar-chart-1",
       },
       {
         title: "Process Automation",
         description:
           "Automate repetitive tasks and processes to increase efficiency and reduce operational costs.",
+        iconClass: "flaticon-settings",
       },
       {
         title: "Personalized Customer Experiences",
         description:
           "Utilize AI to deliver personalized experiences and improve customer satisfaction.",
+        iconClass: "flaticon-user",
       },
       {
         title: "Innovative Products and Platforms",
         description:
           "Develop intelligent products and platforms that offer unique value propositions.",
+        iconClass: "flaticon-idea",
       },
       {
         title: "Competitive Advantage",
         description:
           "Stay ahead of the competition by integrating cutting-edge AI technologies.",
+        iconClass: "flaticon-graph-1",
       },
       {
         title: "Scalable Solutions",
         description:
           "Implement scalable AI solutions that can grow with your business.",
+        iconClass: "flaticon-update",
       },
     ],
   };
+  
 
   const services = {
     sectionTitle: "Our AI Services Offerings",

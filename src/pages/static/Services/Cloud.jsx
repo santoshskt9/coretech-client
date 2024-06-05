@@ -69,34 +69,41 @@ const Cloud = () => {
         title: "Scalable Solutions",
         description:
           "Easily scale your infrastructure to meet changing business demands.",
+        iconClass: "flaticon-graph-1",
       },
       {
         title: "Cost Efficiency",
         description:
           "Optimize costs by leveraging cloud resources and reducing capital expenditures.",
+        iconClass: "flaticon-dollar-currency-symbol",
       },
       {
         title: "Enhanced Security",
         description:
           "Implement robust security measures to protect your data and applications.",
+        iconClass: "flaticon-padlock",
       },
       {
         title: "Business Continuity",
         description:
           "Ensure uninterrupted operations with reliable backup and disaster recovery solutions.",
+        iconClass: "flaticon-shield",
       },
       {
         title: "Agility and Innovation",
         description:
           "Accelerate your digital transformation with agile and innovative cloud solutions.",
+        iconClass: "flaticon-idea",
       },
       {
         title: "Expert Support",
         description:
           "Access around-the-clock support and guidance from cloud experts.",
+        iconClass: "flaticon-help",
       },
     ],
   };
+  
   
   const services = {
     sectionTitle: "Our Cloud Services Offerings",

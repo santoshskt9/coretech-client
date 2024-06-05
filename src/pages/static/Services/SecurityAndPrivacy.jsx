@@ -76,34 +76,41 @@ const SecurityAndPrivacy = () => {
         title: "Comprehensive Protection",
         description:
           "Implement end-to-end security solutions to protect against a wide range of cyber threats.",
+        iconClass: "flaticon-shield",
       },
       {
         title: "Regulatory Compliance",
         description:
           "Ensure compliance with industry standards and regulations, including ISO:27001.",
+        iconClass: "flaticon-verification",
       },
       {
         title: "Proactive Threat Management",
         description:
           "Identify and mitigate potential threats before they impact your business operations.",
+        iconClass: "flaticon-brain",
       },
       {
         title: "Data Privacy Assurance",
         description:
           "Safeguard sensitive data and maintain customer trust with robust privacy measures.",
+        iconClass: "flaticon-padlock",
       },
       {
         title: "Business Continuity",
         description:
           "Maintain uninterrupted operations with effective security incident management and response plans.",
+        iconClass: "flaticon-shield",
       },
       {
         title: "Expert Support",
         description:
           "Access around-the-clock support and guidance from security and privacy experts.",
+        iconClass: "flaticon-help",
       },
     ],
   };
+  
   
   const services = {
     sectionTitle: "Our Security & Privacy Services Offerings",

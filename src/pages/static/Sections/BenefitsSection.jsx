@@ -32,29 +32,33 @@ const BenefitsSection = ({ data }) => {
           {data?.title}
         </h2>
 
-        <div className="container d-flex justify-content-between flex-wrap">
-          {data?.services?.map((benefit, index) => (
+        <div className="container">
+         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 justify-content-between">
+         {data?.services?.map((benefit, index) => (
             <div
             key={index}
-              className="service-benefits d-flex align-items-center"
-              style={{ maxWidth: "30%", marginTop: "3.5rem" }}
+              className="service-benefits col d-flex "
+              style={{ 
+                // maxWidth: "30%", 
+                marginTop: "3.5rem" }}
             >
               <i
-                className={`icon flaticon-concept`}
+                className={`icon ${benefit?.iconClass}`}
                 style={{
-                  fontSize: "70px",
+                  fontSize: "55px",
                   marginRight: "25px",
-                  color: "black",
+                  color: "orange",
                 }}
               ></i>
               <div className="benefits-content">
                 <h5 style={{ fontWeight: "bold", color: "brown" }}>
                   {benefit?.title}
                 </h5>
-                <p>{benefit?.description}</p>
+                <p className="text">{benefit?.description}</p>
               </div>
             </div>
           ))}
+         </div>
         </div>
       </section>
     </>

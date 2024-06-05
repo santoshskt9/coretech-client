@@ -67,34 +67,41 @@ const ServiceOperations = () => {
         title: "Reliable 24/7 Support",
         description:
           "Ensure continuous operations with round-the-clock support and immediate issue resolution.",
+        iconClass: "flaticon-phone-call",
       },
       {
         title: "Proactive Maintenance",
         description:
           "Prevent downtime and optimize performance with our proactive maintenance services.",
+        iconClass: "flaticon-settings-1",
       },
       {
         title: "Improved Efficiency",
         description:
           "Streamline operations and enhance system efficiency through expert administration and improvement.",
+        iconClass: "flaticon-brain-1",
       },
       {
         title: "Cost Savings",
         description:
           "Reduce operational costs with comprehensive maintenance and efficient system management.",
+        iconClass: "flaticon-brain",
       },
       {
         title: "Enhanced Security",
         description:
           "Protect your systems and data with our robust security measures and proactive monitoring.",
+        iconClass: "flaticon-shield",
       },
       {
         title: "Scalable Solutions",
         description:
           "Implement scalable support solutions that grow with your business needs.",
+        iconClass: "flaticon-graph",
       },
     ],
   };
+  
 
   const services = {
     sectionTitle: "Our Service Operations Offerings",
@@ -107,21 +114,21 @@ const ServiceOperations = () => {
         title: "24/7 System Support",
         description:
           "Ensure your systems are always up and running with our 24/7 support services, providing immediate assistance and issue resolution.",
-        iconClass: "flaticon-support",
+        iconClass: "flaticon-help",
       },
       {
         index: "02",
         title: "Annual Maintenance Contract",
         description:
           "Keep your systems in peak condition with our Annual Maintenance Contract services, providing regular maintenance and proactive support.",
-        iconClass: "flaticon-maintenance",
+        iconClass: "flaticon-settings-1",
       },
       {
         index: "03",
         title: "System Administration & Improvement",
         description:
           "Optimize your IT infrastructure with our system administration and improvement services, ensuring security, efficiency, and alignment with business objectives.",
-        iconClass: "flaticon-administration",
+        iconClass: "flaticon-user",
       },
     ],
     cta: {

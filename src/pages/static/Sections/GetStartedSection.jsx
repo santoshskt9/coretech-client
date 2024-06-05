@@ -9,7 +9,7 @@ const GetStartedSection = ({data}) => {
         style={{ padding: "5em 3.5em", backgroundColor: "#ffd100" }}
       >
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-7">
               <h1 style={{ fontSize: "52px", color: "brown" }}>
                 {data?.title}
@@ -18,13 +18,18 @@ const GetStartedSection = ({data}) => {
                 {data?.description}
               </p>
             </div>
-            <div className="col px-5">
+            <div className="col px-5 mx-auto" style={{height: "200px"}}>
               <button
                 style={{
                   width: "100%",
                   height: "50%",
                   fontSize: "35px",
                   fontWeight: "500",
+                  // backgroundcolor: "white"
+                  "&:hover": {
+                    backgroundColor: "black",
+                    color: "white"
+                  }
                 }}
               >
                 Schedule a Meeting

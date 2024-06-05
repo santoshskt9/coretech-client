@@ -81,34 +81,41 @@ const DevelopmentIntegration = () => {
         title: "Custom Solutions",
         description:
           "Develop solutions tailored to your unique business requirements, ensuring a perfect fit.",
+        iconClass: "flaticon-concept",
       },
       {
         title: "Enhanced Efficiency",
         description:
           "Streamline processes and improve operational efficiency through seamless integration.",
+        iconClass: "flaticon-settings-1",
       },
       {
         title: "Scalable Applications",
         description:
           "Build scalable applications that grow with your business and adapt to changing needs.",
+        iconClass: "flaticon-bar-chart-1",
       },
       {
         title: "Improved User Experience",
         description:
           "Deliver exceptional user experiences through responsive and user-friendly designs.",
+        iconClass: "flaticon-design-2",
       },
       {
         title: "Competitive Advantage",
         description:
           "Stay ahead of the competition with innovative and high-quality development solutions.",
+        iconClass: "flaticon-profits",
       },
       {
         title: "Reduced Costs",
         description:
           "Optimize costs by integrating third-party solutions and automating processes.",
+        iconClass: "flaticon-dollar-currency-symbol",
       },
     ],
   };
+  
 
   const services = {
     sectionTitle: "Our Development & Integration Services Offerings",
@@ -121,28 +128,28 @@ const DevelopmentIntegration = () => {
         title: "Application Development",
         description:
           "Transform your ideas into reality with our custom application development services, ensuring seamless integration and exceptional performance.",
-        iconClass: "flaticon-app-development",
+        iconClass: "flaticon-startup",
       },
       {
         index: "02",
         title: "Web Development",
         description:
           "Enhance your online presence with our web development solutions, building responsive and user-friendly websites.",
-        iconClass: "flaticon-web-development",
+        iconClass: "flaticon-web-1",
       },
       {
         index: "03",
         title: "Mobile App Development",
         description:
           "Stay ahead in the mobile-first world with our high-quality mobile app development services, meeting your business objectives and delighting your users.",
-        iconClass: "flaticon-mobile-app",
+        iconClass: "flaticon-atoms",
       },
       {
         index: "04",
         title: "Third-Party Integration",
         description:
           "Integrate third-party services and APIs smoothly into your systems, ensuring compatibility and enhancing your existing infrastructure.",
-        iconClass: "flaticon-third-party",
+        iconClass: "flaticon-link",
       },
       {
         index: "05",

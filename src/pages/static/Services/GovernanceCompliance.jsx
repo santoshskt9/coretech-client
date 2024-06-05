@@ -75,34 +75,41 @@ const GovernanceCompliance = () => {
         title: "Regulatory Compliance",
         description:
           "Ensure adherence to regulatory requirements and avoid costly penalties.",
+        iconClass: "flaticon-access",
       },
       {
         title: "Risk Mitigation",
         description:
           "Identify and manage potential risks to safeguard your business.",
+        iconClass: "flaticon-brain",
       },
       {
         title: "Operational Efficiency",
         description:
           "Streamline processes to improve efficiency and reduce operational costs.",
+        iconClass: "flaticon-settings",
       },
       {
         title: "Enhanced Resilience",
         description:
           "Develop strategies for business continuity and disaster recovery.",
+        iconClass: "flaticon-shield",
       },
       {
         title: "Continuous Improvement",
         description:
           "Implement ongoing improvements to maintain compliance and efficiency.",
+        iconClass: "flaticon-update",
       },
       {
         title: "Strategic Advantage",
         description:
           "Gain a competitive edge by adopting best practices in governance and compliance.",
+        iconClass: "flaticon-profits",
       },
     ],
   };
+  
 
   const services = {
     sectionTitle: "Our Governance & Compliance Services Offerings",

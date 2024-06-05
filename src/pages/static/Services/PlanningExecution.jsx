@@ -75,34 +75,41 @@ const PlanningExecution = () => {
         title: "Strategic Alignment",
         description:
           "Ensure all projects and initiatives align with your business goals.",
+        iconClass: "flaticon-straight-quotes",
       },
       {
         title: "Resource Optimization",
         description:
           "Efficiently allocate resources to maximize productivity and minimize waste.",
+        iconClass: "flaticon-settings",
       },
       {
         title: "Risk Mitigation",
         description:
           "Identify potential risks early and develop strategies to mitigate them.",
+        iconClass: "flaticon-shield",
       },
       {
         title: "Enhanced Productivity",
         description:
           "Streamline processes to improve efficiency and achieve better outcomes.",
+        iconClass: "flaticon-update",
       },
       {
         title: "Improved Stakeholder Engagement",
         description:
           "Maintain clear communication and strong relationships with stakeholders throughout the project lifecycle.",
+        iconClass: "flaticon-phone-call",
       },
       {
         title: "Scalable Solutions",
         description:
           "Implement scalable solutions that can grow with your business.",
+        iconClass: "flaticon-graph",
       },
     ],
   };
+  
 
   const services = {
     sectionTitle: "Our Planning & Execution Services Offerings",
