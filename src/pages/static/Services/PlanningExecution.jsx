@@ -149,7 +149,7 @@ const PlanningExecution = () => {
     cta: {
       text: "Enhance your planning and execution",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
 

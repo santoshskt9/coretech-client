@@ -134,7 +134,7 @@ const ServiceOperations = () => {
     cta: {
       text: "Ensure seamless operations with our service solutions",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
 

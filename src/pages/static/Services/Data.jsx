@@ -146,7 +146,7 @@ const Data = () => {
     cta: {
       text: "Get your data more organised",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
 

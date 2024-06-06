@@ -150,7 +150,7 @@ const SecurityAndPrivacy = () => {
     cta: {
       text: "Secure your business with advanced security solutions",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
   

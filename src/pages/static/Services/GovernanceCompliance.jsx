@@ -163,7 +163,7 @@ const GovernanceCompliance = () => {
     cta: {
       text: "Enhance your governance and compliance",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
 

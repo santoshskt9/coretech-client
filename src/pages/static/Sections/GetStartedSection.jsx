@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const GetStartedSection = ({data}) => {
+  const navigate = useNavigate();
   return (
     <>
       <section
@@ -20,6 +22,7 @@ const GetStartedSection = ({data}) => {
             </div>
             <div className="col px-5 mx-auto" style={{height: "200px"}}>
               <button
+              onClick={() => window.open('https://outlook.office365.com/book/CoretechInfrastructureSolutionsInc1@coretechinfra.com/s/-QDgTMR6kUq4LYy9OmsyGg2','_blank', 'rel=noopener noreferrer')}
                 style={{
                   width: "100%",
                   height: "50%",
@@ -35,6 +38,7 @@ const GetStartedSection = ({data}) => {
                 Schedule a Meeting
               </button>
               <button
+              onClick={() => navigate("/contact")}
                 style={{
                   width: "100%",
                   height: "50%",

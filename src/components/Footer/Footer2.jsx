@@ -96,14 +96,14 @@ const Footer2 = () => {
                                 <div className="footer-widget links-widget">
                                     <h6 className="widget-title">Our Services</h6>
                                     <ul className="user-links">
-                                        <li><Link to="/vulnerability-assessment-penetration-testing">VAPT</Link></li>
-                                        <li><Link to="/cloud-architecture">Cloud Architecture</Link></li>
-                                        <li><Link to="/it-infrastructure">IT Infrastructure</Link></li>
-                                        <li><Link to="/cyber-security">Cyber Security</Link></li>
-                                        <li><Link to="/business-optimization">Business Optimazation</Link></li>
-                                        <li><Link to="/cloud-and-infra-security">Cloud & Infra Security</Link></li>
-                                        <li><Link to="/application-development">Application Development</Link></li>
-                                        <li><Link to="/managed-services">Managed Services</Link></li>
+                                        <li><Link to="/services/data">Data</Link></li>
+                                        <li><Link to="/services/cloud">Cloud</Link></li>
+                                        <li><Link to="/services/security-and-privacy">Security & Privacy</Link></li>
+                                        <li><Link to="/services/artificial-intelligence">Artificial Intelligence</Link></li>
+                                        <li><Link to="/services/governance-and-compliance">Governance & Complaince</Link></li>
+                                        <li><Link to="/services/planning-and-execution">Planning & Execution</Link></li>
+                                        <li><Link to="/services/development-and-integration">Development & Integration</Link></li>
+                                        <li><Link to="/services/service-operations">Service Operations</Link></li>
                                     </ul>
                                 </div>
 

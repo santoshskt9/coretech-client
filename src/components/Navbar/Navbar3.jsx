@@ -280,6 +280,7 @@ const Navbar3 = () => {
                 handleMouseEnter={handleMouseEnter}
                 handleMouseLeave={handleMouseLeaveMegaMenu}
               />
+              {/* <div style={{height: '5px', width: '100%', backgroundColor: "blueviolet"}}></div> */}
             </>
           ) : null}
         {/* <!-- Mobile Menu  --> */}

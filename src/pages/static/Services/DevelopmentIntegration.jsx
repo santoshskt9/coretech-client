@@ -162,7 +162,7 @@ const DevelopmentIntegration = () => {
     cta: {
       text: "Elevate your business with our development & integration services",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
 

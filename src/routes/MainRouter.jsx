@@ -55,7 +55,7 @@ const MainRouter = () => {
         <Route exact path='/services/cloud' element={<Cloud/>}/>
         <Route exact path='/services/security-and-privacy' element={<SecurityAndPrivacy/>}/>
         <Route exact path='/services/artificial-intelligence' element={<ArtificialIntelligence/>}/>
-        <Route exact path='/services/governance-and-complaince' element={<GovernanceCompliance/>}/>
+        <Route exact path='/services/governance-and-compliance' element={<GovernanceCompliance/>}/>
         <Route exact path='/services/planning-and-execution' element={<PlanningExecution/>}/>
         <Route exact path='/services/development-and-integration' element={<DevelopmentIntegration/>}/>
         <Route exact path='/services/service-operations' element={<ServiceOperations/>}/>

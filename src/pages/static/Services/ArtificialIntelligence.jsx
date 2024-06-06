@@ -149,7 +149,7 @@ const ArtificialIntelligence = () => {
     cta: {
       text: "Transform your business with AI solutions",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
 

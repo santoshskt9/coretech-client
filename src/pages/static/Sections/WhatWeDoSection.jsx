@@ -1,23 +1,29 @@
-import React from 'react';
-import { FiActivity, FiAlertOctagon, FiSettings, FiTarget } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {
+  FiActivity,
+  FiAlertOctagon,
+  FiSettings,
+  FiTarget,
+} from "react-icons/fi";
+import { Link } from "react-router-dom";
 
-const WhatWeDoSection = () => {
-    return (
-        <>
-            <section className="container-fluid  bg-light p-0">
-                <div className="container-fluid bg-black "
-                    style={{
-                        backgroundImage: "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/pattern-4.jpg"
-                    }}
-                >
-                    <div className="container py-5">
-                        <div className="sec-title text-center">
-                            <span className="sub-title">Services</span>
-                            <h2 className='mb-3 text-white'>What We Do</h2>
-
-                        </div>
-                        <div className="row row-cols-1 row-cols-md-2">
+const WhatWeDoSection = ({services}) => {
+  return (
+    <>
+      <section className="container-fluid  bg-light p-0">
+        <div
+          className="container-fluid bg-black "
+          style={{
+            backgroundImage:
+              "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/pattern-4.jpg",
+          }}
+        >
+          <div className="container py-5">
+            <div className="sec-title text-center">
+              <span className="sub-title">Services</span>
+              <h2 className="mb-3 text-white">What We Do</h2>
+            </div>
+            {/* <div className="row row-cols-1 row-cols-md-2">
                             
                             <div className="col p-5">
                                 <Link to="#" className="mb-3 text-warning    ">
@@ -51,72 +57,138 @@ const WhatWeDoSection = () => {
                                     Ethical Hacking and Bug Bounty Training program is designed to equip you with the knowledge and skills needed to protect organizations from cyber threats and vulnerabilities.
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
+            <div className="container">
+              <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 ">
+                {services?.map((benefit, index) => (
+                  <div
+                    key={index}
+                    className="service-benefits col d-flex "
+                    style={{
+                      // maxWidth: "30%",
+                      marginTop: "3.5rem",
+                    }}
+                  >
+                    <i
+                      className={`icon ${benefit?.iconClass}`}
+                      style={{
+                        fontSize: "55px",
+                        marginRight: "25px",
+                        color: "orange",
+                      }}
+                    ></i>
+                    <div className="benefits-content">
+                      <h5 style={{ fontWeight: "bold", color: "orange" }}>
+                        {benefit?.title}
+                      </h5>
+                      <p className="" style={{color: "lightgray"}}>{benefit?.description}</p>
                     </div>
-
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="process-title text-center">
+            {/* <span className='fs-2 fw-bold'>the</span> */}
+            <h2 className="fw-bolder my-3">PROCESS</h2>
+          </div>
+          <div className="services-section-three">
+            <div class="row">
+              <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box">
+                  <div class="content">
+                    <div class="icon-box">
+                      <span className="icon">
+                        <FiTarget />
+                      </span>
+                    </div>
+                    <h5 class="title">
+                      <a href="#">Assessment</a>
+                    </h5>
+                    <div class="text">
+                      Conduct a comprehensive assessment of your existing
+                      security posture and vulnerabilities.
+                    </div>
+                  </div>
+                  <a href="#" class="read-more">
+                    <i class="fa fa-long-arrow-alt-right"></i>
+                  </a>
                 </div>
-                <div className="container">
-                    <div className="process-title text-center">
-                        {/* <span className='fs-2 fw-bold'>the</span> */}
-                        <h2 className='fw-bolder my-3'>
-                            PROCESS
-                        </h2>
+              </div>
 
+              <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box">
+                  <div class="content">
+                    <div class="icon-box">
+                      <span className="icon">
+                        <FiSettings />
+                      </span>
                     </div>
-                    <div className="services-section-three">
-
-                        <div class="row">
-                            <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div class="inner-box">
-                                    <div class="content">
-                                        <div class="icon-box"><span className="icon"><FiTarget /></span></div>
-                                        <h5 class="title"><a href="#">Assessment</a></h5>
-                                        <div class="text">Conduct a comprehensive assessment of your existing security posture and vulnerabilities.</div>
-                                    </div>
-                                    <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div class="inner-box">
-                                    <div class="content">
-                                        <div class="icon-box"><span className="icon"><FiSettings /></span></div>
-                                        <h5 class="title"><a href="#">Implementation</a></h5>
-                                        <div class="text">Deploy customized security solutions based on assessment findings for cyber defense.</div>
-                                    </div>
-                                    <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div class="inner-box">
-                                    <div class="content">
-                                        <div class="icon-box"><span className="icon"><FiActivity /></span></div>
-                                        <h5 class="title"><a href="#">Monitoring</a></h5>
-                                        <div class="text">Continuously monitor network traffic, logs, and user activity for signs of suspicious behavior.</div>
-                                    </div>
-                                    <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-
-
-                            <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div class="inner-box">
-                                    <div class="content">
-                                        <div class="icon-box"><span className="icon"><FiAlertOctagon /></span></div>
-                                        <h5 class="title"><a href="#">Incident Response</a></h5>
-                                        <div class="text">Swiftly respond to security incidents with predefined incident response procedures.</div>
-                                    </div>
-                                    <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-
-                        </div>
+                    <h5 class="title">
+                      <a href="#">Implementation</a>
+                    </h5>
+                    <div class="text">
+                      Deploy customized security solutions based on assessment
+                      findings for cyber defense.
                     </div>
+                  </div>
+                  <a href="#" class="read-more">
+                    <i class="fa fa-long-arrow-alt-right"></i>
+                  </a>
                 </div>
-            </section>
-        </>
-    )
-}
+              </div>
+
+              <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box">
+                  <div class="content">
+                    <div class="icon-box">
+                      <span className="icon">
+                        <FiActivity />
+                      </span>
+                    </div>
+                    <h5 class="title">
+                      <a href="#">Monitoring</a>
+                    </h5>
+                    <div class="text">
+                      Continuously monitor network traffic, logs, and user
+                      activity for signs of suspicious behavior.
+                    </div>
+                  </div>
+                  <a href="#" class="read-more">
+                    <i class="fa fa-long-arrow-alt-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="service-block-three col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box">
+                  <div class="content">
+                    <div class="icon-box">
+                      <span className="icon">
+                        <FiAlertOctagon />
+                      </span>
+                    </div>
+                    <h5 class="title">
+                      <a href="#">Incident Response</a>
+                    </h5>
+                    <div class="text">
+                      Swiftly respond to security incidents with predefined
+                      incident response procedures.
+                    </div>
+                  </div>
+                  <a href="#" class="read-more">
+                    <i class="fa fa-long-arrow-alt-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default WhatWeDoSection;

@@ -143,7 +143,7 @@ const Cloud = () => {
     cta: {
       text: "Transform your business with cloud solutions",
       buttonText: "Get Started",
-      buttonLink: "#contact",
+      buttonLink: "#get-started",
     },
   };
   

@@ -141,9 +141,9 @@ const SubServicesSection = ({ data }) => {
           <div class="bottom-box">
             <div class="text">
               {data?.cta?.text}
-              <Link to={data?.cta?.buttonLink} class="theme-btn">
+              <a href={data?.cta?.buttonLink} class="theme-btn">
                 {data?.cta?.buttonText}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

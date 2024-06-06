@@ -6,11 +6,12 @@
     top: 101%;
     width: 100%;
     /* background-color: #002faf; */
-    background-color: #4b2400;
+    background-color: #ffffff;
     box-shadow: 1px 15px 20px rgb(197 210 227 / 20%);
     padding: 30px;
     box-sizing: border-box;
     z-index: 999999;
+    border-bottom: 5px solid blueviolet;
   }
   
   .mega-menu-section {
@@ -23,9 +24,13 @@
     margin-top: 0;
     font-size: 20px;
     /* color: rgb(96, 1, 173); */
-    color: #ffffff;
+    color: #c58000;
     /* color: #deff4d; */
     font-weight: 700;
+  }
+
+  .mega-menu-section h3:hover {
+    color: orange;
   }
   
   .mega-menu-section ul {
@@ -41,7 +46,7 @@
     text-decoration: none;
     /* color: #333; */
     /* color: #b6d0fe; */
-    color: #e8f1ff;
+    color: #776100;
     font-weight: 300;
   }
   
