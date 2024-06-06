@@ -81,7 +81,7 @@ const GovernanceCompliance = () => {
         title: "Risk Mitigation",
         description:
           "Identify and manage potential risks to safeguard your business.",
-        iconClass: "flaticon-brain",
+        iconClass: "fa fa-exclamation-triangle",
       },
       {
         title: "Operational Efficiency",
@@ -122,42 +122,42 @@ const GovernanceCompliance = () => {
         title: "ISO Certification",
         description:
           "Guide your organization through the ISO certification process, ensuring compliance with international standards.",
-        iconClass: "flaticon-certificate",
+        iconClass: "fa fa-certificate", // Certificate icon for ISO
       },
       {
         index: "02",
         title: "Business Continuity",
         description:
           "Develop and implement strategies to ensure your business remains operational during disruptions.",
-        iconClass: "flaticon-business",
+        iconClass: "fa fa-refresh", // Refresh icon for continuity
       },
       {
         index: "03",
         title: "Risk Management",
         description:
           "Identify, assess, and mitigate risks to protect your organization from potential threats.",
-        iconClass: "flaticon-risk",
+        iconClass: "fa fa-exclamation-triangle", // Warning triangle icon for risk
       },
       {
         index: "04",
         title: "Change Management",
         description:
           "Facilitate smooth transitions and ensure successful adoption of organizational changes.",
-        iconClass: "flaticon-change",
+        iconClass: "fa fa-exchange", // Exchange icon for change
       },
       {
         index: "05",
         title: "Process Improvement/Optimization",
         description:
           "Optimize your business processes to enhance efficiency and effectiveness.",
-        iconClass: "flaticon-process",
+        iconClass: "fa fa-line-chart", // Line chart for improvement over time
       },
       {
         index: "06",
         title: "Talent Development & Learning",
         description:
           "Develop your workforce with training programs and learning opportunities tailored to your organizational needs.",
-        iconClass: "flaticon-learning",
+        iconClass: "fa fa-graduation-cap", // Graduation cap for learning
       },
     ],
     cta: {
@@ -166,6 +166,7 @@ const GovernanceCompliance = () => {
       buttonLink: "#get-started",
     },
   };
+  
 
   const cta = {
     title: "Get Started with Coretech Governance & Compliance Solutions",

@@ -76,40 +76,41 @@ const SecurityAndPrivacy = () => {
         title: "Comprehensive Protection",
         description:
           "Implement end-to-end security solutions to protect against a wide range of cyber threats.",
-        iconClass: "flaticon-shield",
+        iconClass: "fa fa-shield", // Shield icon
       },
       {
         title: "Regulatory Compliance",
         description:
           "Ensure compliance with industry standards and regulations, including ISO:27001.",
-        iconClass: "flaticon-verification",
+        iconClass: "fa fa-check-square", // Checkbox icon for compliance
       },
       {
         title: "Proactive Threat Management",
         description:
           "Identify and mitigate potential threats before they impact your business operations.",
-        iconClass: "flaticon-brain",
+        iconClass: "fa fa-eye", // Eye icon for vigilance/proactive monitoring
       },
       {
         title: "Data Privacy Assurance",
         description:
           "Safeguard sensitive data and maintain customer trust with robust privacy measures.",
-        iconClass: "flaticon-padlock",
+        iconClass: "fa fa-lock", // Lock icon
       },
       {
         title: "Business Continuity",
         description:
           "Maintain uninterrupted operations with effective security incident management and response plans.",
-        iconClass: "flaticon-shield",
+        iconClass: "fa fa-refresh", // Refresh icon for continuity
       },
       {
         title: "Expert Support",
         description:
           "Access around-the-clock support and guidance from security and privacy experts.",
-        iconClass: "flaticon-help",
+        iconClass: "fa fa-life-ring", // Life ring icon for support
       },
     ],
   };
+  
   
   
   const services = {
@@ -123,28 +124,28 @@ const SecurityAndPrivacy = () => {
         title: "Cyber Security",
         description:
           "Implement advanced cyber security measures to protect your organization from digital threats, including malware, ransomware, and phishing attacks.",
-        iconClass: "flaticon-shield",
+        iconClass: "fa fa-shield", // Shield icon
       },
       {
         index: "02",
         title: "SIEM Solution",
         description:
           "Deploy and manage Security Information and Event Management (SIEM) solutions to provide real-time analysis of security alerts and ensure proactive threat detection.",
-        iconClass: "flaticon-analysis",
+        iconClass: "fa fa-search", // Search icon (for analysis/detection)
       },
       {
         index: "03",
         title: "Data Privacy",
         description:
           "Ensure the privacy and protection of sensitive data with comprehensive data privacy solutions, including data encryption, anonymization, and compliance with privacy regulations.",
-        iconClass: "flaticon-lock",
+        iconClass: "fa fa-lock", // Lock icon 
       },
       {
         index: "04",
         title: "ISO:27001",
         description:
           "Achieve and maintain ISO:27001 certification with our expert guidance and implementation services, ensuring your organization meets international standards for information security management.",
-        iconClass: "flaticon-certification",
+        iconClass: "fa fa-certificate", // Certificate icon
       },
     ],
     cta: {
@@ -153,6 +154,7 @@ const SecurityAndPrivacy = () => {
       buttonLink: "#get-started",
     },
   };
+  
   
   const cta = {
     title: "Get Started with Coretech Security & Privacy Solutions",

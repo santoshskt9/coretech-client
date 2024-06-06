@@ -32,6 +32,49 @@ const technologies = {
     ],
 };
 
+const services = [
+    {
+        title: "Data",
+        description: "Harness the power of data with our expert engineering, architecture, management, and analytics solutions.",
+        iconClass: "fas fa-database"  
+    },
+    {
+        title: "Cloud",
+        description: "Seamlessly migrate, modernize, and optimize your infrastructure on the cloud for enhanced scalability and efficiency.",
+        iconClass: "fas fa-cloud-upload-alt" 
+    },
+    {
+        title: "Security & Privacy",
+        description: "Safeguard your systems, data, and operations with robust cybersecurity measures and privacy protocols.",
+        iconClass: "fas fa-shield-alt"
+    },
+    {
+        title: "Artificial Intelligence",
+        description: "Leverage AI and machine learning to unlock new insights, automate processes, and drive innovation.",
+        iconClass: "fas fa-robot" 
+    },
+    {
+        title: "Governance & Compliance",
+        description: "Ensure regulatory compliance, risk management, and operational excellence through effective governance frameworks.",
+        iconClass: "fas fa-balance-scale" 
+    },
+    {
+        title: "Planning and Execution",
+        description: "Achieve your strategic goals with comprehensive portfolio, product, program, and project management expertise.",
+        iconClass: "fas fa-tasks" 
+    },
+    {
+        title: "Development & Integration",
+        description: "Build custom applications, websites, and mobile apps tailored to your unique requirements and integrate them seamlessly.",
+        iconClass: "fas fa-code"
+    },
+    {
+        title: "Service Operations",
+        description: "Ensure smooth system operation and continuous improvement with our 24/7 support and maintenance services.",
+        iconClass: "fas fa-tools" 
+    }
+];
+
 const About = () => {
 
     useEffect(() => {
@@ -63,7 +106,7 @@ const About = () => {
                                 <div class="row">
                                     <div class="about-block col-lg-6 col-md-6">
                                         <div class="inner-box">
-                                            <i class="icon flaticon-user-interface"></i>
+                                            <i class="icon fa fa-cloud"></i>
                                             <h6 class="title"> Cloud Solutions</h6>
                                             <div class="text">Deployment, migration, and management across major platforms (AWS, Azure, Google Cloud).</div>
                                         </div>
@@ -71,15 +114,15 @@ const About = () => {
 
                                     <div class="about-block col-lg-6 col-md-6">
                                         <div class="inner-box">
-                                            <i class="icon flaticon-front-end"></i>
-                                            <h6 class="title">Cybersecurity Solutions</h6>
+                                            <i class="icon fa fa-shield"></i>
+                                            <h6 class="title">Security Solutions</h6>
                                             <div class="text">Comprehensive security assessments, incident response, and compliance strategies.</div>
                                         </div>
                                     </div>
 
                                     <div class="about-block col-lg-6 col-md-6">
                                         <div class="inner-box">
-                                            <i class="icon flaticon-front-end"></i>
+                                            <i class="icon fa fa-code"></i>
                                             <h6 class="title">Software Development</h6>
                                             <div class="text">Custom software solutions, mobile app development, and system integration.</div>
                                         </div>
@@ -87,7 +130,7 @@ const About = () => {
 
                                     <div class="about-block col-lg-6 col-md-6">
                                         <div class="inner-box">
-                                            <i class="icon flaticon-front-end"></i>
+                                            <i class="icon fa fa-question-circle"></i>
                                             <h6 class="title">IT Consultancy</h6>
                                             <div class="text">Strategic IT consulting, project management, and IT infrastructure optimization.</div>
                                         </div>
@@ -159,7 +202,7 @@ const About = () => {
                         <h2>Services we’re offering to <br />our customers</h2>
                     </div>
 
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div className="inner-box">
                                 <div className="icon-box"><FaCloudscale className='icon' /></div>
@@ -210,11 +253,40 @@ const About = () => {
                                 <a href="#" className="read-more"><i className="fa fa-long-arrow-alt-right"></i> Read more</a>
                             </div>
                         </div>
+                    </div> */}
+                    <div className="container">
+              <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 ">
+                {services?.map((benefit, index) => (
+                  <div
+                    key={index}
+                    className="service-benefits col d-flex "
+                    style={{
+                      // maxWidth: "30%",
+                      marginTop: "3.5rem",
+                    }}
+                  >
+                    <i
+                      className={`icon ${benefit?.iconClass}`}
+                      style={{
+                        fontSize: "55px",
+                        marginRight: "25px",
+                        color: "orange",
+                      }}
+                    ></i>
+                    <div className="benefits-content">
+                      <h5 style={{ fontWeight: "bold", color: "orange" }}>
+                        {benefit?.title}
+                      </h5>
+                      <p className="text">{benefit?.description}</p>
                     </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
                     <div className="bottom-box">
-                        <div className="text">Trust the experts for all your <strong>web design & development</strong> needs.</div>
-                        <a href="#" className="theme-btn btn-style-one"><span className="btn-title">Explore now</span></a>
+                        <div className="text">Trust the experts for all your <strong>infrastructure solutions</strong> needs.</div>
+                        <a href="/services" className="theme-btn btn-style-one"><span className="btn-title">Explore now</span></a>
                     </div>
                 </div>
             </section>

@@ -114,21 +114,21 @@ const ServiceOperations = () => {
         title: "24/7 System Support",
         description:
           "Ensure your systems are always up and running with our 24/7 support services, providing immediate assistance and issue resolution.",
-        iconClass: "flaticon-help",
+        iconClass: "fa fa-life-ring", // Life ring icon for support
       },
       {
         index: "02",
         title: "Annual Maintenance Contract",
         description:
           "Keep your systems in peak condition with our Annual Maintenance Contract services, providing regular maintenance and proactive support.",
-        iconClass: "flaticon-settings-1",
+        iconClass: "fa fa-wrench", // Wrench icon for maintenance
       },
       {
         index: "03",
         title: "System Administration & Improvement",
         description:
           "Optimize your IT infrastructure with our system administration and improvement services, ensuring security, efficiency, and alignment with business objectives.",
-        iconClass: "flaticon-user",
+        iconClass: "fa fa-cogs", // Cogs icon for system administration
       },
     ],
     cta: {
@@ -137,6 +137,7 @@ const ServiceOperations = () => {
       buttonLink: "#get-started",
     },
   };
+  
 
   const cta = {
     title: "Get Started with Coretech Service Operations Solutions",

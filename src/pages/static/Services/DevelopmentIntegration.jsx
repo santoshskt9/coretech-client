@@ -128,35 +128,35 @@ const DevelopmentIntegration = () => {
         title: "Application Development",
         description:
           "Transform your ideas into reality with our custom application development services, ensuring seamless integration and exceptional performance.",
-        iconClass: "flaticon-startup",
+        iconClass: "fa fa-code", // Code icon for application development
       },
       {
         index: "02",
         title: "Web Development",
         description:
           "Enhance your online presence with our web development solutions, building responsive and user-friendly websites.",
-        iconClass: "flaticon-web-1",
+        iconClass: "fa fa-globe", // Globe icon for web development
       },
       {
         index: "03",
         title: "Mobile App Development",
         description:
           "Stay ahead in the mobile-first world with our high-quality mobile app development services, meeting your business objectives and delighting your users.",
-        iconClass: "flaticon-atoms",
+        iconClass: "fa fa-mobile", // Mobile phone icon for mobile app dev
       },
       {
         index: "04",
         title: "Third-Party Integration",
         description:
           "Integrate third-party services and APIs smoothly into your systems, ensuring compatibility and enhancing your existing infrastructure.",
-        iconClass: "flaticon-link",
+        iconClass: "fa fa-plug", // Plug icon for integration
       },
       {
         index: "05",
         title: "Tailored Solutions",
         description:
           "Get solutions tailored to your specific business requirements with our custom development services, providing unique and innovative solutions.",
-        iconClass: "flaticon-tailored-solutions",
+        iconClass: "fa fa-wrench", // Wrench icon for customization
       },
     ],
     cta: {
@@ -165,6 +165,7 @@ const DevelopmentIntegration = () => {
       buttonLink: "#get-started",
     },
   };
+  
 
   const cta = {
     title: "Get Started with Coretech Development & Integration Solutions",

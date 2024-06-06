@@ -75,40 +75,41 @@ const ArtificialIntelligence = () => {
         title: "Enhanced Decision-Making",
         description:
           "Leverage AI-driven insights to make informed and strategic business decisions.",
-        iconClass: "flaticon-bar-chart-1",
+        iconClass: "fa fa-diagram-project", // Bar chart for data-driven decisions
       },
       {
         title: "Process Automation",
         description:
           "Automate repetitive tasks and processes to increase efficiency and reduce operational costs.",
-        iconClass: "flaticon-settings",
+        iconClass: "fa fa-cogs", // Gears for automation
       },
       {
         title: "Personalized Customer Experiences",
         description:
           "Utilize AI to deliver personalized experiences and improve customer satisfaction.",
-        iconClass: "flaticon-user",
+        iconClass: "fa fa-user", // User icon for personalization
       },
       {
         title: "Innovative Products and Platforms",
         description:
           "Develop intelligent products and platforms that offer unique value propositions.",
-        iconClass: "flaticon-idea",
+        iconClass: "fa fa-lightbulb", // Lightbulb for innovation
       },
       {
         title: "Competitive Advantage",
         description:
           "Stay ahead of the competition by integrating cutting-edge AI technologies.",
-        iconClass: "flaticon-graph-1",
+        iconClass: "fa fa-trophy", // Trophy for competitive advantage
       },
       {
         title: "Scalable Solutions",
         description:
           "Implement scalable AI solutions that can grow with your business.",
-        iconClass: "flaticon-update",
+        iconClass: "fa fa-expand", // Expand arrows for scalability
       },
     ],
   };
+  
   
 
   const services = {
@@ -122,28 +123,28 @@ const ArtificialIntelligence = () => {
         title: "AI & Machine Learning",
         description:
           "Develop and deploy machine learning models to solve complex problems, automate decision-making, and drive innovation.",
-        iconClass: "flaticon-brain",
+        iconClass: "fa fa-microchip", // Microchip for AI/ML
       },
       {
         index: "02",
         title: "Intelligent Product/Platform",
         description:
           "Create intelligent products and platforms that leverage AI to offer advanced functionalities and improved user experiences.",
-        iconClass: "flaticon-smartphone",
+        iconClass: "fa fa-puzzle-piece", // Puzzle piece for building blocks of product
       },
       {
         index: "03",
         title: "Chatbot Automation",
         description:
           "Implement chatbot solutions to automate customer interactions, provide instant support, and enhance user engagement.",
-        iconClass: "flaticon-chat",
+        iconClass: "fa fa-comments", // Comments icon for chatbots
       },
       {
         index: "04",
         title: "Computer Vision",
         description:
           "Utilize computer vision technologies to analyze visual data, automate image and video processing tasks, and extract valuable insights.",
-        iconClass: "flaticon-vision",
+        iconClass: "fa fa-eye", // Eye icon for vision
       },
     ],
     cta: {
@@ -152,6 +153,7 @@ const ArtificialIntelligence = () => {
       buttonLink: "#get-started",
     },
   };
+  
 
   const cta = {
     title: "Get Started with Coretech AI Solutions",

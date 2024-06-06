@@ -122,28 +122,28 @@ const PlanningExecution = () => {
         title: "Portfolio Management",
         description:
           "Align projects and programs with business goals, prioritize initiatives, and optimize resource allocation to maximize value.",
-        iconClass: "flaticon-portfolio",
+        iconClass: "fa fa-briefcase", // Briefcase for portfolio
       },
       {
         index: "02",
         title: "Product Management",
         description:
           "Drive the success of your products from ideation to market launch, ensuring they meet customer needs and business objectives.",
-        iconClass: "flaticon-product",
+        iconClass: "fa fa-cube", // Cube for product
       },
       {
         index: "03",
         title: "Program & Project Management",
         description:
           "Deliver projects on time and within budget by managing resources, timelines, and stakeholder expectations effectively.",
-        iconClass: "flaticon-project",
+        iconClass: "fa fa-tasks", // Tasks for project management
       },
       {
         index: "04",
         title: "Systems Implementation",
         description:
           "Manage the complexities of system integration and deployment to ensure a smooth transition and successful implementation.",
-        iconClass: "flaticon-system",
+        iconClass: "fa fa-cogs", // Gears for implementation and integration
       },
     ],
     cta: {
@@ -152,6 +152,7 @@ const PlanningExecution = () => {
       buttonLink: "#get-started",
     },
   };
+  
 
   const cta = {
     title: "Get Started with Coretech Planning & Execution Solutions",

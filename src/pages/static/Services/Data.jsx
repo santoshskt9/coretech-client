@@ -77,40 +77,41 @@ const Data = () => {
         title: "Enterprise Data Strategy and Roadmap",
         description:
           "Map multidomain MDM roadmap for customer, supplier, product.",
-        iconClass: "flaticon-graph",
+        iconClass: "fa fa-road",  // Road icon for roadmap/strategy
       },
       {
         title: "Data-Driven Decision-Making",
         description:
           "Understand business and make informed decisions using reliable data.",
-        iconClass: "flaticon-bar-chart",
+        iconClass: "fa fa-bar-chart",  // Bar chart icon for data-driven decisions
       },
       {
         title: "Improved Operational Efficiency",
         description:
           "Streamline processes and identify opportunities for cost savings.",
-        iconClass: "flaticon-settings",
+        iconClass: "fa fa-line-chart",  // Line chart icon for efficiency trends
       },
       {
         title: "Enhanced Customer Experience",
         description:
           "Personalize interactions and tailor offerings based on customer data.",
-        iconClass: "flaticon-user",
+        iconClass: "fa fa-users", // Users icon for customer experience
       },
       {
         title: "Competitive Advantage",
         description:
           "Gain a strategic edge over competitors by leveraging data-driven insights.",
-        iconClass: "flaticon-graph-1",
+        iconClass: "fa fa-trophy", // Trophy icon for competitive advantage
       },
       {
         title: "Future-Ready",
         description:
           "Build a scalable and flexible data infrastructure that can adapt to changing business needs.",
-        iconClass: "flaticon-update",
+        iconClass: "fa fa-cubes", // Cubes icon to represent building blocks for the future
       },
     ],
   };
+  
   
 
 
@@ -125,23 +126,22 @@ const Data = () => {
         title: "Data Engineering & Architecture",
         description:
           "Designs and implements data architectures, manages data infrastructure, develops data models, and ensures data quality and integrity.",
-        iconClass: "flaticon-network",
+        iconClass: "fa fa-cogs",  // Gear icon (cogs) for engineering/building
       },
       {
         index: "02",
         title: "Data Management & Governance",
         description:
           "Master Data Management (MDM), Data quality management, Data lineage and metadata management, Data privacy and security, Data governance frameworks and policies",
-        iconClass: "flaticon-server",
+        iconClass: "fa fa-database", // Database icon to represent data management
       },
       {
         index: "03",
         title: "Data Reporting & Analytics",
         description:
           "Custom report development and dashboards, Data visualization and storytelling, Business intelligence (BI) solutions, Self-service analytics platforms, Ad-hoc data analysis and exploration",
-        iconClass: "flaticon-desktop",
-      },
-     
+        iconClass: "fa fa-bar-chart", // Bar chart icon for analytics/reporting
+      },    
     ],
     cta: {
       text: "Get your data more organised",
@@ -149,6 +149,7 @@ const Data = () => {
       buttonLink: "#get-started",
     },
   };
+  
 
   const cta = {
     title: "Get Started with Coretech Data Solutions",

@@ -69,40 +69,41 @@ const Cloud = () => {
         title: "Scalable Solutions",
         description:
           "Easily scale your infrastructure to meet changing business demands.",
-        iconClass: "flaticon-graph-1",
+        iconClass: "fa fa-expand", // Expanding arrows in FA4
       },
       {
         title: "Cost Efficiency",
         description:
           "Optimize costs by leveraging cloud resources and reducing capital expenditures.",
-        iconClass: "flaticon-dollar-currency-symbol",
+        iconClass: "fa fa-piggy-bank",  // Money icon in FA4
       },
       {
         title: "Enhanced Security",
         description:
           "Implement robust security measures to protect your data and applications.",
-        iconClass: "flaticon-padlock",
+        iconClass: "fa fa-shield-halved", 
       },
       {
         title: "Business Continuity",
         description:
           "Ensure uninterrupted operations with reliable backup and disaster recovery solutions.",
-        iconClass: "flaticon-shield",
+        iconClass: "fa fa-refresh", // Refresh icon for continuity
       },
       {
         title: "Agility and Innovation",
         description:
           "Accelerate your digital transformation with agile and innovative cloud solutions.",
-        iconClass: "flaticon-idea",
+        iconClass: "fa fa-rocket", 
       },
       {
         title: "Expert Support",
         description:
           "Access around-the-clock support and guidance from cloud experts.",
-        iconClass: "flaticon-help",
+        iconClass: "fa fa-life-ring", 
       },
     ],
   };
+  
   
   
   const services = {
@@ -116,28 +117,28 @@ const Cloud = () => {
         title: "Migration & Modernization",
         description:
           "Seamlessly migrate your existing applications and infrastructure to the cloud, and modernize your IT landscape for enhanced performance and scalability.",
-        iconClass: "flaticon-cloud-computing",
+        iconClass: "fa fa-cloud-upload-alt",
       },
       {
         index: "02",
         title: "Optimization",
         description:
           "Optimize your cloud environment for cost, performance, and reliability. Ensure your resources are used efficiently to maximize value.",
-        iconClass: "flaticon-optimization",
+        iconClass: "fa fa-chart-line", // Using a more relevant icon here
       },
       {
         index: "03",
         title: "Infrastructure",
         description:
           "Design, deploy, and manage a robust cloud infrastructure tailored to your business needs. Ensure high availability and reliability with our expert solutions.",
-        iconClass: "flaticon-infrastructure",
+        iconClass: "fa fa-server",
       },
       {
         index: "04",
         title: "System Design",
         description:
           "Develop comprehensive cloud system designs that support your business objectives. Leverage best practices for architecture, security, and compliance.",
-        iconClass: "flaticon-system-design",
+        iconClass: "fa fa-sitemap",
       },
     ],
     cta: {
@@ -146,6 +147,7 @@ const Cloud = () => {
       buttonLink: "#get-started",
     },
   };
+  
   
   const cta = {
     title: "Get Started with Coretech Cloud Solutions",
