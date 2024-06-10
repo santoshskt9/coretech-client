@@ -23,7 +23,7 @@ const TeamSection2 = () => {
         // },
         {
             "_id": "6625347b56f56aa75c3d640c",
-            "name": "Ashutosh Singh",
+            "name": "A Singh",
             "jobTitle": "Chief Data Architect",
             "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
             "__v": 0
