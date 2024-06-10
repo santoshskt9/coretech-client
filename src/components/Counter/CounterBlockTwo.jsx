@@ -19,7 +19,7 @@ const CounterBlockTwo = ({ iconClass, count, title, delay }) => {
             <div className="inner">
                 <i className={`icon ${iconClass}`}></i>
                 <div className="count-box">
-                    <span className="count-text">{currentCount}</span>
+                    <span className="count-text">{currentCount}+</span>
                 </div>
                 <h6 className="counter-title px-5">{title}</h6>
             </div>

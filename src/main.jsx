@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import './assets/css/responsive.css';
 import './assets/css/flaticon.css';
-import './assets/css/flaticon2.css';
+// import './assets/css/flaticon2.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import '@fontsource/roboto/300.css';
