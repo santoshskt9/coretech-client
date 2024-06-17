@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { LiaEnvelopeOpenTextSolid } from "react-icons/lia";
-import Brand from "../../assets/logo-5.png";
+import Brand from "../../assets/coretech_logo_white.svg";
 import { FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 import { FaMessage } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
@@ -37,8 +37,8 @@ const Footer2 = () => {
 
     return (
         <>
-            <footer className="main-footer">
-                <div className="bg bg-pattern-9"></div>
+            <footer className="main-footer" style={{backgroundColor: "navy"}}>
+                {/* <div className="bg bg-pattern-9"></div> */}
                 <div className="container">
                     <div className="subscribe-form">
                         <div className="title-column">

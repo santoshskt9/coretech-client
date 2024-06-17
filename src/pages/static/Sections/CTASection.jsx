@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const CTASection = ({title, link, linkText}) => {
     return (
         <>
-            <section className="call-to-action bg-warning">
-                <div className="bg bg-pattern-8"></div>
+            <section className="call-to-action" style={{color: 'var(--theme-color2'}}>
+                <div className=""></div>
                 <div className="container">
                     <div className="outer-box wow fadeIn">
                         <div className="title-box">

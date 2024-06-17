@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar2.css";
-import Brand from "../../assets/logo-4.png";
+import Brand from "../../assets/coretech_logo.svg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MegaMenu from "./MegaMenu/MegaMenu";
 import { FaBars, FaCross } from "react-icons/fa";
 import FullScreenMenu from "./MobileMenu/FullScreenMenu";
 import { FaXmark } from "react-icons/fa6";
+import { CSSTransition } from "react-transition-group";
 
 const Navbar3 = () => {
   const [isMegaMenuVisible, setMegaMenuVisible] = useState(false);
@@ -49,7 +50,7 @@ const Navbar3 = () => {
               <div className="logo-box">
                 <div className="logo">
                   <Link to="/">
-                    <img src={Brand} height={50} alt="" title="Coretech" />
+                    <img src={Brand} height={50} alt="" title="Coretech" style={{width: '170px'}}/>
                   </Link>
                 </div>
               </div>
@@ -59,12 +60,12 @@ const Navbar3 = () => {
                 <nav className="nav main-menu">
                   <ul className="navigation">
                     <li>
-                      <Link to="/">Home</Link>
+                      <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="dropdown">
-                      <Link to="#" className="d-flex align-items-center">
+                      <NavLink to="#" className="d-flex align-items-center">
                         Learn <MdOutlineKeyboardArrowDown />
-                      </Link>
+                      </NavLink>
                       <ul>
                         <li className="dropdown">
                           <Link to="#">Salesforce</Link>
@@ -89,9 +90,9 @@ const Navbar3 = () => {
                       </ul>
                     </li>
                     <li className="dropdown">
-                      <Link to="/about" className="d-flex align-items-center">
+                      <NavLink to="/about" className="d-flex align-items-center">
                         About <MdOutlineKeyboardArrowDown />{" "}
-                      </Link>
+                      </NavLink>
                       <ul>
                         <li>
                           <Link to="/team">Team</Link>
@@ -135,13 +136,13 @@ const Navbar3 = () => {
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     >
-                      <Link
+                      <NavLink
                         to="/services"
                         className="d-flex align-items-center"
                         // onClick={handleMegamenuHover}
                       >
                         Services <MdOutlineKeyboardArrowDown />
-                      </Link>
+                      </NavLink>
 
                       {/* <div className="mega-menu-container">
                         <div className="mega-menu-content">
@@ -235,9 +236,9 @@ const Navbar3 = () => {
                     </li>
 
                     <li className="dropdown">
-                      <Link to="#" className="d-flex align-items-center">
+                      <NavLink to="#" className="d-flex align-items-center">
                         Insight Hub <MdOutlineKeyboardArrowDown />
-                      </Link>
+                      </NavLink>
                       <ul>
                         <li>
                           <Link to="#">News</Link>
@@ -261,15 +262,14 @@ const Navbar3 = () => {
                 </nav>
                 {/* <!-- Main Menu End--> */}
                 <div className="mobile-menu-btn">
-                    {
-                        mobileMenuVisible ? 
-                        <FaXmark className="fs-1"
-                        onClick={handleMobileMenuToggle}
-                        />
-                        :
-                        <FaBars className="fs-1" onClick={handleMobileMenuToggle}/>
-                    }
-                 
+                  {mobileMenuVisible ? (
+                    <FaXmark
+                      className="fs-1"
+                      onClick={handleMobileMenuToggle}
+                    />
+                  ) : (
+                    <FaBars className="fs-1" onClick={handleMobileMenuToggle} />
+                  )}
                 </div>
               </div>
             </div>
@@ -283,11 +283,19 @@ const Navbar3 = () => {
               {/* <div style={{height: '5px', width: '100%', backgroundColor: "blueviolet"}}></div> */}
             </>
           ) : null}
-        {/* <!-- Mobile Menu  --> */}
-        <FullScreenMenu isOpen={mobileMenuVisible} toggleMenu={handleMobileMenuToggle}/>
+          {/* <!-- Mobile Menu  --> */}
+          <CSSTransition
+            in={mobileMenuVisible}
+            timeout={3000} // Match your CSS transition duration
+            classNames="fullscreen-menu-transition"
+            unmountOnExit
+          >
+            <FullScreenMenu
+              isOpen={mobileMenuVisible}
+              toggleMenu={handleMobileMenuToggle}
+            />
+          </CSSTransition>
         </div>
-
-
       </header>
     </>
   );

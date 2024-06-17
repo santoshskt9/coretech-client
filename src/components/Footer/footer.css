@@ -127,8 +127,8 @@
   }
   .main-footer .about-widget .text {
     font-size: 15px;
-    line-height: 30px;
-    color: #8f8f8f;
+    /* line-height: 30px; */
+    color: #ffffff;
     margin-bottom: 20px;
   }
   .main-footer .about-widget .contact-info {
@@ -139,7 +139,7 @@
     padding: 5px 0;
     padding-left: 50px;
     font-size: 16px;
-    line-height: 27px;
+    /* line-height: 27px; */
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 10px;
@@ -184,8 +184,8 @@
   .user-links li {
     position: relative;
     font-size: 15px;
-    line-height: 28px;
-    color: #8f8f8f;
+    /* line-height: 28px; */
+    color: #d4c3fd;
     font-weight: 400;
     margin-bottom: 10px;
   }

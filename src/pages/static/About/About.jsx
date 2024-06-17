@@ -270,11 +270,11 @@ const About = () => {
                       style={{
                         fontSize: "55px",
                         marginRight: "25px",
-                        color: "orange",
+                        color: "var(--theme-color2)",
                       }}
                     ></i>
                     <div className="benefits-content">
-                      <h5 style={{ fontWeight: "bold", color: "orange" }}>
+                      <h5 style={{ fontWeight: "bold", color: "var(--theme-color2)" }}>
                         {benefit?.title}
                       </h5>
                       <p className="text">{benefit?.description}</p>

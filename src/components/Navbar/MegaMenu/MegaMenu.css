@@ -7,7 +7,7 @@
     width: 100%;
     /* background-color: #002faf; */
     background-color: #ffffff;
-    box-shadow: 1px 15px 20px rgb(197 210 227 / 20%);
+    box-shadow: 1px 15px 20px rgba(197, 197, 227, 0.2);
     padding: 30px;
     box-sizing: border-box;
     z-index: 999999;
@@ -24,13 +24,13 @@
     margin-top: 0;
     font-size: 20px;
     /* color: rgb(96, 1, 173); */
-    color: #c58000;
+    color: #1e00c5;
     /* color: #deff4d; */
     font-weight: 700;
   }
 
   .mega-menu-section h3:hover {
-    color: orange;
+    color: rgb(89, 0, 255);
   }
   
   .mega-menu-section ul {
@@ -46,13 +46,13 @@
     text-decoration: none;
     /* color: #333; */
     /* color: #b6d0fe; */
-    color: #776100;
+    color: #1a0077;
     font-weight: 300;
   }
   
   .mega-menu-section ul li a:hover {
     text-decoration: underline;
-    /* color: orangered; */
+    /* color: var(--theme-color2)red; */
   }
   
   /* Clear floats */

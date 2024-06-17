@@ -47,7 +47,7 @@ const BenefitsSection = ({ data }) => {
                 style={{
                   fontSize: "55px",
                   marginRight: "25px",
-                  color: "orange",
+                  color: "var(--theme-color2)",
                 }}
               ></i>
               <div className="benefits-content">

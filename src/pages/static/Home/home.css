@@ -63,7 +63,7 @@
     width: 10em;
     height: auto;
     margin-right: 25px;
-    color: orange;
+    color: var(--theme-color2);
 }
 
 .items-col-1 {
@@ -79,7 +79,7 @@
 }
 
 .featured-content-2 h4 {
-    color: orange;
+    color: var(--theme-color2);
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -125,7 +125,7 @@
 }
 
 .action-link a {
-    color: orange;
+    color: var(--theme-color2);
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
@@ -173,7 +173,7 @@
 }
 
 .client-slider-head h4 {
-    color: orange;
+    color: var(--theme-color2);
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;

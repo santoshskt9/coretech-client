@@ -119,7 +119,7 @@ What we do section
   /* position: relative;
   top: -10vh;
   mix-blend-mode: difference; */
-  color: #ffc107;
+  color: var(--bg-theme-color2);
 }
 
 .process-title h2 {
@@ -136,7 +136,7 @@ What we do section
 
   content: "";
   height: 20px;
-  background-color: orange;
+  background-color: var(--bg-theme-color2);
 }
 
 /* -------------------- */

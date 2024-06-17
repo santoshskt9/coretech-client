@@ -12,10 +12,9 @@ const WhatWeDoSection = ({services}) => {
     <>
       <section className="container-fluid  bg-light p-0">
         <div
-          className="container-fluid bg-black "
+          className="container-fluid "
           style={{
-            backgroundImage:
-              "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/pattern-4.jpg",
+           backgroundColor: 'var(--theme-black)'
           }}
         >
           <div className="container py-5">
@@ -74,11 +73,11 @@ const WhatWeDoSection = ({services}) => {
                       style={{
                         fontSize: "55px",
                         marginRight: "25px",
-                        color: "orange",
+                        color: "var(--theme-color4)",
                       }}
                     ></i>
                     <div className="benefits-content">
-                      <h5 style={{ fontWeight: "bold", color: "orange" }}>
+                      <h5 style={{ fontWeight: "bold", color: "var(--theme-color4)" }}>
                         {benefit?.title}
                       </h5>
                       <p className="" style={{color: "lightgray"}}>{benefit?.description}</p>

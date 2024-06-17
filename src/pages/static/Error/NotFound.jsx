@@ -10,7 +10,7 @@ const NotFound = () => {
 				<div className="col-xl-12">
 					<div className="error-page__inner">
 						<div className="error-page__title-box">
-							<img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/404.jpg" alt=""/>
+							<img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/404.jpg" alt="" className='w-75'/>
 							<h3 className="error-page__sub-title">Page not found!</h3>
 						</div>
 						<p className="error-page__text">Sorry we can't find that page! The page you are looking <br/> for

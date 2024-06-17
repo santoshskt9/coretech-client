@@ -1,8 +1,9 @@
 :root {
-    --theme-color1: #0f0f0f;
-    --theme-color2: orange;
-    --theme-color2-dark: rgb(233, 152, 2);
+    --theme-color1: #1b036e;
+    --theme-color2: rgb(55, 0, 255);
+    --theme-color2-dark: rgb(2, 6, 233);
     --theme-color3: #f3f3f3;
+    --theme-color4: #A076F9;
     --bg-theme-color1: var(--theme-color1);
     --bg-theme-color2: var(--theme-color2);
     --bg-theme-color2-dark: var(--theme-color2-dark);
@@ -51,7 +52,7 @@
     --sec-title-font-weight: var(--h2-font-weight);
     --theme-light-background: #f8f6f1;
     --theme-light-background-text-color: var(--headings-color);
-    --theme-black: #222429;
+    --theme-black: #000c29;
     --sec-title-font-weight: var(--h2-font-weight);
 }
 
