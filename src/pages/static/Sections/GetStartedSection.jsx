@@ -8,15 +8,15 @@ const GetStartedSection = ({data}) => {
       <section
         id="get-started"
         className="container-fluid"
-        style={{ padding: "5em 3.5em", backgroundColor: "#ffd100" }}
+        style={{ padding: "5em 3.5em", backgroundColor: "var(--theme-color2)" }}
       >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-7">
-              <h1 style={{ fontSize: "52px", color: "brown" }}>
+              <h1 style={{ fontSize: "52px", color: "white" }}>
                 {data?.title}
               </h1>
-              <p className="mt-4">
+              <p className="mt-4 text-light">
                 {data?.description}
               </p>
             </div>
@@ -30,7 +30,7 @@ const GetStartedSection = ({data}) => {
                   fontWeight: "500",
                   // backgroundcolor: "white"
                   "&:hover": {
-                    backgroundColor: "black",
+                    backgroundColor: "var(--theme-color2)",
                     color: "white"
                   }
                 }}
@@ -46,7 +46,7 @@ const GetStartedSection = ({data}) => {
                   color: "white",
                   fontWeight: "500",
                   background:
-                    "linear-gradient(121deg, rgb(221 112 0) 6%, rgb(33, 56, 1) 100%)",
+                    "linear-gradient(121deg, rgb(0 44 111) 6%, rgb(51 1 56) 100%)",
                 }}
               >
                 Contact Us

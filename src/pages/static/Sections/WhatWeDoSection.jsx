@@ -73,11 +73,11 @@ const WhatWeDoSection = ({services}) => {
                       style={{
                         fontSize: "55px",
                         marginRight: "25px",
-                        color: "var(--theme-color4)",
+                        color: "var(--theme-color3)",
                       }}
                     ></i>
                     <div className="benefits-content">
-                      <h5 style={{ fontWeight: "bold", color: "var(--theme-color4)" }}>
+                      <h5 style={{ fontWeight: "bold", color: "var(--theme-color3)" }}>
                         {benefit?.title}
                       </h5>
                       <p className="" style={{color: "lightgray"}}>{benefit?.description}</p>

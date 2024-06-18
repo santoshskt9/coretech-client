@@ -11,7 +11,7 @@ const BenefitsSection = ({ data }) => {
         <div className="container">
           <div className="">
             <h1
-              style={{ fontSize: "52px", color: "brown" }}
+              style={{ fontSize: "52px", color: "var(--theme-color2)" }}
               className="text-center"
             >
               <b>The Coretech Approach</b> to <i>{data?.sectionTitle}</i>
@@ -25,7 +25,7 @@ const BenefitsSection = ({ data }) => {
           style={{
             marginTop: "2em",
             fontSize: "2.2rem",
-            color: "brown",
+            color: "var(--theme-color2)",
             textAlign: "center",
           }}
         >
@@ -51,7 +51,7 @@ const BenefitsSection = ({ data }) => {
                 }}
               ></i>
               <div className="benefits-content">
-                <h5 style={{ fontWeight: "bold", color: "brown" }}>
+                <h5 style={{ fontWeight: "bold", color: "var(--theme-color2" }}>
                   {benefit?.title}
                 </h5>
                 <p className="text">{benefit?.description}</p>

@@ -227,12 +227,12 @@
 }
 
 .service-block-three .inner-box:hover .icon-box:before {
-  color: #ffc971;
+  color: #6686ff;
 }
 
 .service-block-three .inner-box:hover .read-more i {
   color: #ffffff;
-  background-color: #b16503;
+  background-color: #200044;
 }
 
 .service-block-three .content {
