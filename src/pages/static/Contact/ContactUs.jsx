@@ -111,7 +111,7 @@ const ContactUs = () => {
             <div className="col-xl-7 col-lg-6">
               {/* <!-- Google Map HTML Codes --> */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3346.4578352604344!2d-96.981067!3d32.991703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2e6ea5f206db%3A0x1e31269da04d94f1!2sRegus%20-%20Lewisville%20-%20Vista%20Point%20North!5e0!3m2!1sen!2sin!4v1714313080357!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351.7563946735928!2d-96.9800216908862!3d32.99086372396291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2f0035e1663b%3A0xc8a80d43edfad837!2sCoretech%20Infrastructure%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1719290113000!5m2!1sen!2sin"
                 width="100%"
                 height="550"
                 className="rounded-4"

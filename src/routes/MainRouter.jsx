@@ -4,7 +4,6 @@ import Home from '../pages/static/Home/Home';
 import About from '../pages/static/About/About';
 import Services from '../pages/static/Services/Services';
 import ServiceDetails from '../pages/static/Services/ServiceDetails';
-import Blogs from '../pages/static/Blogs/Blogs';
 import BlogDetails from '../pages/static/Blogs/BlogDetails';
 import Training from '../pages/static/Training/Training';
 import Careers from '../pages/static/Careers/Careers';
@@ -33,6 +32,10 @@ import GovernanceCompliance from '../pages/static/Services/GovernanceCompliance'
 import PlanningExecution from '../pages/static/Services/PlanningExecution';
 import DevelopmentIntegration from '../pages/static/Services/DevelopmentIntegration';
 import ServiceOperations from '../pages/static/Services/ServiceOperations';
+import Articles from '../pages/static/Insight/Articles';
+import CaseStudies from '../pages/static/Insight/CaseStudies';
+import News from '../pages/static/Insight/News';
+import Blogs from '../pages/static/Insight/Blogs';
 
 const MainRouter = () => {
   return (
@@ -62,6 +65,9 @@ const MainRouter = () => {
 
         <Route exact path='/blogs' element={<Blogs/>}/>
         <Route exact path='/insight-hub' element={<InsightHub/>}/>
+        <Route exact path='/articles' element={<Articles/>}/>
+        <Route exact path='/case-studies' element={<CaseStudies/>}/>
+        <Route exact path='/news' element={<News/>}/>
 
         <Route exact path='/learn/cyber-security' element={<CyberSecurityTraining />}/>
         <Route exact path='/learn/salesforce/administrator' element={<SalesforceAdministrator />}/>

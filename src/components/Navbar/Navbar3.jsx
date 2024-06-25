@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar2.css";
-import Brand from "../../assets/coretech_logo.svg";
+import Brand from "../../assets/coretech_new.svg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import MegaMenu from "./MegaMenu/MegaMenu";
@@ -241,16 +241,16 @@ const Navbar3 = () => {
                       </NavLink>
                       <ul>
                         <li>
-                          <Link to="#">News</Link>
+                          <Link to="/news">News</Link>
                         </li>
                         <li>
                           <Link to="/blogs">Blogs</Link>
                         </li>
                         <li>
-                          <Link to="#">Articles</Link>
+                          <Link to="/articles">Articles</Link>
                         </li>
                         <li>
-                          <Link to="#">Case Studies</Link>
+                          <Link to="/case-studies">Case Studies</Link>
                         </li>
                       </ul>
                     </li>

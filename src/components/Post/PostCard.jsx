@@ -2,10 +2,10 @@ import moment from 'moment';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PostCard = ({data}) => {
+const PostCard = ({data, variant='md'}) => {
     return (
         <>
-            <div className="news-block col-xl-4 col-lg-6 col-md-6">
+            <div className={`news-block ${variant==='sm' ? 'col-xl-2 col-lg-2 col-md-6' : 'col-xl-4 col-lg-6 col-md-6'}`}>
                 <div className="inner-box">
                     <div className="image-box">
                         <figure className="image"><Link to={"/"+data?.slug || "#"}><img src={data?.heroImage} alt="" height={200}/></Link></figure>

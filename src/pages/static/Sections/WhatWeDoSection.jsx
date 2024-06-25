@@ -88,9 +88,8 @@ const WhatWeDoSection = ({services}) => {
             </div>
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <div className="process-title text-center">
-            {/* <span className='fs-2 fw-bold'>the</span> */}
             <h2 className="fw-bolder my-3">PROCESS</h2>
           </div>
           <div className="services-section-three">
@@ -184,7 +183,7 @@ const WhatWeDoSection = ({services}) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

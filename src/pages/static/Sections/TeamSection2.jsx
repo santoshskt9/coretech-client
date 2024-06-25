@@ -11,7 +11,7 @@ const TeamSection2 = () => {
             "_id": "660c575715adad8d3026f54d",
             "name": "Kailash Nath Patel",
             "jobTitle": "Founder & CEO",
-            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/62d2fa2b-fd5b-40d6-9d2f-bb2788c01a18.png",
             "__v": 0
         },
         // {
@@ -25,7 +25,7 @@ const TeamSection2 = () => {
             "_id": "6625347b56f56aa75c3d640c",
             "name": "A Singh",
             "jobTitle": "Chief Data Architect",
-            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/blank-profile-picture.png",
+            "profileImage": "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/team/62d2fa2b-fd5b-40d6-9d2f-bb2788c01a18.png",
             "__v": 0
         },
         

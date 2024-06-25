@@ -141,8 +141,17 @@ const getElement = (element, elementData) => {
                                 <React.Fragment key={i}>
                                     {content.heading && content.heading.tag && React.createElement(content.heading.tag, {}, content.heading.title)}
                                     {content.paraArr?.map((para, j) => (
-                                        <p key={j}>{para}</p>
+                                        <p key={j}>{
+                                            para?.split(':').length ?
+                                            <>{para}</> : <>
+                                            <b>{para?.split(':')[0]?.replace(/[-*]/g, '')} :</b>{para?.split(':')[1]?.replace("**", '')}</>
+                                        }</p>
                                     ))}
+                                   <ol>
+                                   {content.list?.map((item, k) => (
+                                        <li key={k}><b>{item?.split(':')[0].replace(/[-*]/g,'')} :</b>{item?.split(':')[1].replace('**', '')}</li>
+                                    ))}
+                                   </ol>
                                 </React.Fragment>
                             ))}
                         </div>
@@ -239,12 +248,12 @@ const BlogDetails = () => {
         <>
 
             {/* <!-- blog banner area start from here --> */}
-            <section class="single-blog-banner-area">
+            <section class="single-blog-banner-area mb-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 m-auto">
                             <div class="single-blog-banner-wrapper">
-                                <Link to="#"><h4 className='d-flex align-items-center mb-3 border-bottom py-3'><FaRegArrowAltCircleLeft className='me-2' /> All {data?.category}</h4></Link>
+                                <Link to={`/${data?.postType}s`}><h4 className='d-flex align-items-center mb-3 border-bottom py-3'><FaRegArrowAltCircleLeft className='me-2' /> All {data?.postType}s</h4></Link>
                                 <h5>{data?.category}</h5>
                                 <h1>{data?.title}</h1>
                                 <p>{data?.description}</p>
