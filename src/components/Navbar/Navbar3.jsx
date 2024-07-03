@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar2.css";
-import Brand from "../../assets/coretech_new.svg";
+import Brand from "../../assets/coretech_logo_blue.png";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import MegaMenu from "./MegaMenu/MegaMenu";
@@ -50,7 +50,7 @@ const Navbar3 = () => {
               <div className="logo-box">
                 <div className="logo">
                   <Link to="/">
-                    <img src={Brand} height={50} alt="" title="Coretech" style={{width: '170px'}}/>
+                    <img src={Brand} height={50} alt="" title="Coretech"/>
                   </Link>
                 </div>
               </div>

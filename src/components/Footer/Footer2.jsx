@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { LiaEnvelopeOpenTextSolid } from "react-icons/lia";
-import Brand from "../../assets/coretech_logo_white.svg";
+import Brand from "../../assets/coretech_logo_light.png";
 import { FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 import { FaMessage } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
