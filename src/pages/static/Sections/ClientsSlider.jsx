@@ -18,7 +18,7 @@ function ClientsSlider({ data, autoplay, dots, infinite }) {
   return (
     <>
       <div className="container">
-        <div className="slider-container">
+        <div className="slider-container p-5">
           <div class="sec-title text-center">
             <span class="sub-title">{data?.subTitle}</span>
             <h2>{data?.title}</h2>

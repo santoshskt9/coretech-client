@@ -133,12 +133,12 @@
   
   @media (max-width: 576px) {
     .blog-hero-slide {
-      height: 35vh;
+      height: 50vh;
       align-items: center;
       text-align: center;
     }
     .blog-hero-image {
-      height: 35vh;
+      height: 50vh;
     }
     .blog-hero-text {
       padding: 15px;

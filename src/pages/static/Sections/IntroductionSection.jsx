@@ -57,9 +57,9 @@ const IntroductionSection = ({ data }) => {
                         {
                             data?.images?.length ?
                                 <div className="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
-                                    <div className="inner-column wow fadeInLeft">
-                                        <figure className="image-1 overlay-anim wow fadeInUp"><img src={data?.images[0]} alt="" className='w-100'/></figure>
-                                        <figure className="image-2 overlay-anim wow fadeInRight"><img src={data?.images[1]} alt="" /></figure>
+                                    <div className="inner-column fadeInLeft">
+                                        <figure className="image-1 overlay-anim fadeInUp"><img src={data?.images[0]} alt="" className='w-100'/></figure>
+                                        <figure className="image-2 overlay-anim fadeInRight"><img src={data?.images[1]} alt="" className='w-100'/></figure>
                                         {/* <div className="experience bounce-y">
                                             <div className="inner">
                                                 <i className="icon flaticon-design"></i>

@@ -97,7 +97,7 @@ const SubServicesSection = ({ data }) => {
                 ))}
               </div>
 
-              <div class="video-box">
+              {/* <div class="video-box">
                 <figure class="image">
                   <img
                     src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/image-4.jpg"
@@ -113,11 +113,11 @@ const SubServicesSection = ({ data }) => {
                 >
                   <i class="icon fa fa-play" aria-hidden="true"></i>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
-          <div class="outer-box">
+          <div class="outer-box p-3">
             <div class="services-carousel">
               <Slider {...settings}>
                 {data?.services?.map((service) => (

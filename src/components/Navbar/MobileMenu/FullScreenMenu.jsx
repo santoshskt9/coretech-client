@@ -50,7 +50,15 @@ const FullScreenMenu = ({ isOpen, toggleMenu }) => {
         { text: "Service Operations", link: "/services/service-operations" },
       ],
     },
-    { text: "Insight Hub", link: "/insight-hub" },
+    { text: "Insight Hub", 
+      submenu: [
+        { text: "Blogs", link: "/blogs" },
+        { text: "Articles", link: "/articles" },
+        { text: "news", link: "/news" },
+        { text: "case-studies", link: "/case-studies" },
+    ],
+      // link: "/insight-hub" 
+    },
     { text: "Get In Touch", link: "/contact" },
   ];
 
