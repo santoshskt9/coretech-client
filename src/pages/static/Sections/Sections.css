@@ -1154,7 +1154,7 @@ What we do section
   bottom: 0;
   margin-bottom: 0;
 }
-.about-section-two .image-column .image-2:before {
+/* .about-section-two .image-column .image-2:before {
   position: absolute;
   right: 100px;
   top: -80px;
@@ -1162,7 +1162,7 @@ What we do section
   height: 60px;
   background-color: var(--bg-theme-color2);
   content: "";
-}
+} */
 .about-section-two .image-column .image-2 img {
   width: 100%;
   border-radius: 15px;
