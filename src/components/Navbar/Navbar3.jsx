@@ -94,9 +94,9 @@ const Navbar3 = () => {
                         About <MdOutlineKeyboardArrowDown />{" "}
                       </NavLink>
                       <ul>
-                        <li>
+                        {/* <li>
                           <Link to="/team">Team</Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link
                             to="/about"

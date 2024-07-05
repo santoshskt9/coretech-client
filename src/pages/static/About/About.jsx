@@ -304,7 +304,7 @@ const About = () => {
                 <ClientsSlider data={technologies} />
             </section>
 
-            <TeamSection2 />
+            {/* <TeamSection2 /> */}
             <CareerSection />
         </>
     )
