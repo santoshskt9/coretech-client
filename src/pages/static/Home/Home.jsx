@@ -22,38 +22,36 @@ const Home = () => {
   ];
 
   const slideContent = [
-    
-    // {
-    //   Cloud,
-    //   Development,
-    //   Data,
-    //   Consulting,
-
-    // },
     {
-      title: "Healthcare Opportunity",
-      description: "Looking for a perfect healthcare job?",
-      buttonText: "Learn More About Jobs",
+      title: "Data Services",
+      description:
+        "Unlock the power of your data with our advanced analytics and management solutions.",
+      buttonText: "Learn More About Data Services",
+      buttonLink: "/services/data",
       animation: "fadeInUp",
     },
     {
-      title: "Network with Professionals",
-      description: "Need a professionals?",
-      buttonText: "Explore Our Network",
+      title: "Cloud Solutions",
+      description:
+        "Leverage the cloud to enhance scalability, flexibility, and efficiency.",
+      buttonText: "Discover Cloud Solutions",
+      buttonLink: "/services/cloud",
       animation: "fadeInRight",
     },
     {
-      title: "Security and Compliance",
-      description: "Want to secure your infrastructure?",
-      buttonText: "Learn More About Security",
+      title: "Development Services",
+      description: "Custom software development to meet your business needs.",
+      buttonText: "Explore Development Services",
+      buttonLink: "/services/development-and-integration",
       animation: "fadeInLeft",
     },
     {
-      title: "Automation Services",
+      title: "Consulting Services",
       description:
-        "Coretech provides cloud and automation services to help businesses achieve their IT objectives",
-      buttonText: "Learn More About Automation Services",
-      animation: "fadeInLeft",
+        "Expert guidance to optimize your IT strategy and operations.",
+      buttonText: "Learn More About Consulting",
+      buttonLink: "/services/planing-and-execution",
+      animation: "fadeInUp",
     },
   ];
 
@@ -109,50 +107,54 @@ const Home = () => {
 
   const services = [
     {
-        title: "Data",
-        description: "Harness the power of data with our expert engineering, architecture, management, and analytics solutions.",
-        iconClass: "fas fa-database"  
+      title: "Data",
+      description:
+        "Harness the power of data with our expert engineering, architecture, management, and analytics solutions.",
+      iconClass: "fas fa-database",
     },
     {
-        title: "Cloud",
-        description: "Seamlessly migrate, modernize, and optimize your infrastructure on the cloud for enhanced scalability and efficiency.",
-        iconClass: "fas fa-cloud-upload-alt" 
+      title: "Cloud",
+      description:
+        "Seamlessly migrate, modernize, and optimize your infrastructure on the cloud for enhanced scalability and efficiency.",
+      iconClass: "fas fa-cloud-upload-alt",
     },
     {
-        title: "Security & Privacy",
-        description: "Safeguard your systems, data, and operations with robust cybersecurity measures and privacy protocols.",
-        iconClass: "fas fa-shield-alt"
+      title: "Security & Privacy",
+      description:
+        "Safeguard your systems, data, and operations with robust cybersecurity measures and privacy protocols.",
+      iconClass: "fas fa-shield-alt",
     },
     {
-        title: "Artificial Intelligence",
-        description: "Leverage AI and machine learning to unlock new insights, automate processes, and drive innovation.",
-        iconClass: "fas fa-robot" 
+      title: "Artificial Intelligence",
+      description:
+        "Leverage AI and machine learning to unlock new insights, automate processes, and drive innovation.",
+      iconClass: "fas fa-robot",
     },
     {
-        title: "Governance & Compliance",
-        description: "Ensure regulatory compliance, risk management, and operational excellence through effective governance frameworks.",
-        iconClass: "fas fa-balance-scale" 
+      title: "Governance & Compliance",
+      description:
+        "Ensure regulatory compliance, risk management, and operational excellence through effective governance frameworks.",
+      iconClass: "fas fa-balance-scale",
     },
     {
-        title: "Planning and Execution",
-        description: "Achieve your strategic goals with comprehensive portfolio, product, program, and project management expertise.",
-        iconClass: "fas fa-tasks" 
+      title: "Planning and Execution",
+      description:
+        "Achieve your strategic goals with comprehensive portfolio, product, program, and project management expertise.",
+      iconClass: "fas fa-tasks",
     },
     {
-        title: "Development & Integration",
-        description: "Build custom applications, websites, and mobile apps tailored to your unique requirements and integrate them seamlessly.",
-        iconClass: "fas fa-code"
+      title: "Development & Integration",
+      description:
+        "Build custom applications, websites, and mobile apps tailored to your unique requirements and integrate them seamlessly.",
+      iconClass: "fas fa-code",
     },
     {
-        title: "Service Operations",
-        description: "Ensure smooth system operation and continuous improvement with our 24/7 support and maintenance services.",
-        iconClass: "fas fa-tools" 
-    }
-];
-
-
-
-  
+      title: "Service Operations",
+      description:
+        "Ensure smooth system operation and continuous improvement with our 24/7 support and maintenance services.",
+      iconClass: "fas fa-tools",
+    },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -164,7 +166,7 @@ const Home = () => {
       <WhyChooseUs />
       {/* <Featured featuredContent={featuredContent} /> */}
       <AboutSection />
-      <WhatWeDoSection services={services}/>
+      <WhatWeDoSection services={services} />
       <TestimonialSection />
 
       <ClientsSlider data={technologies} />
