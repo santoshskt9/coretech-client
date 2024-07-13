@@ -7,14 +7,14 @@ import {
 } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-const WhatWeDoSection = ({services}) => {
+const WhatWeDoSection = ({ services }) => {
   return (
     <>
       <section className="container-fluid  bg-light p-0">
         <div
           className="container-fluid "
           style={{
-           backgroundColor: 'var(--theme-black)'
+            backgroundColor: "var(--theme-black)",
           }}
         >
           <div className="container py-5">
@@ -58,7 +58,7 @@ const WhatWeDoSection = ({services}) => {
                             </div>
                         </div> */}
             <div className="container">
-              <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 ">
+              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                 {services?.map((benefit, index) => (
                   <div
                     key={index}
@@ -68,19 +68,32 @@ const WhatWeDoSection = ({services}) => {
                       marginTop: "3.5rem",
                     }}
                   >
-                    <i
-                      className={`icon ${benefit?.iconClass}`}
-                      style={{
-                        fontSize: "55px",
-                        marginRight: "25px",
-                        color: "var(--theme-color3)",
-                      }}
-                    ></i>
-                    <div className="benefits-content">
-                      <h5 style={{ fontWeight: "bold", color: "var(--theme-color3)" }}>
-                        {benefit?.title}
-                      </h5>
-                      <p className="" style={{color: "lightgray"}}>{benefit?.description}</p>
+                    <div className="row">
+                      <div className="col col-2">
+                        <i
+                          className={`icon ${benefit?.iconClass}`}
+                          style={{
+                            fontSize: "40px",
+                            // marginRight: "25px",
+                            color: "var(--theme-color3)",
+                          }}
+                        ></i>
+                      </div>
+                      <div className="col col-10">
+                        <div className="benefits-content">
+                          <h5
+                            style={{
+                              fontWeight: "bold",
+                              color: "var(--theme-color3)",
+                            }}
+                          >
+                            {benefit?.title}
+                          </h5>
+                          <p className="" style={{ color: "lightgray" }}>
+                            {benefit?.description}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ))}
