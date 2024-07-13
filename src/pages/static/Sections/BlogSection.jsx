@@ -8,7 +8,7 @@ const BlogSection = ({ title, subTitle }) => {
 
     const getBlogs = async () => {
         try {
-            const res = await api.get(`/api/post/blogs`);
+            const res = await api.get(`/api/post/latest?type=blog`);
             if (res?.status === 200) {
                 console.log(res);
                 setPosts(res?.data);

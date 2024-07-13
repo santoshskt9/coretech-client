@@ -64,7 +64,7 @@ const Navbar3 = () => {
                     </li>
                     <li className="dropdown">
                       <NavLink to="#" className="d-flex align-items-center">
-                        Learn <MdOutlineKeyboardArrowDown />
+                        Training <MdOutlineKeyboardArrowDown />
                       </NavLink>
                       <ul>
                         <li className="dropdown">

@@ -12,6 +12,7 @@ import InsightHero from "../Sections/InsightHero";
 const Blogs = () => {
   const { api } = useGlobalContext();
   const [blogs, setBlogs] = useState();
+  const [popularBlogs, setPopularBlogs ] = useState();
   const [news, setNews] = useState();
   const [caseStudies, setCaseStudies] = useState();
   const [articles, setArticles] = useState();
@@ -64,9 +65,21 @@ const Blogs = () => {
     },
   ];
 
-  const getBlogs = async () => {
+  // const getBlogs = async () => {
+  //   try {
+  //     const res = await api.get(`/api/post/blogs`);
+  //     if (res?.status === 200) {
+  //       console.log(res);
+  //       setBlogs(res?.data);
+  //     }
+  //   } catch (error) {
+  //     console.log("Error fetching post", error);
+  //   }
+  // };
+
+  const getLatestBlogs = async () => {
     try {
-      const res = await api.get(`/api/post/blogs`);
+      const res = await api.get(`/api/post/latest?type=blog`);
       if (res?.status === 200) {
         console.log(res);
         setBlogs(res?.data);
@@ -76,48 +89,62 @@ const Blogs = () => {
     }
   };
 
-  const getNews = async () => {
+  const getPopularBlogs = async () => {
     try {
-      const res = await api.get(`/api/post/news`);
+      const res = await api.get(`/api/post/popular?type=blog`);
       if (res?.status === 200) {
         console.log(res);
-        setNews(res?.data);
+        setPopularBlogs(res?.data?.popularPosts);
       }
     } catch (error) {
       console.log("Error fetching post", error);
     }
   };
 
-  const getArticles = async () => {
-    try {
-      const res = await api.get(`/api/post/articles`);
-      if (res?.status === 200) {
-        console.log(res);
-        setArticles(res?.data);
-      }
-    } catch (error) {
-      console.log("Error fetching post", error);
-    }
-  };
+  // const getNews = async () => {
+  //   try {
+  //     const res = await api.get(`/api/post/news`);
+  //     if (res?.status === 200) {
+  //       console.log(res);
+  //       setNews(res?.data);
+  //     }
+  //   } catch (error) {
+  //     console.log("Error fetching post", error);
+  //   }
+  // };
 
-  const getCaseStudies = async () => {
-    try {
-      const res = await api.get(`/api/post/case-studies`);
-      if (res?.status === 200) {
-        console.log(res);
-        setCaseStudies(res?.data);
-      }
-    } catch (error) {
-      console.log("Error fetching post", error);
-    }
-  };
+  // const getArticles = async () => {
+  //   try {
+  //     const res = await api.get(`/api/post/articles`);
+  //     if (res?.status === 200) {
+  //       console.log(res);
+  //       setArticles(res?.data);
+  //     }
+  //   } catch (error) {
+  //     console.log("Error fetching post", error);
+  //   }
+  // };
+
+  // const getCaseStudies = async () => {
+  //   try {
+  //     const res = await api.get(`/api/post/case-studies`);
+  //     if (res?.status === 200) {
+  //       console.log(res);
+  //       setCaseStudies(res?.data);
+  //     }
+  //   } catch (error) {
+  //     console.log("Error fetching post", error);
+  //   }
+  // };
 
   useEffect(() => {
     getFeaturedBlogs();
-    getArticles();
-    getBlogs();
-    getCaseStudies();
-    getNews();
+    // getArticles();
+    // getBlogs();
+    getLatestBlogs();
+    getPopularBlogs();
+    // getCaseStudies();
+    // getNews();
   }, []);
 
   useEffect(() => {
@@ -128,7 +155,7 @@ const Blogs = () => {
     <>
       <InsightHero title="Featured Blogs" featuredPosts={featuredBlogs} />
       <PostSection data={blogs} title="Latest blogs" />
-      <PostSection data={blogs} title="Popular blogs" />
+      <PostSection data={popularBlogs} title="Popular blogs" />
     </>
   );
 };

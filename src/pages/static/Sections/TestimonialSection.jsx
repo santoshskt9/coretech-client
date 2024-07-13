@@ -2,6 +2,7 @@ import React from 'react'
 import CounterBlockTwo from '../../../components/Counter/CounterBlockTwo';
 import Slider from 'react-slick';
 import { DockTwoTone } from '@mui/icons-material';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const testimonials = [
     {
@@ -13,7 +14,7 @@ const testimonials = [
     },
     {
         "avatarUrl": "images/resource/thumb-2.jpg",
-        "name": "John Smith",
+        "name": "Sunil Mehta",
         "designation": "CTO",
         "review": "We relied on Coretech Infrastructure Solutions Inc. for cyber security solutions, and they exceeded our expectations. Their proactive approach and expertise in the field ensured our digital assets remained protected.",
         "rating": 5
@@ -70,8 +71,9 @@ const TestimonialSection = () => {
                                 <div className="testimonial-block-three" key={i}>
                                     <div className="inner-box">
                                         <div className="thumb">
-                                            <img src={testimonial?.avatarUrl} alt="" />
-                                            <span className="icon fa fa-quote-right"></span>
+                                            {/* <img src={testimonial?.avatarUrl} alt="" /> */}
+                                            {/* <span className="icon fa fa-quote-right"></span> */}
+                                            <FaQuoteLeft style={{fontSize: '56px' , color: "blueviolet"}}/>
                                         </div>
                                         <div className="text">{testimonial?.review}</div>
                                         <h6 className="name">{testimonial?.name} <span className="designation"> - &nbsp; {testimonial?.designation}</span></h6>
