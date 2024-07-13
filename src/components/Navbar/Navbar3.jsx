@@ -59,36 +59,9 @@ const Navbar3 = () => {
               <div className="nav-outer">
                 <nav className="nav main-menu">
                   <ul className="navigation">
-                    <li>
+                    {/* <li>
                       <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li className="dropdown">
-                      <NavLink to="#" className="d-flex align-items-center">
-                        Training <MdOutlineKeyboardArrowDown />
-                      </NavLink>
-                      <ul>
-                        <li className="dropdown">
-                          <Link to="#">Salesforce</Link>
-                          <ul>
-                            <li>
-                              <Link to="/learn/salesforce/developer">
-                                Salesforce Developer
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="/learn/salesforce/administrator">
-                                Salesforce Administrator
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <Link to="/learn/cyber-security">Cyber Security</Link>
-                        </li>
-                        {/* <li><Link to="/training">Certiification</Link></li>
-												<li><Link to="/training">Webinar</Link></li> */}
-                      </ul>
-                    </li>
+                    </li> */}
                     <li className="dropdown">
                       <NavLink to="/about" className="d-flex align-items-center">
                         About <MdOutlineKeyboardArrowDown />{" "}
@@ -131,6 +104,8 @@ const Navbar3 = () => {
                         </li>
                       </ul>
                     </li>
+                  
+                    
                     <li
                       className="dropdown mega-menu"
                       onMouseEnter={handleMouseEnter}
@@ -234,10 +209,37 @@ const Navbar3 = () => {
                         ></div>
                       </div> */}
                     </li>
+                    <li className="dropdown">
+                      <NavLink to="#" className="d-flex align-items-center">
+                        Training <MdOutlineKeyboardArrowDown />
+                      </NavLink>
+                      <ul>
+                        <li className="dropdown">
+                          <Link to="#">Salesforce</Link>
+                          <ul>
+                            <li>
+                              <Link to="/learn/salesforce/developer">
+                                Salesforce Developer
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/learn/salesforce/administrator">
+                                Salesforce Administrator
+                              </Link>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to="/learn/cyber-security">Cyber Security</Link>
+                        </li>
+                        {/* <li><Link to="/training">Certiification</Link></li>
+												<li><Link to="/training">Webinar</Link></li> */}
+                      </ul>
+                    </li>
 
                     <li className="dropdown">
                       <NavLink to="#" className="d-flex align-items-center">
-                        Insight Hub <MdOutlineKeyboardArrowDown />
+                        Insights <MdOutlineKeyboardArrowDown />
                       </NavLink>
                       <ul>
                         <li>

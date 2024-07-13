@@ -22,6 +22,14 @@ const Home = () => {
   ];
 
   const slideContent = [
+    
+    // {
+    //   Cloud,
+    //   Development,
+    //   Data,
+    //   Consulting,
+
+    // },
     {
       title: "Healthcare Opportunity",
       description: "Looking for a perfect healthcare job?",
