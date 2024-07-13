@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 
-function ClientsSlider({ data, autoplay, dots, infinite }) {
+function ClientsSlider({ data, autoplay, dots, infinite, logoHeight }) {
   const settings = {
     dots: dots || true,
     infinite: infinite || true,
@@ -27,7 +27,9 @@ function ClientsSlider({ data, autoplay, dots, infinite }) {
             {data?.slides?.map((imgSrc, i) => (
               <div className="slide-logo" key={i}>
                 <Link to="#">
-                  <img src={imgSrc} alt="" />
+                  <img src={imgSrc} alt=""  style={{
+                    height: logoHeight ? `${logoHeight}px` : '100px',
+                  }}/>
                 </Link>
               </div>
             ))}

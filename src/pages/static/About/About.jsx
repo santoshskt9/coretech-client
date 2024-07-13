@@ -247,7 +247,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="services-section container pt-0">
+      <section className="services-section container pt-0 pb-0">
         <div className="container">
           <div className="sec-title text-center">
             <span className="sub-title">What We’re Offering</span>
@@ -362,7 +362,7 @@ const About = () => {
       </section>
 
       <section id="clients">
-        <ClientsSlider data={partners} autoplay={false} dots={false} />
+        <ClientsSlider data={partners} autoplay={false} dots={false} logoHeight={50} />
       </section>
 
       <section id="partners">
