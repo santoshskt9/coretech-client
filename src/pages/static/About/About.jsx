@@ -171,6 +171,17 @@ const About = () => {
                 <div className="container">
 
 
+                    
+                    <div className="row row-cols-1 row-cols-lg-2">
+                        <div className="col">
+                            <img src="https://img.freepik.com/free-photo/flight-aviation-cloudy-aircraft-airplane_1172-277.jpg?t=st=1713715859~exp=1713719459~hmac=0a27aae777940a5bc6cb7cbdd52850271c6a635f2e72f1524d0cddde891d30a1&w=740" alt="about" className='w-100 rounded-3' />
+                        </div>
+                        <div className="col p-5">
+                            <h1 className='text-warning'>Our Mission</h1>
+                            <p>Our mission is to empower businesses with cutting-edge IT solutions that enhance operational efficiency and drive digital transformation. We commit to delivering reliable, scalable, and secure IT services tailored to meet the diverse needs of our clients, ensuring they can focus on their core business goals with confidence.
+                            </p>
+                        </div>
+                    </div>
                     <div className="row row-cols-1 row-cols-lg-2  mb-5">
 
                         <div className="col p-5 ">
@@ -180,16 +191,6 @@ const About = () => {
                         </div>
                         <div className="col">
                             <img src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/about/mission.jpg" alt="about" className='w-100 rounded-3' />
-                        </div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-lg-2">
-                        <div className="col">
-                            <img src="https://img.freepik.com/free-photo/flight-aviation-cloudy-aircraft-airplane_1172-277.jpg?t=st=1713715859~exp=1713719459~hmac=0a27aae777940a5bc6cb7cbdd52850271c6a635f2e72f1524d0cddde891d30a1&w=740" alt="about" className='w-100 rounded-3' />
-                        </div>
-                        <div className="col p-5">
-                            <h1 className='text-warning'>Our Mission</h1>
-                            <p>Our mission is to empower businesses with cutting-edge IT solutions that enhance operational efficiency and drive digital transformation. We commit to delivering reliable, scalable, and secure IT services tailored to meet the diverse needs of our clients, ensuring they can focus on their core business goals with confidence.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -285,7 +286,7 @@ const About = () => {
             </div>
 
                     <div className="bottom-box">
-                        <div className="text">Trust the experts for all your <strong>infrastructure solutions</strong> needs.</div>
+                        <div className="text">Trust the experts for all your <strong>IT solutions</strong></div>
                         <a href="/services" className="theme-btn btn-style-one"><span className="btn-title">Explore now</span></a>
                     </div>
                 </div>
