@@ -344,7 +344,7 @@ What we do section
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--bg-theme-color2);
+  background-color: #4288e4;
   opacity: 0.8;
   content: "";
 }
