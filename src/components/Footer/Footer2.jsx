@@ -45,10 +45,10 @@ const Footer2 = () => {
                             <h5 className="title"><span className="icon"><LiaEnvelopeOpenTextSolid /> </span> Subscribe now to get <br />latest updates</h5>
                         </div>
                         <div className="form-column">
-                            <form method="post" action="#">
+                            <form onSubmit={handleSubscribe}>
                                 <div className="form-group">
                                     <input type="email" name="email" className="email" placeholder="Email Address" value={email} onChange={handleEmailChange} required />
-                                    <button type="button" className="theme-btn" onClick={handleSubscribe}><i className="fa fa-paper-plane"></i></button>
+                                    <button type="button" className="theme-btn" onClick={handleSubscribe}><i className="fa fa-paper-plane" style={{color: "var(--theme-color2)"}}></i></button>
                                 </div>
                             </form>
                         </div>
