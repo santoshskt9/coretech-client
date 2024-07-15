@@ -36,11 +36,11 @@ const Navbar2 = () => {
 										</li>
 										<li className="dropdown"><Link to="#" className='d-flex align-items-center'>Learn <MdOutlineKeyboardArrowDown /></Link>
 											<ul>
-												<li><Link to="/learn/cyber-security">Cyber Security</Link></li>
+												<li><Link to="/training/cyber-security">Cyber Security</Link></li>
 												<li className="dropdown"><Link to="#">Salesforce</Link>
 													<ul>
-														<li><Link to="/learn/salesforce/administrator">Salesforce Administrator</Link></li>
-														<li><Link to="/learn/salesforce/developer">Salesforce Developer</Link></li>
+														<li><Link to="/training/salesforce/administrator">Salesforce Administrator</Link></li>
+														<li><Link to="/training/salesforce/developer">Salesforce Developer</Link></li>
 													</ul>
 												</li>
 												{/* <li><Link to="/training">Certiification</Link></li>

@@ -85,7 +85,7 @@ const Footer2 = () => {
                                         {/* <li><Link to="/team">Meet the Team</Link></li> */}
                                         <li><Link to="/news">News & Media</Link></li>
                                         <li><Link to="/blogs">Blogs & Articles</Link></li>
-                                        <li><Link to="#">Training</Link></li>
+                                        <li><Link to="/training">Training</Link></li>
                                         <li><Link to="/career">Career</Link></li>
                                         <li><Link to="/contact">Contact</Link></li>
                                     </ul>

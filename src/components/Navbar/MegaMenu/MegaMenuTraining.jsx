@@ -6,7 +6,7 @@ const MegaMenuTraining = ({handleMouseEnter, handleMouseLeave}) => {
   return (
     <div className="mega-menu-content" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className="mega-menu-section">
-        <h3><Link onClick={handleMouseLeave} to="/learn/cyber-security">Cyber Security</Link></h3>
+        <h3><Link onClick={handleMouseLeave} to="/training/cyber-security">Cyber Security</Link></h3>
         <ul>
           <li>VAPT</li>
           <li>Ethical Hacking</li>
@@ -15,7 +15,7 @@ const MegaMenuTraining = ({handleMouseEnter, handleMouseLeave}) => {
         </ul>
       </div>
       <div className="mega-menu-section">
-        <h3><Link onClick={handleMouseLeave} to="/learn/salesforce">Salesforce</Link></h3>
+        <h3><Link onClick={handleMouseLeave} to="/training/salesforce">Salesforce</Link></h3>
         <ul>
           <li>Administrator</li>
           <li>Developer</li>

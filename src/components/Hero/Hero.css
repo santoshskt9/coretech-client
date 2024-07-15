@@ -4,6 +4,7 @@
     height: calc(100vh - 50px);
     display: flex;
     align-items: center;
+    top: 0;
 }
 
 .hero-content h1 {

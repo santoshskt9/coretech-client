@@ -233,19 +233,19 @@ const Navbar3 = () => {
                           <Link to="#">Salesforce</Link>
                           <ul>
                             <li>
-                              <Link to="/learn/salesforce/developer">
+                              <Link to="/training/salesforce/developer">
                                 Salesforce Developer
                               </Link>
                             </li>
                             <li>
-                              <Link to="/learn/salesforce/administrator">
+                              <Link to="/training/salesforce/administrator">
                                 Salesforce Administrator
                               </Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <Link to="/learn/cyber-security">Cyber Security</Link>
+                          <Link to="/training/cyber-security">Cyber Security</Link>
                         </li>
                         <li><Link to="/training">Certiification</Link></li>
 												<li><Link to="/training">Webinar</Link></li>

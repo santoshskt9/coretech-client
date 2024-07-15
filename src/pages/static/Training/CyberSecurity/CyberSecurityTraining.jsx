@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import "../Training.css";
-import Hero from '../../../../components/Hero/Hero'
 import { FaBook, FaCheckCircle, FaClipboard, FaClock, FaPlus, FaTimesCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import HeroTwo from '../../../../components/Hero/HeroTwo';
 
 const CyberSecurityTraining = () => {
 
@@ -12,7 +12,7 @@ const CyberSecurityTraining = () => {
 
     return (
         <>
-            <Hero
+            <HeroTwo
                 heading="Become a Cybersecurity Expert"
                 description="Sharpen your skills and launch your cybersecurity career with our comprehensive training programs"
                 imgSrc="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/service/cyber-security.png"

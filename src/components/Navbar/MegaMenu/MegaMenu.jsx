@@ -83,7 +83,7 @@ const MegaMenu = ({handleMouseEnter, handleMouseLeave}) => {
           <li>Annual Maintenance Contract</li>
           <li>System Administration & Improvement</li>
         </ul>
-        <h3 className='mt-5'><Link onClick={handleMouseLeave} to="/services/service-operations">Coporate Training <FaArrowCircleRight/> </Link></h3>
+        <h3 className='mt-5'><Link onClick={handleMouseLeave} to="/training">Coporate Training <FaArrowCircleRight/> </Link></h3>
       </div>
       
     </div>

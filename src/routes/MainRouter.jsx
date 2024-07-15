@@ -68,10 +68,11 @@ const MainRouter = () => {
         <Route exact path='/articles' element={<Articles/>}/>
         <Route exact path='/case-studies' element={<CaseStudies/>}/>
         <Route exact path='/news' element={<News/>}/>
+        <Route exact path='/training' element={<Training/>}/>
 
-        <Route exact path='/learn/cyber-security' element={<CyberSecurityTraining />}/>
-        <Route exact path='/learn/salesforce/administrator' element={<SalesforceAdministrator />}/>
-        <Route exact path='/learn/salesforce/developer' element={<SalesforceDeveloper />}/>
+        <Route exact path='/training/cyber-security' element={<CyberSecurityTraining />}/>
+        <Route exact path='/training/salesforce/administrator' element={<SalesforceAdministrator />}/>
+        <Route exact path='/training/salesforce/developer' element={<SalesforceDeveloper />}/>
         <Route exact path='/career' element={<Careers />}/>
         <Route exact path='/contact' element={<ContactUs />}/>
         <Route exact path='/team' element={<Teams />}/>
