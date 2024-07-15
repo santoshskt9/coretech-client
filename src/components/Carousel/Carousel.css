@@ -1,7 +1,7 @@
 .hero-slider {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    min-height: 90vh;
+    min-height: 87vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -177,9 +177,9 @@
   -------------------------------- */
 
   .hero-slider-two {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     flex-direction: column;

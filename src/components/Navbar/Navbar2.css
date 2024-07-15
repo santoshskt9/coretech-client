@@ -526,8 +526,9 @@ Main Header
   ***/
 .header-style-two {
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
   z-index: 9;
+  transition: background-color 0.6s ease-in-out;
 }
 .header-style-two .header-top {
   position: relative;
@@ -561,7 +562,14 @@ Main Header
   color: #6a6a6a;
 }
 .header-style-two .main-menu .navigation > li > a {
-  color: #6a6a6a;
+  /* color: #6a6a6a; */
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-style-two.bg-white .main-menu .navigation > li > a {
+  color: #6a6a6a; /* Change the color to black when sticky */
+  transition: color 0.3s ease-in-out
 }
 
 /*** 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './MegaMenu.css';
 import { Link } from 'react-router-dom';
+import { FaArrowCircleRight } from 'react-icons/fa';
 
 const MegaMenu = ({handleMouseEnter, handleMouseLeave}) => {
   return (
@@ -82,6 +83,7 @@ const MegaMenu = ({handleMouseEnter, handleMouseLeave}) => {
           <li>Annual Maintenance Contract</li>
           <li>System Administration & Improvement</li>
         </ul>
+        <h3 className='mt-5'><Link onClick={handleMouseLeave} to="/services/service-operations">Coporate Training <FaArrowCircleRight/> </Link></h3>
       </div>
       
     </div>

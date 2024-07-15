@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar2.css";
 import Brand from "../../assets/coretech_logo_blue.png";
+import BrandInvert from "../../assets/coretech_logo_light.png";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import MegaMenu from "./MegaMenu/MegaMenu";
@@ -40,9 +41,23 @@ const Navbar3 = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   };
 
+  const [isSticky, setIsSticky] = useState(false);
+  const scrollThreshold = 1; // Adjust this value to change the scroll position
+
+  const handleScroll = () => {
+    const scrolledY = window.scrollY;
+    setIsSticky(scrolledY > scrollThreshold);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []); // Empty dependency array to run effect only once
+
   return (
     <>
-      <header className="main-header header-style-two sticky-top shadow-sm">
+      <header className={`main-header header-style-two ${isSticky ? 'bg-white sticky-top shadow-sm' : ''}`}>
         <div className="header-lower">
           <div className="container-fluid">
             {/* <!-- Main box --> */}
@@ -50,7 +65,7 @@ const Navbar3 = () => {
               <div className="logo-box">
                 <div className="logo">
                   <Link to="/">
-                    <img src={Brand} height={50} alt="" title="Coretech"/>
+                    <img src={isSticky? Brand : BrandInvert} height={50} alt="" title="Coretech"/>
                   </Link>
                 </div>
               </div>
@@ -209,7 +224,7 @@ const Navbar3 = () => {
                         ></div>
                       </div> */}
                     </li>
-                    <li className="dropdown">
+                    {/* <li className="dropdown">
                       <NavLink to="#" className="d-flex align-items-center">
                         Training <MdOutlineKeyboardArrowDown />
                       </NavLink>
@@ -232,10 +247,10 @@ const Navbar3 = () => {
                         <li>
                           <Link to="/learn/cyber-security">Cyber Security</Link>
                         </li>
-                        {/* <li><Link to="/training">Certiification</Link></li>
-												<li><Link to="/training">Webinar</Link></li> */}
+                        <li><Link to="/training">Certiification</Link></li>
+												<li><Link to="/training">Webinar</Link></li>
                       </ul>
-                    </li>
+                    </li> */}
 
                     <li className="dropdown">
                       <NavLink to="#" className="d-flex align-items-center">
