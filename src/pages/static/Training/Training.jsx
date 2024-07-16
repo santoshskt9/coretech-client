@@ -5,37 +5,19 @@ import { Link } from "react-router-dom";
 
 const Training = () => {
   const videos = [
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4",
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4",
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4",
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4",
+    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/blogs/videos/9302291e-3c43-42a6-8665-09765c59800c.mp4",
   ];
 
   const slideContent = [
     {
-      title: "Seamless Migration & Modernization",
+      title: "Comprehensive IT Training Programs",
       description:
-        "Effortlessly migrate your infrastructure to the cloud and modernize your applications. Our expert team ensures a smooth transition, minimizing downtime and maximizing efficiency.",
-      buttonText: "Explore Services",
-      buttonNavigation: "#migration-modernization",
+        "Empower your team with the latest IT skills through our extensive training programs. Stay ahead with cutting-edge knowledge and practical experience.",
+      buttonText: "Explore Training Programs",
+      buttonNavigation: "#",
       animation: "fadeInRight",
     },
-    {
-      title: "Optimized Cloud Infrastructure",
-      description:
-        "Optimize your cloud infrastructure for performance, scalability, and cost-efficiency. Our cloud solutions ensure your systems are always available and fully optimized.",
-      buttonText: "Learn More",
-      buttonNavigation: "#optimization",
-      animation: "fadeInRight",
-    },
-    {
-      title: "Robust Cloud Infrastructure",
-      description:
-        "Build a robust cloud infrastructure tailored to your business needs. Our system design experts design and implement scalable, secure, and resilient cloud architectures.",
-      buttonText: "Discover Benefits",
-      buttonNavigation: "#infrastructure",
-      animation: "fadeInRight",
-    },
+   
   ];
   return (
     <>
@@ -84,7 +66,7 @@ const Training = () => {
             </div>
             <div className="col">
               <img
-                src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/cyber-security-thumbnail.png"
+                src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/blogs/imgs/ede30ed7-986b-4129-9edb-65334b73d01f.png"
                 alt=""
                 className="w-100 rounded-4"
               />
@@ -107,7 +89,7 @@ const Training = () => {
             </div>
             <div className="col">
               <img
-                src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/resource/cyber-security-thumbnail.png"
+                src="https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/blogs/imgs/49da92c8-5fbc-4a97-bf48-7cc28751b0ac.png"
                 alt=""
                 className="w-100 rounded-4"
               />

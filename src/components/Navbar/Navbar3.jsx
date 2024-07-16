@@ -9,8 +9,10 @@ import { FaBars, FaCross } from "react-icons/fa";
 import FullScreenMenu from "./MobileMenu/FullScreenMenu";
 import { FaXmark } from "react-icons/fa6";
 import { CSSTransition } from "react-transition-group";
+import { useGlobalContext } from "../../global/context";
 
 const Navbar3 = () => {
+  const {isSliderRendered} = useGlobalContext();
   const [isMegaMenuVisible, setMegaMenuVisible] = useState(false);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const handleSectionRoute = (sectionId) => {
@@ -18,6 +20,9 @@ const Navbar3 = () => {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: "smooth" });
   };
+
+ 
+  const [isPlainNav, setIsPlainNav] = useState(false);
 
   let hoverTimeOut; // Declare hoverTimeOut variable outside of the function
 
@@ -41,7 +46,7 @@ const Navbar3 = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   };
 
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(true);
   const scrollThreshold = 1; // Adjust this value to change the scroll position
 
   const handleScroll = () => {
@@ -50,14 +55,21 @@ const Navbar3 = () => {
   };
 
   useEffect(() => {
+    
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []); // Empty dependency array to run effect only once
 
+  useEffect(() => {
+     
+    console.log({ isCarouselRendered: isSliderRendered});
+    setIsPlainNav(!isSliderRendered);
+  },[isSliderRendered]);
+
   return (
     <>
-      <header className={`main-header header-style-two ${isSticky ? 'bg-white sticky-top shadow-sm' : ''}`}>
+      <header className={`main-header header-style-two ${isSticky ? 'bg-white sticky-top shadow-sm' : ''} ${isPlainNav ? 'bg-white sticky-top' : ''}`}>
         <div className="header-lower">
           <div className="container-fluid">
             {/* <!-- Main box --> */}
@@ -65,7 +77,7 @@ const Navbar3 = () => {
               <div className="logo-box">
                 <div className="logo">
                   <Link to="/">
-                    <img src={isSticky? Brand : BrandInvert} height={50} alt="" title="Coretech"/>
+                    <img src={isSticky || isPlainNav ? Brand : BrandInvert } height={50} alt="" title="Coretech"/>
                   </Link>
                 </div>
               </div>
@@ -77,6 +89,7 @@ const Navbar3 = () => {
                     {/* <li>
                       <NavLink to="/">Home</NavLink>
                     </li> */}
+
                     <li className="dropdown">
                       <NavLink to="/about" className="d-flex align-items-center">
                         About <MdOutlineKeyboardArrowDown />{" "}

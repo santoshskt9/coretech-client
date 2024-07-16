@@ -13,6 +13,7 @@ const initialState = {
   token: localStorage.getItem("token") ? localStorage.getItem("token") : "",
   loginStatus: false,
   showAuth: false,
+  isSliderRendered: false,
   questions: [],
   socket: null,
   showMessage: false,
@@ -55,6 +56,16 @@ const UserProvider = ({ children }) => {
       type: "SET_TOKEN",
       payload: {
         token: token,
+      },
+    });
+  };
+  const setIsSliderRendered = (isSliderRendered) => {
+    console.log("Reducer got the isSliderRendered: ", isSliderRendered);
+    localStorage.setItem("isSliderRendered", isSliderRendered);
+    return dispatch({
+      type: "SET_isSliderRendered",
+      payload: {
+        isSliderRendered: isSliderRendered,
       },
     });
   };
@@ -263,7 +274,8 @@ const UserProvider = ({ children }) => {
         setUserStep,
         setOnboardingData,
         setfinalData,
-        setjobdetailss
+        setjobdetailss,
+        setIsSliderRendered
       }}
     >
       {children}

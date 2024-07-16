@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Carousel.css';
 import { useNavigate } from 'react-router-dom';
+import { useGlobalContext } from '../../global/context';
 
 
 const ImageCarousel = ({ images, slideContent, array = false, align = 'left', color = 'light', contentBackground = false }) => {
+    const { setIsSliderRendered } = useGlobalContext();
     const [activeSlide, setActiveSlide] = useState(0);
     const sliderRef = useRef(null);
     const navigate = useNavigate();
@@ -16,6 +18,7 @@ const ImageCarousel = ({ images, slideContent, array = false, align = 'left', co
     const [timer, setTimer] = useState(0); // Separate state for timer
 
     useEffect(() => {
+        setIsSliderRendered(true);
         const intervalId = setInterval(() => {
             setTimer(prevTimer => prevTimer + 1); // Increment timer state
         }, 5000);
@@ -27,6 +30,9 @@ const ImageCarousel = ({ images, slideContent, array = false, align = 'left', co
         const nextSlideIndex = (activeSlide + 1) % slideContent.length;
         setActiveSlide(nextSlideIndex);
     }, [timer]); // Update activeSlide only when timer changes
+
+    useEffect( () => () => setIsSliderRendered(false), [] );
+
     return (
         <>
             <section className='hero-slider-two' ref={sliderRef}>

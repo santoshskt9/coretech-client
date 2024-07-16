@@ -15,6 +15,7 @@ const reducer = (state, action) => {
         case "SET_ONBOARDING": return { ...state, OnboardingData: action.payload.OnboardingData};
         case "SET_FINALDATA": return { ...state, finalData: action.payload.finalData};
         case "SET_JOBDETAILS": return { ...state, jobdetailss: action.payload.jobdetailss};
+        case "SET_isSliderRendered": return { ...state, isSliderRendered: action.payload.isSliderRendered};
         default: return state;
     }
 }

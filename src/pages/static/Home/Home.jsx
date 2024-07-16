@@ -15,11 +15,14 @@ import CTASection from "../Sections/CTASection";
 
 const Home = () => {
   const videos = [
+    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/data.mp4",
+    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/vapt1.mp4",
+    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/development.mp4",
     "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/pixels.mp4",
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/network.mp4",
     "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
-    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
+    // "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/network.mp4",
+    // "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
+    // "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
   ];
 
   const slideContent = [
@@ -55,12 +58,12 @@ const Home = () => {
       animation: "fadeInUp",
     },
     {
-      title: 'Security and Privacy',
-      description: 'Want to secure your infrastructure?',
-      buttonText: 'Learn More About Security',
+      title: "Security and Privacy",
+      description: "Want to secure your infrastructure?",
+      buttonText: "Learn More About Security",
       buttonLink: "/services/security-and-privacy",
-      animation: 'fadeInLeft',
-  },
+      animation: "fadeInLeft",
+    },
   ];
 
   const featuredContent = {
