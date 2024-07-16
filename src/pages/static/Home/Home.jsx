@@ -19,6 +19,7 @@ const Home = () => {
     "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/network.mp4",
     "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
     "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
+    "https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/videos/security.mp4",
   ];
 
   const slideContent = [
@@ -53,6 +54,13 @@ const Home = () => {
       buttonLink: "/services/planing-and-execution",
       animation: "fadeInUp",
     },
+    {
+      title: 'Security and Privacy',
+      description: 'Want to secure your infrastructure?',
+      buttonText: 'Learn More About Security',
+      buttonLink: "/services/security-and-privacy",
+      animation: 'fadeInLeft',
+  },
   ];
 
   const featuredContent = {
