@@ -74,6 +74,7 @@ const MegaMenu = ({handleMouseEnter, handleMouseLeave}) => {
           <li>Mobile App Development</li>
           <li>Third Party Integration</li>
           <li>Tailored Solutions</li>
+          <li>Digital Marketing</li>
         </ul>
       </div>
       <div className="mega-menu-section">
