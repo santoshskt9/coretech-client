@@ -75,8 +75,8 @@ const ContactUs = () => {
                     <div className="icon icon-contact">
                       <PiPhoneCallFill />
                     </div>
-                    <div className="contact-items">
-                      <h4>Have any question?</h4>
+                    <div className="contact-items m-0">
+                      <h5>Have any question?</h5>
                       <a href="tel:+19452785774">USA: +1 (945) 278 5774</a>
                     </div>
                   </li>
@@ -84,8 +84,8 @@ const ContactUs = () => {
                     <div className="icon icon-contact">
                       <PiEnvelopeFill />
                     </div>
-                    <div className="contact-items">
-                      <h4>Write email</h4>
+                    <div className="contact-items m-0">
+                      <h5>Write email</h5>
                       <a href="mailto:info@coretecchinfra.com">
                         info@coretechinfra.com
                       </a>
@@ -95,8 +95,8 @@ const ContactUs = () => {
                     <div className="icon icon-contact">
                       <PiNavigationArrowFill />
                     </div>
-                    <div className="contact-items">
-                      <h4>Visit anytime</h4>
+                    <div className="contact-items m-0">
+                      <h5>Visit anytime</h5>
                       <span>
                         Vista Point North <br />
                         405 State Highway 121, <br />
@@ -132,34 +132,61 @@ const ContactUs = () => {
           </div>
           <div className="row">
             <div className="col office">
-              <h3>Lucknow, UP</h3>
+              <h4 className="border-bottom pb-3 text-primary">Sonebhadra, UP</h4>
               <ul className="list-unstyled contact-details__offices">
                 <li>
-                  <div className="icon icon-contact">
-                    <PiPhoneCallFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Call Us</h4>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Call Us</h5>
                     <a href="tel:+918050572875">+91 (805)-0572875</a>
                   </div>
                 </li>
                 <li>
-                  <div className="icon icon-contact">
-                    <PiEnvelopeFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Write email</h4>
+                 
+                  <div className="contact-items m-0">
+                    <h5>Write email</h5>
                     <a href="mailto:info@coretechinfra.com">
                       info@coretechinfra.com
                     </a>
                   </div>
                 </li>
                 <li>
-                  <div className="icon icon-contact">
-                    <PiNavigationArrowFill />
+                  
+                  <div className="contact-items m-0">
+                    <h5>Visit anytime</h5>
+                    <a href="https://maps.app.goo.gl/42UdWMYrBT3T4CpX8">
+                      Plot No 9, A Block, Ambedkarnagar, <br /> Shaktinagar,
+                      Sonebhadra, Uttar Pradesh, 
+                      India - 231222
+                    </a>
+                    
                   </div>
-                  <div className="contact-items">
-                    <h4>Visit anytime</h4>
+                </li>
+              </ul>
+            </div>
+            <div className="col office">
+              <h4 className="border-bottom pb-3 text-primary">Lucknow, UP</h4>
+              <ul className="list-unstyled contact-details__offices">
+                <li>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Call Us</h5>
+                    <a href="tel:+918050572875">+91 (805)-0572875</a>
+                  </div>
+                </li>
+                <li>
+                 
+                  <div className="contact-items m-0">
+                    <h5>Write email</h5>
+                    <a href="mailto:info@coretechinfra.com">
+                      info@coretechinfra.com
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Visit anytime</h5>
                     {/* <a href="https://maps.app.goo.gl/42UdWMYrBT3T4CpX8">
                       Plot No 9, A Block, Ambedkarnagar, <br /> Shaktinagar,
                       Sonebhadra, Uttar Pradesh, <br />
@@ -173,35 +200,29 @@ const ContactUs = () => {
               </ul>
             </div>
             <div className="col office">
-              <h3>Bangalore, KA</h3>
+              <h4 className="border-bottom pb-3 text-primary">Bangalore, KA</h4>
               <ul className="list-unstyled contact-details__offices">
                 <li>
-                  <div className="icon icon-contact">
-                    <PiPhoneCallFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Call Us</h4>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Call Us</h5>
                     <a href="tel:+918088297383">+91 (808)-8297383</a>
                     {/* <a href="tel:+918050572875">+91 (805)-0572875</a> */}
                   </div>
                 </li>
                 <li>
-                  <div className="icon icon-contact">
-                    <PiEnvelopeFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Write email</h4>
+                 
+                  <div className="contact-items m-0">
+                    <h5>Write email</h5>
                     <a href="mailto:info@coretechinfra.com">
                       info@coretechinfra.com
                     </a>
                   </div>
                 </li>
                 <li>
-                  <div className="icon icon-contact">
-                    <PiNavigationArrowFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Visit anytime</h4>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Visit anytime</h5>
                     <a href="#">
                       6G 601, Provident Sunworth <br />
                       Mysore Road Kengeri, Venkatapura <br />
@@ -212,37 +233,31 @@ const ContactUs = () => {
               </ul>
             </div>
             <div className="col office">
-              <h3>Aurangabad, MH</h3>
+              <h4 className="border-bottom pb-3 text-primary">Aurangabad, MH</h4>
               <ul className="list-unstyled contact-details__offices">
                 <li>
-                  <div className="icon icon-contact">
-                    <PiPhoneCallFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Call Us</h4>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Call Us</h5>
                     <a href="tel:+918050572875">+91 (805)-0572875</a>
                   </div>
                 </li>
                 <li>
-                  <div className="icon icon-contact">
-                    <PiEnvelopeFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Write email</h4>
+                 
+                  <div className="contact-items m-0">
+                    <h5>Write email</h5>
                     <a href="mailto:info@coretechinfra.com">
                       info@coretechinfra.com
                     </a>
                   </div>
                 </li>
                 <li>
-                  <div className="icon icon-contact">
-                    <PiNavigationArrowFill />
-                  </div>
-                  <div className="contact-items">
-                    <h4>Visit anytime</h4>
+                  
+                  <div className="contact-items m-0">
+                    <h5>Visit anytime</h5>
                     <a href="https://maps.app.goo.gl/EYyynCYt3zfaNgzK7">
-                      Diwan deodi, Gulmandi, Chhatrapati <br /> Sambhaji Nagar,
-                      (Aurangabad), Maharashtra, <br /> India - 431001
+                      Diwan deodi, Gulmandi, <br />  Chhatrapati, Sambhaji Nagar,
+                      (Aurangabad), Maharashtra, 431001
                     </a>
                   </div>
                 </li>
